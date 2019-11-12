@@ -179,7 +179,7 @@ span.textoMenu {
   border-bottom-color: #ffffff; }
 
 #scroll:hover {
-  background-color: #dc3545;
+  background-color: #000;
   opacity: 1;
   filter: "alpha(opacity=100)";
   -ms-filter: "alpha(opacity=100)"; }
