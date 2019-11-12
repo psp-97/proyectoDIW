@@ -5,10 +5,14 @@
 
 <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
 
+<link rel="stylesheet" href="css/resume.css">
+
+<!--
 <link rel="stylesheet" href="css/navigation.css">
 <link rel="stylesheet" href="css/content.css">
 <link rel="stylesheet" href="css/aleatorio.css">
 <link rel="stylesheet" href="css/meme.css">
+-->
 
 
 <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
