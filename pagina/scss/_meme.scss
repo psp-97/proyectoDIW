@@ -11,14 +11,34 @@
 }
 
 .comentario{
-  border-bottom: #2b33eb 3px solid;
+  border-bottom: $primary 3px solid;
   margin-top: 30px;
 }
 
 .comentario h6{
-  color: #1A577F !important;
+  color: $azulletra !important;
 }
 
 .comentario p{
   padding-left: 20px;
+}
+
+.btn-circle.btn-xl {
+  background-color: $primary;
+  width: 50px;
+  height: 50px;
+  padding: 10px 16px;
+  border-radius: 35px;
+  font-size: 24px;
+  line-height: 1.33;
+  margin-right: 15px;
+  margin-bottom: 15px;
+}
+
+.btn-circle.btn-xl:hover {
+  background-color: $black;
+}
+
+.btn-circle.btn-xl i {
+  color: $white;
 }

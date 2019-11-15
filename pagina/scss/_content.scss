@@ -31,7 +31,7 @@
 }
 
 .card-title{
-  color: black;
+  color: $black;
   width: 90%;
   margin: auto;
   margin-top: 10px;
@@ -49,13 +49,13 @@
 .card{
   font-family: 'Roboto';
   border-bottom: 5px solid black;
-  color: #1A577F !important;
+  color: $azulletra !important;
   margin-top: 50px;
 }
 
 .card:hover {
   background: #e8f4fa;
-  border-bottom-color: #2b33eb;
+  border-bottom-color: $primary;
 }
 
 
@@ -66,8 +66,8 @@
 
 .aside{
   font-family: 'Roboto';
-  background-color: gainsboro;
-  color: #1A577F !important;
+  background-color: $gainsboro;
+  color: $azulletra !important;
   margin-top: 50px;
   margin-left: 50px;
   padding: 10px;
@@ -96,7 +96,7 @@
 
 .footer{
   font-family: 'Roboto';
-  background-color: gainsboro;
+  background-color: $gainsboro;
   color: #1A577F !important;
   padding: 10px;
   margin-top: 50px;

@@ -10,10 +10,14 @@
 <div class="container">
 
 
+    <div class="fixed-bottom text-right">
+        <a  href="index.php"><button type="button" class="btn btn-circle btn-xl"><i class="fa fa-caret-left"></i>
+            </button></a>
+    </div>
+
+
 
             <div class="row content" style="padding-top: 80px;">
-
-                <a href="index.php">Volver</a>
 
 
                 <div class="col-10 aside">
@@ -53,7 +57,6 @@
 
     </div>
 
-    <a href="javascript:void(0);" id="scroll" title="Scroll to Top" style="display: none;">Top<span></span></a>
 
 </div>
 

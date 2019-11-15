@@ -5,7 +5,7 @@ ul li a{
 
 
 .navbar-toggler{
-  background-color: blue;
+  background-color: $primary;
   color: white;
 }
 
@@ -36,14 +36,14 @@ span.textoMenu{
 
 
 .login{
-  background-color: #2b33eb;
+  background-color: $primary;
   color: white;
   font-family: "Gochi Hand";
 }
 
 
 .navbar{
-  background-color: black !important;
+  background-color: $black !important;
   position: fixed !important;
   width: 100%;
   z-index: 100 !important;
@@ -57,18 +57,18 @@ span.textoMenu{
 }
 
 .nav-item:hover{
-  background-color: #2b33eb;
+  background-color: $primary;
 }
 
 .dropdown-item{
-  color: white;
+  color: $white;
 }
 
 .dropdown-item:hover{
-  background-color: #2b33eb;
-  color: white;
+  background-color: $primary;
+  color: $white;
 }
 
 .nav-link{
-  color: white !important;
+  color: $white !important;
 }
