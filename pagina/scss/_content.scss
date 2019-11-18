@@ -5,11 +5,15 @@
   box-sizing: border-box !important;
 }
 
-
-.enlace{
+.container{
   padding-top: 100px;
 }
 
+.enlace a{
+  font-family: "Gochi Hand"   ;
+  text-decoration: none !important;
+  color: $primary !important;
+}
 
 .memes{
   padding: 30px;

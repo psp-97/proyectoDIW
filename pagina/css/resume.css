@@ -43,7 +43,8 @@ span.textoMenu {
   background-color: #2b33eb; }
 
 .dropdown-item {
-  color: #fff; }
+  color: #fff;
+  border-radius: 5px; }
 
 .dropdown-item:hover {
   background-color: #2b33eb;
@@ -95,8 +96,13 @@ span.textoMenu {
   transition: all .65s ease !important;
   box-sizing: border-box !important; }
 
-.enlace {
+.container {
   padding-top: 100px; }
+
+.enlace a {
+  font-family: "Gochi Hand";
+  text-decoration: none !important;
+  color: #2b33eb !important; }
 
 .memes {
   padding: 30px;

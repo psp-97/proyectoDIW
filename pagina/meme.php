@@ -10,7 +10,7 @@
 <div class="container">
 
 
-    <div class="row content" style="padding-top: 80px;">
+    <div class="row content">
 
         <div class="fixed-bottom text-right">
                 <a  href="index.php"><button type="button" class="btn btn-circle btn-xl"><i class="fa fa-caret-left"></i>

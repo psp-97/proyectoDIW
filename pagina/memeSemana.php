@@ -17,7 +17,7 @@
 
 
 
-            <div class="row content" style="padding-top: 80px;">
+            <div class="row content">
 
 
                 <div class="col-10 aside">

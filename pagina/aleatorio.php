@@ -9,7 +9,7 @@
 
 <div class="container">
 
-    <div class="row" style="padding-top: 80px;">
+    <div class="row">
 
         <div class="col memes">
 

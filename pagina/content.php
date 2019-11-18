@@ -1,14 +1,16 @@
 <div class="container">
 
-    <div class="row enlace">
-        <div class="col-12 d-md-none">
-            <a href="memeSemana.php">¿Quieres ver el meme de la semana?</a>
-        </div>
-    </div>
+
 
     <div class="row">
 
         <div class="col-md-8 memes">
+
+            <div class="row enlace">
+                <div class="col-12 d-md-none">
+                    <h3 class="enlace"><a href="memeSemana.php">¿Quieres ver el meme de la semana? Pulsa aquí</a></h3>
+                </div>
+            </div>
 
             <a class="enlaceAMeme" href="meme.php">
             <div class="card">
