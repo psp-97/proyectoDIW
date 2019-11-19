@@ -36,9 +36,9 @@
                     Información
                 </a>
                 <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
-                    <a class="dropdown-item" href="#">Contacta con nosotros</a>
-                    <a class="dropdown-item" href="#">Quienes somos</a>
-                    <a class="dropdown-item" href="#">Terminos legales</a>
+                    <a class="dropdown-item" href="contacta.php">Contacta con nosotros</a>
+                    <a class="dropdown-item" href="quienessomos.php">Quienes somos</a>
+                    <a class="dropdown-item" href="terminos.php">Terminos legales</a>
                 </div>
             </li>
         </ul>

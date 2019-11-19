@@ -12,11 +12,6 @@
 
     <div class="row content">
 
-        <div class="col-12">
-            <a href="index.php">Volver</a>
-        </div>
-
-
         <div class="col-10">
 
             <h2 class="aside-title">Subir meme</h2>
