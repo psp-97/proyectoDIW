@@ -1,4 +1,13 @@
 @charset "UTF-8";
+#login {
+  margin: 50px; }
+
+#vertical {
+  border: none;
+  border-left: 1px solid;
+  height: 200px;
+  width: 1px; }
+
 #linea:hover {
   background-color: #2b33eb !important; }
 
@@ -7,10 +16,10 @@
 
 a {
   text-decoration: none !important;
-  color: black; }
+  color: #000; }
 
 a:hover #linea {
-  color: white; }
+  color: #fff; }
 
 ul li a {
   font-family: "Gochi Hand"; }
