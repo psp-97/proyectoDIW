@@ -11,10 +11,10 @@
         <a class="navbar-brand d-none d-md-block" href="index.php"><img class="logo" src="images/Momazos_Logo_Completo.png"></a>
         <ul class="navbar-nav mr-auto mt-2 mt-lg-0">
             <li class="nav-item">
-                <a class="nav-link" href="#">Añadir contenido</a>
+                <a class="nav-link" href="subirMeme.php">Añadir contenido</a>
             </li>
             <li class="nav-item">
-                <a class="nav-link" href="#">Categorias</a>
+                <a class="nav-link" href="categorias.php">Categorias</a>
             </li>
             <li class="nav-item">
                 <a class="nav-link" href="aleatorio.php">Aleatorio</a>
