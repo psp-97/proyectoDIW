@@ -25,8 +25,8 @@
                     Más
                 </a>
                 <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
-                    <a class="dropdown-item" href="#">Herramientas y tutoriales</a>
-                    <a class="dropdown-item" href="#">Noticias "memables"</a>
+                    <a class="dropdown-item" href="herramientasYTutoriales.php">Herramientas y tutoriales</a>
+                    <a class="dropdown-item" href="NoticiasMemables.php">Noticias "memables"</a>
                 </div>
             </li>
 

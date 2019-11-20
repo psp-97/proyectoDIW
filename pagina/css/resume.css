@@ -1,4 +1,53 @@
 @charset "UTF-8";
+#derecha {
+  float: left;
+  width: 20%;
+  background-color: gainsboro;
+  height: 100%;
+  padding: 10px; }
+
+h3 {
+  font-family: "Gochi Hand"; }
+
+h4 {
+  font-family: "Gochi Hand"; }
+
+h1 {
+  font-family: "Gochi Hand"; }
+
+h2 {
+  font-family: "Gochi Hand"; }
+
+body {
+  font-family: "Nunito", sans-serif;
+  color: #222; }
+
+#columna {
+  padding: 1.5625em;
+  max-width: 90%;
+  color: #1A577F;
+  border-bottom: 5px solid black;
+  margin-bottom: 2.1875em;
+  position: relative;
+  overflow: hidden; }
+
+#imagen {
+  width: 300px;
+  height: 250px; }
+
+#columna:hover {
+  background: #e8f4fa;
+  border-bottom-color: #2b33eb; }
+
+.enlace {
+  display: none; }
+
+@media only screen and (max-width: 755px) {
+  .col-sm-4 {
+    display: none; }
+
+  .enlace {
+    display: block; } }
 #login {
   margin: 50px; }
 
