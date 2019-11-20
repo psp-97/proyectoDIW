@@ -1,7 +1,7 @@
 #derecha {
   float: left;
   width: 20%;
-  background-color: gainsboro;
+  background-color: $gainsboro;
   height: 100%;
   padding: 10px;
 }
@@ -20,14 +20,14 @@ h2 {
 
 body {
   font-family: "Nunito", sans-serif;
-  color: #222;
+  color: $gray-800;
 }
 
 #columna {
   padding: 1.5625em;
   max-width: 90%;
-  color: #1A577F;
-  border-bottom: 5px solid black;
+  color: $azulletra;
+  border-bottom: 5px solid $black;
   margin-bottom: 2.1875em;
   position: relative;
   overflow: hidden;
@@ -38,8 +38,8 @@ body {
 }
 
 #columna:hover {
-  background: #e8f4fa;
-  border-bottom-color: #2b33eb;
+  background: $gray-300;
+  border-bottom-color: $primary;
 }
 .enlace {
   display:none;
