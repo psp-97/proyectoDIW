@@ -1,0 +1,75 @@
+ul li a{
+  font-family: "Gochi Hand";
+}
+
+
+
+.navbar-toggler{
+  background-color: $primary;
+  color: white;
+}
+
+span.navbar-toggler-icon{
+  color: white !important;
+}
+
+span.textoMenu{
+  color: white !important;
+  font-family: "Gochi Hand";
+}
+
+
+.logoPequeño{
+  background-color: black;
+}
+
+
+.logo{
+  width: 80px;
+  height: 40px;
+  margin: 0px 20px 0px 20px;
+}
+
+.dropdown-menu{
+  background-color: black;
+}
+
+
+.login{
+  background-color: $primary;
+  color: white;
+  font-family: "Gochi Hand";
+}
+
+
+.navbar{
+  background-color: $black !important;
+  position: fixed !important;
+  width: 100%;
+  z-index: 100 !important;
+}
+
+
+
+.nav-item{
+  padding: 0px 10px 0px 10px;
+  border-radius: 5px;
+}
+
+.nav-item:hover{
+  background-color: $primary;
+}
+
+.dropdown-item{
+  color: $white;
+  border-radius: 5px;
+}
+
+.dropdown-item:hover{
+  background-color: $primary;
+  color: $white;
+}
+
+.nav-link{
+  color: $white !important;
+}
