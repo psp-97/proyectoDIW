@@ -1,12 +1,13 @@
 <nav class="navbar navbar-expand-md navbar-light bg-light">
+    <div class="navbar-toggler logoPequeño">
+        <a class="navbar-brand" href="index.php"><img class="logo" src="images/Momazos_Logo_Completo.png"></a>
+    </div>
     <button class="navbar-toggler btn btn-primary" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo01"
             aria-controls="navbarTogglerDemo01" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
         <span class="textoMenu">Menú</span>
     </button>
-    <div class="navbar-toggler logoPequeño">
-        <a class="navbar-brand" href="index.php"><img class="logo" src="images/Momazos_Logo_Completo.png"></a>
-    </div>
+
     <div class="collapse navbar-collapse" id="navbarTogglerDemo01">
         <a class="navbar-brand d-none d-md-block" href="index.php"><img class="logo" src="images/Momazos_Logo_Completo.png"></a>
         <ul class="navbar-nav mr-auto mt-2 mt-lg-0">
