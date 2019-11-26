@@ -127,6 +127,9 @@ span.textoMenu {
 .card {
   margin: 20px; }
 
+.card-image {
+  margin: 20px !important; }
+
 .imagen-meme {
   margin-bottom: 20px; }
 
@@ -163,6 +166,9 @@ span.textoMenu {
 .btn-circle.btn-xl i {
   color: #fff; }
 
+@media only screen and (max-width: 768px) {
+  .container {
+    padding-left: 20px !important; } }
 * {
   transition: all .65s ease !important;
   box-sizing: border-box !important; }
