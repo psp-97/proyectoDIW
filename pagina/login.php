@@ -20,7 +20,7 @@
              <div class=row>
              <div class="col-md-4 col-sm-12"></div>
              <div class="col-md-2 col-sm-12">EMAIL: </div>
-             <div class="col-md-6 col-sm-12"><input type="text" id="correo"></div>
+             <div class="col-md-6 col-sm-12"><input class="formulario" type="text" id="correo"></div>
                   
              </div>
              <hr>
@@ -28,7 +28,7 @@
              <div class="col-md-4 col-sm-12"></div>
              <div class="col-md-2 col-sm-12">CONTRASEÑA: </div>
              
-             <div class="col-md-6 col-sm-12"><input type="password" id="contra"></div>
+             <div class="col-md-6 col-sm-12"><input class="formulario" type="password" id="contra"></div>
              </div>
              <hr>
              <div class=row>
