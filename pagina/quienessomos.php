@@ -9,26 +9,35 @@
 
 
 
-<div class="container text-center">
+<div class="container">
 
 
     <div class="row content ">
 
     
 
-        <div class="col-12">
+        <div class="col">
 
         <h2 class="aside-title">¿Quiénes Somos?</h2>
 
-        <p>________________________</p><br>
+        <div class="col-md-4 col-sm-12">
+            <hr>
+        </div>
 
         <h2>Aqui foto grupal</h2>
 
-        <p>________________________</p><br>
+        <div class="col-md-4 col-sm-12">
+            <hr>
+        </div>
 
-        <p>Momazos se funda en el 2019 por cuatro frikis amantes de Internet y de la diversion decidieron compartir sus aficiones con sus amistades a traves de las nuevas tecnologías. En aquella época, tanto en España como a nivel mundial, el entusiasta de la informática estaba todavía en gestación. No existían memes especializados, ni paginas que hablaran de los mismos y todo estaba empezando a moverse.</p>
+        <div class="col text-justify">
+            <p>Momazos se funda en el 2019 por cuatro frikis amantes de Internet y de la diversion decidieron compartir sus aficiones con sus amistades a traves de las nuevas tecnologías. En aquella época, tanto en España como a nivel mundial, el entusiasta de la informática estaba todavía en gestación. No existían memes especializados, ni paginas que hablaran de los mismos y todo estaba empezando a moverse.</p>
+        </div> 
+        
 
-        <p>________________________</p><br>
+        <div class="col-md-4 col-sm-12">
+            <hr>
+        </div>
 
 
         <!-- Fila 1: Navdar -->
@@ -41,7 +50,7 @@
         -->
 
         <!-- Fila 2 -->
-        <div class="row">
+        <div class="row text-center">
             <div class="col-md">
                 <!-- <img src="canario3.jpg" class="col-md-12 card">-->
                 <img src="images/quienes-somos-01.png" alt="Sample Image" class="img-fluid imagen-meme"/>
@@ -61,7 +70,7 @@
                 <p class="col-md-12">Paga de forma cómoda, rápida y segura en nuestra tienda. Utiliza el método de pago que más se adapte a ti, transferencia, ingreso, tarjeta o contrareembolso. Fináncialo o págalo directamente en metálico en nuestra tienda. ¡Anda que no te lo ponemos fácil!</p>
             </div>
         </div>
-        <div class="row">
+        <div class="row text-center">
             <div class="col-md">
                 <!-- <img src="canario3.jpg" class="col-md-12 card">-->
                 <img src="images/quienes-somos-04.png" alt="Sample Image" class="img-fluid imagen-meme"/>

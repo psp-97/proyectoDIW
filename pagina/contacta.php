@@ -3,11 +3,21 @@
 <head>
     <?php include("includes/head-tag-contents.php"); ?>
 </head>
+<style>
+    .pepe {
+      border: 0.5px solid;
+      /*
+      margin-left: 20%;
+      margin-right: 20%;
+      */
+    }
+    
+    </style>
 <body>
 
 <?php include("includes/navigation.php"); ?>
 
-<div class="container text-center">
+<div class="container">
 
 
     <div class="row content ">
@@ -18,11 +28,74 @@
 
         <h2 class="aside-title">Contacta con nosotros</h2>
 
-        <p>________________________</p><br>
+        <div class="col-md-4 col-sm-12">
+            <hr>
+        </div>
 
-        <h2>Aqui iria el formulario</h2>
+        <div class="box expl">
+            <div class="box-content">
+            <p class="box-text">
+            ¿Tienes algo que decirnos? ¿Una propuesta, una petición, una queja?
+            Este es el lugar adecuado, rellena el
+            siguiente formulario y contactaremos contigo lo antes posible.
+            </p>
+            <p class="box-text">
+                Antes de enviar tu duda, asegúrate que no esté resuelta en nuestra sección de
+                <a href="momazosPreguntas" target="_blank" title="Preguntas frecuentes">preguntas frecuentes</a>.
+            </p>
+            </div>
+        </div>
 
-        <p>________________________</p><br>
+        <form action="" method="POST">
+            <div class="row">
+                <div class="col-md-6 col-sm-12 text-md-right">Nombre</div>
+                <div class="col-md-6 col-sm-12 text-md-left"><input type="text" id="nombre" placeholder="Nombre"></div>
+            </div>
+            <!--
+            <div class="flex-row justify-content-center">
+                <div class="d-flex ">Nombre</div>
+                <div class="d-flex "><input type="text" id="nombre" placeholder="Nombre"></div>
+            </div>
+            -->
+            <hr>
+            <div class="row">
+                <div class="col-md-6 col-sm-12 text-md-right">Email  </div>
+                <div class="col-md-6 col-sm-12 text-md-left"><input type="text" id="email" placeholder="email (opcional)"></div>
+            </div>
+            <hr>
+            <div class="row">
+                <div class="col-md-6 col-sm-12 text-md-right">Asunto  </div>
+                <div class="col-md-6 col-sm-12 text-md-left">
+                    <select id="contact-topic" name="topic" class="form-input field-validate" data-validations="required">
+                        <option value="">Escoge</option>
+                        <option value="Colaboración">Colaboración</option>
+                        <option value="Comportamiento inadecuado">Comportamiento inadecuado</option>
+                        <option value="Duda">Duda</option>
+                        <option value="Felicitación">Felicitación</option>
+                        <option value="Petición">Petición</option>
+                        <option value="Propuesta">Propuesta</option>
+                        <option value="Publicidad">Publicidad</option>
+                        <option value="Red de blogs">Red de blogs</option>
+                        <option value="Otro">Otro</option>
+                    </select>
+                </div>
+            </div>
+            <hr>
+            <div class="row">
+                <div class="col-md-6 col-sm-12 text-md-right">Comentarios</div>
+                <div class="col-md-6 col-sm-12 text-md-left">
+                    <textarea name="message" placeholder="Comentarios" rows="10" cols="30"></textarea> 
+                </div>
+            </div>
+            <hr>
+
+            <div class="row">
+                <div class="col-md-12 col-sm-12 text-md-center"><input type="submit" name="enviar" value="Enviar" class="btn btn-primary"/></div>
+            </div>
+        </form>
+
+
+        <hr class="col-4"><br>
 
 
         <!-- Fila 1: Navdar -->
@@ -35,7 +108,7 @@
         -->
 
         <!-- Fila 2 -->
-        <div class="row">
+        <div class="row text-center">
             <div class="col-md col-sm-6">
                 <!-- <img src="canario3.jpg" class="col-md-12 card">-->
                 <a href="https://www.twitch.tv/linustech"><i class="fa fa-twitch" style="font-size:50px;color:purple"></i></a>

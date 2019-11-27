@@ -7,16 +7,19 @@
 
 <?php include("includes/navigation.php"); ?>
 
-<div class="container text-center">
+<div class="container text-justify">
 
 
-    <div class="row content text-justify">
+    <div class="row content">
 
-        <div class="col-12">
+        <div class="col">
 
-        <h2 class="aside-title text-center">Terminos de Uso</h2>
+        <h2 class="aside-title">Terminos de Uso</h2>
 
-        <p>________________________</p><br>
+        <div class="col-md-4 col-sm-12">
+            <hr>
+        </div>
+        
 
         <h3>1. Datos del titular</h3>
         <p>
