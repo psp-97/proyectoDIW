@@ -1,0 +1,156 @@
+
+
+* {
+  transition: all .65s ease !important;
+  box-sizing: border-box !important;
+}
+
+.container{
+  padding-top: 100px;
+}
+
+.enlace a{
+  font-family: "Gochi Hand"   ;
+  text-decoration: none !important;
+  color: $primary !important;
+}
+
+.memes{
+  padding: 30px;
+  position: relative;
+  z-index: 50;
+}
+
+
+
+.enlaceAMeme{
+  text-decoration: none !important;
+}
+
+
+
+.card-image{
+  width: 90%;
+  margin: auto;
+}
+
+.card-title{
+  color: $black;
+  width: 90%;
+  margin: auto;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  font-family: "Gochi Hand";
+}
+
+.card-content{
+  width: 90%;
+  margin: auto;
+  margin-bottom: 50px;
+}
+
+
+.card{
+  font-family: 'Roboto';
+  border-bottom: 5px solid black;
+  color: $azulletra !important;
+  margin-top: 50px;
+}
+
+.card:hover {
+  background: #e8f4fa;
+  border-bottom-color: $primary;
+}
+
+
+.lateral{
+  position: relative;
+  z-index: 50;
+}
+
+.aside{
+  font-family: 'Roboto';
+  background-color: $gainsboro;
+  color: $azulletra !important;
+  margin-top: 50px;
+  margin-left: 50px;
+  padding: 10px;
+}
+
+.aside-title{
+  font-family: "Gochi Hand";
+  color: black;
+}
+
+.aside img{
+  width: 100%;
+}
+
+#primero{
+  font-size: 3em;
+}
+
+#segundo{
+  font-size: 2em;
+}
+
+#tercero{
+  font-size: 1.5em;
+}
+
+.footer{
+  font-family: 'Roboto';
+  background-color: $gainsboro;
+  color: #1A577F !important;
+  padding: 10px;
+  margin-top: 50px;
+}
+
+/*Boton volver arriba*/
+
+#scroll {
+  position:fixed;
+  right:10px;
+  bottom:10px;
+  cursor:pointer;
+  width:50px;
+  height:50px;
+  background-color: $primary;
+  text-indent:-9999px;
+  display:none;
+  -webkit-border-radius:60px;
+  -moz-border-radius:60px;
+  border-radius:60px;
+  z-index: 100;
+}
+#scroll span {
+  position:absolute;
+  top:50%;
+  left:50%;
+  margin-left:-8px;
+  margin-top:-12px;
+  height:0;
+  width:0;
+  border:8px solid transparent;
+  border-bottom-color:#ffffff;
+}
+#scroll:hover {
+  background-color: $black;
+  opacity:1;filter:"alpha(opacity=100)";
+  -ms-filter:"alpha(opacity=100)";
+}
+
+
+@media only screen and (max-width: 768px){
+  .container{
+    padding: 0px;
+    padding-top: 100px;
+  }
+  .memes{
+    padding: 0px;
+  }
+  .enlace{
+    margin-left: 10px;
+    margin-right: 10px;
+  }
+}
