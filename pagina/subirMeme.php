@@ -19,7 +19,7 @@
              <div class=row>
              <div class="col-md-4 col-sm-12"></div>
              <div class="col-md-2 col-sm-12">Titulo del meme </div>
-             <div class="col-md-6 col-sm-12"><input type="text" id="titulo"></div>
+             <div class="col-md-6 col-sm-12"><input class="formulario" type="text" id="titulo"></div>
                   
              </div>
              <hr>
@@ -38,7 +38,7 @@
              <hr>
              <div class=row>
              <div class="col-md-5 col-sm-12">   </div>
-             <div class="col-md-7 col-sm-12"> <textarea name="message" rows="10" cols="30">Introduce aqui la descripcion.</textarea> </div>
+             <div class="col-md-7 col-sm-12"> <textarea class="formulario" name="message" rows="10" cols="30">Introduce aqui la descripcion.</textarea> </div>
 
              </div>
 
