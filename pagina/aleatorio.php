@@ -21,7 +21,7 @@
                         <h4 class="card-title">This is the post title</h4>
                         <img src="images/meme1.jpeg" alt="Sample Image" class="card-image"/>
                         <p class="card-content">Frankly, it's ludicrous to have these interlocking bodies and
-                            not...interlock. My Uncle Rory was
+                            not...interlock. My Uncle Rogfhtrjhtyjjtyjry was
                             the stodgiest taxidermist you've ever met by day. But I haven't spent any money! I wa me. If
                             I
                             could make you purtier, I would.</p>
