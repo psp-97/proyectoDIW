@@ -12,28 +12,28 @@
         <div class="col-md-4 col-sm-12">
             <hr>
         </div>
-        <div class="box expl">
-            <div class="box-content">
-            <p class="box-text">
+        <div>
+            <div>
+            <p>
             ¿Tienes algo que decirnos? ¿Una propuesta, una petición, una queja?
             Este es el lugar adecuado, rellena el
             siguiente formulario y contactaremos contigo lo antes posible.
             </p>
-            <p class="box-text">
+            <p>
                 Antes de enviar tu duda, asegúrate que no esté resuelta en nuestra sección de
                 <a href="momazosPreguntas" target="_blank" title="Preguntas frecuentes">preguntas frecuentes</a>.
             </p>
             </div>
         </div>
         <form action="" method="POST">
-            <div class="row">
+            <div class="row" >
                 <div class="col-md-6 col-sm-12 text-md-right">Nombre</div>
-                <div class="col-md-6 col-sm-12 text-md-left"><input type="text" id="nombre" placeholder="Nombre"></div>
+                <div class="col-md-6 col-sm-12 text-md-left"><input class="formulario" type="text" id="nombre" placeholder="Nombre"></div>
             </div>
             <hr>
             <div class="row">
-                <div class="col-md-6 col-sm-12 text-md-right">Email  </div>
-                <div class="col-md-6 col-sm-12 text-md-left"><input type="text" id="email" placeholder="email (opcional)"></div>
+                <div class="formulario col-md-6 col-sm-12 text-md-right">Email  </div>
+                <div class="formulario col-md-6 col-sm-12 text-md-left"><input class="formulario" type="text" id="email" placeholder="email (opcional)"></div>
             </div>
             <hr>
             <div class="row">
@@ -57,7 +57,7 @@
             <div class="row">
                 <div class="col-md-6 col-sm-12 text-md-right">Comentarios</div>
                 <div class="col-md-6 col-sm-12 text-md-left">
-                    <textarea name="message" placeholder="Comentarios" rows="10" cols="30"></textarea> 
+                    <textarea class="formulario" name="message" placeholder="Comentarios" rows="10" cols="30"></textarea> 
                 </div>
             </div>
             <hr>
@@ -66,6 +66,7 @@
             </div>
         </form>
         <hr class="col-4"><br>
+        <!-- Redes-->
         <div class="row text-center">
             <div class="col-md col-sm-6">
                 <a href="https://www.twitch.tv/linustech"><i class="fa fa-twitch" style="font-size:50px;color:purple"></i></a>
