@@ -1,12 +1,9 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <?php include("includes/head-tag-contents.php");?>
 </head>
-
 <body>
-
 <?php include("includes/navigation.php");?>
     <div class="container">
         <div class="row">
@@ -19,5 +16,4 @@
         </div>
     </div>
 </body>
-
 </html>

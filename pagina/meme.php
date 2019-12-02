@@ -4,11 +4,8 @@
     <?php include("includes/head-tag-contents.php"); ?>
 </head>
 <body>
-
 <?php include("includes/navigation.php"); ?>
-
 <div class="container">
-
     <div class="row content">
         <div class="fixed-bottom text-right">
             <a href="index.php">
@@ -71,11 +68,8 @@
         </div>
     </div>
 </div>
-
 <div class="footer text-center">
     <p>&copy; <?php print date("Y"); ?> <a href="https://iesmarquesdecomares.org/"> IES Marqués de Comares.</a></p>
 </div>
-
-
 </body>
 </html>

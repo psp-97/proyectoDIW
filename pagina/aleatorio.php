@@ -4,9 +4,7 @@
     <?php include("includes/head-tag-contents.php"); ?>
 </head>
 <body>
-
 <?php include("includes/navigation.php"); ?>
-
 <div class="container">
     <div class="row">
         <div class="col memes">
@@ -98,11 +96,7 @@
             </div>
         </div>
     </div>
-
     <a href="javascript:void(0);" id="scroll" title="Scroll to Top" style="display: none;">Top<span></span></a>
-
 </div>
-
-
 </body>
 </html>

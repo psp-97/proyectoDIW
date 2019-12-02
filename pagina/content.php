@@ -1,6 +1,4 @@
 <div class="container">
-
-
     <div class="row">
         <div class="col-md-8 memes">
             <div class="row enlace">
@@ -29,7 +27,6 @@
                 </div>
             </a>
         </div>
-
         <div class="col-md-4 d-none d-md-block lateral">
             <div class="row">
                 <div class="col-12 aside">
@@ -58,7 +55,5 @@
             </div>
         </div>
     </div>
-
     <a href="javascript:void(0);" id="scroll" title="Scroll to Top" style="display: none;">Top<span></span></a>
-
 </div>

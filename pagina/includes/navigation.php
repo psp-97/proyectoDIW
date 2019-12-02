@@ -6,7 +6,6 @@
             aria-controls="navbarTogglerDemo01" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
     </button>
-
     <div class="collapse navbar-collapse" id="navbarTogglerDemo01">
         <a class="navbar-brand d-none d-md-block" href="index.php"><img class="logo" src="images/Momazos_Logo_Completo.png"></a>
         <ul class="navbar-nav mr-auto mt-2 mt-lg-0">
@@ -29,7 +28,6 @@
                     <a class="dropdown-item" href="NoticiasMemables.php">Noticias "memables"</a>
                 </div>
             </li>
-
             <li class="nav-item dropdown">
                 <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" data-toggle="dropdown"
                    aria-haspopup="true" aria-expanded="false">
@@ -47,4 +45,3 @@
         </form>
     </div>
 </nav>
-

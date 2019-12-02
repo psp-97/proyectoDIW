@@ -4,9 +4,7 @@
     <?php include("includes/head-tag-contents.php"); ?>
 </head>
 <body>
-
 <?php include("includes/navigation.php"); ?>
-
 <div class="container text-justify">
     <div class="row content">
         <div class="col">
@@ -73,13 +71,8 @@
         <p>Las obligaciones, derechos y condiciones descritas en este documento están sometidas a la legislación española, en caso de conflicto, los juzgados y Tribunales competentes serán los de Lucena.</p>
     </div>
 </div>
-
-
-
 <div class="footer text-center">
     <p>&copy; <?php print date("Y");?> <a href="https://iesmarquesdecomares.org/"> IES Marqués de Comares.</a></p>
 </div>
-
-
 </body>
 </html>

@@ -1,14 +1,10 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <?php include("includes/head-tag-contents.php");?>
 </head>
-
 <body>
-
 <?php include("includes/navigation.php");?>
-
     <div class="container">
         <h1>Herramientas y Tutoriales</h1>
         <a href="masComentarios.php">
@@ -35,7 +31,6 @@
                         allowfullscreen></iframe>
                 </div>
             </div>
-
             <div class="col-sm-4" id="derecha">
                 <h3>Coméntanos cómo haces tú los memes</h3>
                 <textarea placeholder="Deja tu comentario aquí..."></textarea>
@@ -46,5 +41,4 @@
         </div>
     </div>
 </body>
-
 </html>

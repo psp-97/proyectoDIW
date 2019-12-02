@@ -1,13 +1,10 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <?php include("includes/head-tag-contents.php");?>
 </head>
-
 <body>
 <?php include("includes/navigation.php");?>
-
 <div class="container">
         <h1>Noticias memables</h1>
         <a href="masComentarios.php">
@@ -44,5 +41,4 @@
         </div>
     </div>
 </body>
-
 </html>

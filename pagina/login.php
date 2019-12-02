@@ -4,12 +4,8 @@
     <?php include("includes/head-tag-contents.php"); ?>
 </head>
 <body>
-
 <?php include("includes/navigation.php"); ?>
-
 <div class="container">
-
-
     <div class="row content">
         <div class="col-md-7 col-sm-12">
             <h2 class="aside-title">Iniciar Sesion</h2>
@@ -56,11 +52,8 @@
         </div>
     </div>
 </div>
-
 <div class="footer text-center">
     <p>&copy; <?php print date("Y"); ?> <a href="https://iesmarquesdecomares.org/"> IES Marqués de Comares.</a></p>
 </div>
-
-
 </body>
 </html>
