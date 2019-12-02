@@ -40,5 +40,8 @@
             </div>
         </div>
     </div>
+<div class="footer text-center">
+    <p>&copy; <?php print date("Y"); ?> <a href="https://iesmarquesdecomares.org/"> IES Marqués de Comares.</a></p>
+</div>
 </body>
 </html>
