@@ -8,19 +8,12 @@
 <?php include("includes/navigation.php"); ?>
 
 <div class="container text-justify">
-
-
     <div class="row content">
-
         <div class="col">
-
         <h2 class="aside-title">Terminos de Uso</h2>
-
         <div class="col-md-4 col-sm-12">
             <hr>
         </div>
-        
-
         <h3>1. Datos del titular</h3>
         <p>
         Titular: Momazos S.L., en adelante LA EMPRESA<br/><br />
@@ -29,8 +22,6 @@
         Correo electrónico: contacto (arroba) momazos (punto) combr/><br />
         Datos registrales: Registro Mercantil de Lleida, Tomo 1.252, Folio 151, Hoja L24.996, Inscripción 1.
         </p>
-
-
         <h3>2. Aceptación de los Términos del Servicio y Normas de la Comunidad que a continuación se detallan: </h3>
         <p>POR FAVOR LEA CON DETENIMIENTO LAS CONDICIONES DE USO ANTES DE UTILIZAR EL PRESENTE SITIO. PUEDEN PARECERLE MUY TÉCNICAS Y FORMALES DESDE EL PUNTO DE VISTA LEGAL PERO SON DE VITAL IMPORTANCIA. AL UTILIZAR ESTE SITIO, UD. ACEPTA ESTAS CONDICIONES DE USO. EN CASO DE QUE UD. NO ESTE DE ACUERDO CON ESTAS CONDICIONES DE USO, POR FAVOR NO UTILICE ESTE SITIO O LOS SERVICIOS QUE EL MISMO LE OFRECE. GRACIAS.</p>
         <ol>
@@ -39,8 +30,6 @@
             <li>Las presentes Condiciones de Servicio se aplican a todos los usuarios del Sitio Web, incluidos los usuarios que participen aportando contenidos tales como  imágenes, información y otros materiales o servicios en el Sitio Web.</li>
             <li>La EMPRESA  se reserva el derecho a modificar  cualquier aspecto del Sitio Web en cualquier momento.</li>
         </ol>
-
-
         <h3>3. Normas de la Comunidad </h3>
         <ol>
             <li>El Usuario se compromete a cumplir con los términos y condiciones de estos Términos de Servicio, Normas de la comunidad, y todas las leyes locales, nacionales y reglamentos internacionales.</li>
@@ -55,8 +44,6 @@
             <li>Los envíos de usuario debe cumplir la <a href="https://support.google.com/adsense/answer/1348688" target="_blank">Política de contenido</a> de Google Adsense. Si una aportación no cumple con la misma, será eliminada.</li>
             <li>Usted acepta que su comportamiento en el Sitio Web atiende a las normas de la comunidad que serán actualizadas periódicamente. Le rogamos que periódicamente las consulte.</li>
         </ol>
-
-
         <h3>4. Propiedad intelectual e industrial del Sitio Web</h3>
         <ol>
             <li>La EMPRESA es titular de los derechos de propiedad intelectual e industrial, o ha obtenido las autorizaciones o licencias correspondientes para su explotación, sobre el nombre de dominio, las marcas y signos distintivos, la aplicación y el resto de obras e invenciones asociadas con el sitio web y la tecnología asociada al mismo, así como sobre sus contenidos, con excepción de las obras y contenidos generados por los usuarios, que pertenecen a sus correspondientes autores, sin perjuicio de los derechos de explotación de los mismos que corresponden a la EMPRESA.</li>
@@ -66,8 +53,6 @@
             <li>En caso de que Vd solicite a la EMPRESA la obtención de la información –incluidos los textos, imágenes y cualquier otra obra sometida a derechos de propiedad intelectual o industrial- asociada a su perfil en otras redes sociales, grupos, foros o servicios, mediante la comunicación de su nombre de usuario –como, a modo de ejemplo- su gamertag o nombre de jugador, la EMPRESA iniciará a cabo las medidas técnicas necesarias para el cumplimiento de dicho mandato, obteniendo los datos públicos y/o privados asociados a su perfil en su nombre y representación, y vinculándolos a su perfil en los sitios web correspondientes. La EMPRESA no asume responsabilidad alguna derivada del uso que Vd. u otros usuarios pueda efectuar de la información obtenida en cumplimiento del mandato descrito en este apartado. El usuario será el único responsable del uso de la información obtenida a través del procedimiento descrito y deberá adoptar las medidas oportunas para evitar que dicho uso pueda constituir una infracción de derechos de propiedad intelectual o industrial de terceros.</li>
             <li>Las marcas de terceros que, eventualmente, pueden aparecer en el sitio web pertenecen a los terceros titulares de las mismas.</li>
         </ol>
-
-
         <h3>5.	Propiedad Intelectual de los Archivos de Usuarios</h3>
         <ol>
             <li>Usted puede enviar imágenes y texto (“Comentarios de usuarios”) al Sitio Web. Las fotos,  comentarios o cualquier otra obra o material que incorporen los usuarios se conocen colectivamente como “Archivos de Usuario”.</li>
@@ -77,8 +62,6 @@
             <li>Cualquier tercero distinto de la EMPRESA o de las personas físicas o jurídicas expresamente autorizadas por la misma que pretenda extraer, usar, publicar o explotar, bajo cualquier forma, los contenidos generados por los usuarios, deberá recabar, previa y expresamente, el consentimiento de sus titulares o, en su caso, de la EMPRESA.</li>
             <li>El Usuario se compromete a no presentar material alguno que ostente derechos de propiedad intelectual o industrial o que estén protegidos por el secreto comercial o de cualquier otro tipo, incluyendo la privacidad y derechos de publicidad, salvo en el caso de que sea el propietario de dichos derechos o tenga el permiso de su titular para publicar el material y conceder al Sitio Web todos los derechos de licencia otorgados en este documento.</li>
         </ol>
-
-
         <h3>6. Exclusión de responsabilidad</h3>
         <ol>
             <li>El Usuario entiende que al utilizar el Sitio Web, la EMPRESA no es responsable de la exactitud, utilidad, seguridad o derechos de propiedad intelectual de o en relación con los  Archivos de Usuario. El Usuario entiende y reconoce que los Archivos de Usuarios pueden resultar inexactos, ofensivos y en algunos casos resultar indecentes o censurables.</li>
@@ -86,21 +69,15 @@
             <li>La EMPRESA no comparte ni hace propios, de manera enumerativa pero no limitativa, los envíos de usuario ni las entradas, comentarios, recomendaciones, consejos y opiniones expresados en los Archivos de Usuario, eximiéndose la EMPRESA de toda responsabilidad que se produzca por la publicación en el Sitio Web de los Archivos de los Usuarios.</li>
             <li>El Sitio Web no permite las actividades infractoras de los derechos de autor en su Sitio Web, y la EMPRESA tiene la potestad de  borrar todos los contenidos y envíos de usuario que infrinjan estos derechos. El Sitio Web se reserva el derecho de eliminar Contenido de Usuario sin previo aviso, en caso de que existan dudas acerca del cumplimiento de las presentes condiciones de uso.</li>
         </ol>
-
         <h3>7. Legislación y jurisdicción aplicable</h3>
         <p>Las obligaciones, derechos y condiciones descritas en este documento están sometidas a la legislación española, en caso de conflicto, los juzgados y Tribunales competentes serán los de Lucena.</p>
-
-
     </div>
-
 </div>
 
 
 
 <div class="footer text-center">
-
     <p>&copy; <?php print date("Y");?> <a href="https://iesmarquesdecomares.org/"> IES Marqués de Comares.</a></p>
-
 </div>
 
 

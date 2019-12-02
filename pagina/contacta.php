@@ -3,16 +3,7 @@
 <head>
     <?php include("includes/head-tag-contents.php"); ?>
 </head>
-<style>
-    .pepe {
-      border: 0.5px solid;
-      /*
-      margin-left: 20%;
-      margin-right: 20%;
-      */
-    }
-    
-    </style>
+
 <body>
 
 <?php include("includes/navigation.php"); ?>
@@ -21,17 +12,11 @@
 
 
     <div class="row content ">
-
-    
-
         <div class="col-12">
-
         <h2 class="aside-title">Contacta con nosotros</h2>
-
         <div class="col-md-4 col-sm-12">
             <hr>
         </div>
-
         <div class="box expl">
             <div class="box-content">
             <p class="box-text">
@@ -45,18 +30,11 @@
             </p>
             </div>
         </div>
-
         <form action="" method="POST">
             <div class="row">
                 <div class="col-md-6 col-sm-12 text-md-right">Nombre</div>
                 <div class="col-md-6 col-sm-12 text-md-left"><input type="text" id="nombre" placeholder="Nombre"></div>
             </div>
-            <!--
-            <div class="flex-row justify-content-center">
-                <div class="d-flex ">Nombre</div>
-                <div class="d-flex "><input type="text" id="nombre" placeholder="Nombre"></div>
-            </div>
-            -->
             <hr>
             <div class="row">
                 <div class="col-md-6 col-sm-12 text-md-right">Email  </div>
@@ -88,61 +66,34 @@
                 </div>
             </div>
             <hr>
-
             <div class="row">
                 <div class="col-md-12 col-sm-12 text-md-center"><input type="submit" name="enviar" value="Enviar" class="btn btn-primary"/></div>
             </div>
         </form>
-
-
         <hr class="col-4"><br>
-
-
-        <!-- Fila 1: Navdar -->
-        <!--
-        <div class="row">
-            <div class="col-sm-12">
-            <h1>Formulario</h1>
-            </div>
-        </div>
-        -->
-
-        <!-- Fila 2 -->
         <div class="row text-center">
             <div class="col-md col-sm-6">
-                <!-- <img src="canario3.jpg" class="col-md-12 card">-->
                 <a href="https://www.twitch.tv/linustech"><i class="fa fa-twitch" style="font-size:50px;color:purple"></i></a>
-
                 <p class="col-md-12">Twitch</p>
             </div>
             <div class="col-md col-sm-6">
-                <!-- <img src="canario3.jpg" class="col-md-12 card">-->
                 <a href="https://www.facebook.com/LinusTech"><i class="fa fa-facebook-square" style="font-size:50px;color:blue"></i></a>
-
                 <p class="col-md-12">Facebook</p>
             </div>
             <div class="col-md col-sm-6">
-                <!-- <img src="canario3.jpg" class="col-md-12 card">-->
                 <a href="https://github.com/psp-97/proyectoDIW.git"><i class="fa fa-git-square" style="font-size:50px;color:burlywood"></i></a>
-
                 <p class="col-md-12">GitHub</p>
             </div>
             <div class="col-md col-sm-6">
-                <!-- <img src="canario3.jpg" class="col-md-12 card">-->
                 <a href="https://www.instagram.com/linustech/"><i class="fa fa-instagram" style="font-size:50px;color:purple"></i></a>
-
                 <p class="col-md-12">Instagram</p>
             </div>
             <div class="col-md col-sm-6">
-                <!-- <img src="canario3.jpg" class="col-md-12 card">-->
                 <a href="https://twitter.com/LinusTech"><i class="fa fa-twitter-square" style="font-size:50px;color:cyan"></i></a>
-
                 <p class="col-md-12">Twiter</p>
             </div>
             <div class="col-md col-sm-6">
-                 <!-- <img src="canario3.jpg" class="col-md-12 card">-->
                 <a href="https://www.youtube.com/user/LinusTechTips/videos"><i class="fa fa-youtube-play" style="font-size:48px;color:red"></i></a>
-
                 <p class="col-md-12">Youtube</p>
             </div>
         </div>
