@@ -70,27 +70,27 @@
             <!-- Redes-->
             <div class="row text-center">
                 <div class="col-md col-sm-6">
-                    <a href="https://www.twitch.tv/linustech"><i class="redes fa fa-twitch" style="color:purple"></i></a>
+                    <a href="https://www.twitch.tv/linustech"><i class="fa fa-twitch redes" style="color:purple"></i></a>
                     <p class="col-md-12">Twitch</p>
                 </div>
                 <div class="col-md col-sm-6">
-                    <a href="https://www.facebook.com/LinusTech"><i class="redes fa fa-facebook-square" style="color:blue"></i></a>
+                    <a href="https://www.facebook.com/LinusTech"><i class="fa fa-facebook-square redes" style="color:blue"></i></a>
                     <p class="col-md-12">Facebook</p>
                 </div>
                 <div class="col-md col-sm-6">
-                    <a href="https://github.com/psp-97/proyectoDIW.git"><i class="redes fa fa-git-square" style="color:burlywood"></i></a>
+                    <a href="https://github.com/psp-97/proyectoDIW.git"><i class="fa fa-git-square redes" style="color:burlywood"></i></a>
                     <p class="col-md-12">GitHub</p>
                 </div>
                 <div class="col-md col-sm-6">
-                    <a href="https://www.instagram.com/linustech/"><i class="redes fa fa-instagram" style="color:purple"></i></a>
+                    <a href="https://www.instagram.com/linustech/"><i class="fa fa-instagram redes" style="color:purple"></i></a>
                     <p class="col-md-12">Instagram</p>
                 </div>
                 <div class="col-md col-sm-6">
-                    <a href="https://twitter.com/LinusTech"><i class="redes fa fa-twitter-square" style="color:cyan"></i></a>
+                    <a href="https://twitter.com/LinusTech"><i class="fa fa-twitter-square redes" style="color:cyan"></i></a>
                     <p class="col-md-12">Twiter</p>
                 </div>
                 <div class="col-md col-sm-6">
-                    <a href="https://www.youtube.com/user/LinusTechTips/videos"><i class="redes fa fa-youtube-play" style="color:red"></i></a>
+                    <a href="https://www.youtube.com/user/LinusTechTips/videos"><i class="fa fa-youtube-play redes" style="color:red"></i></a>
                     <p class="col-md-12">Youtube</p>
                 </div>
             </div>
