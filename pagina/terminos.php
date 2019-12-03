@@ -8,7 +8,7 @@
 <div class="container text-justify">
     <div class="row content">
         <div class="col">
-            <h2 class="aside-title">Terminos de Uso</h2>
+            <h2>Terminos de Uso</h2>
             <div class="col-md-4 col-sm-12">
                 <hr>
             </div>
@@ -85,8 +85,7 @@
                     pueda herir la sensibilidad del destinatario. En tal caso, nos reservamos el derecho de avisar a las
                     autoridades pertinentes.
                 </li>
-                <li>Los envíos de usuario debe cumplir la <a href="https://support.google.com/adsense/answer/1348688"
-                                                             target="_blank">Política de contenido</a> de Google
+                <li>Los envíos de usuario debe cumplir la <a href="https://support.google.com/adsense/answer/1348688" >Política de contenido</a> de Google
                     Adsense. Si una aportación no cumple con la misma, será eliminada.
                 </li>
                 <li>Usted acepta que su comportamiento en el Sitio Web atiende a las normas de la comunidad que serán

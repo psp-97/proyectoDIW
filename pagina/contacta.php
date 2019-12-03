@@ -8,7 +8,7 @@
 <div class="container">
     <div class="row content ">
         <div class="col-12">
-            <h2 class="aside-title">Contacta con nosotros</h2>
+            <h2>Contacta con nosotros</h2>
             <div class="col-md-4 col-sm-12">
                 <hr>
             </div>
@@ -21,29 +21,25 @@
                     </p>
                     <p>
                         Antes de enviar tu duda, asegúrate que no esté resuelta en nuestra sección de
-                        <a href="momazosPreguntas" target="_blank" title="Preguntas frecuentes">preguntas frecuentes</a>.
+                        <a href="#" title="Preguntas frecuentes">preguntas frecuentes</a>.
                     </p>
                 </div>
             </div>
             <form action="" method="POST">
                 <div class="row">
                     <div class="col-md-6 col-sm-12 text-md-right">Nombre</div>
-                    <div class="col-md-6 col-sm-12 text-md-left"><input class="formulario" type="text" id="nombre"
-                                                                        placeholder="Nombre"></div>
+                    <div class="col-md-6 col-sm-12 text-md-left"><input class="formulario" type="text" id="nombre" placeholder="Nombre"></div>
                 </div>
                 <hr>
                 <div class="row">
                     <div class="formulario col-md-6 col-sm-12 text-md-right">Email</div>
-                    <div class="formulario col-md-6 col-sm-12 text-md-left"><input class="formulario" type="text"
-                                                                                   id="email"
-                                                                                   placeholder="email (opcional)"></div>
+                    <div class="formulario col-md-6 col-sm-12 text-md-left"><input class="formulario" type="text" id="email" placeholder="email (opcional)"></div>
                 </div>
                 <hr>
                 <div class="row">
                     <div class="col-md-6 col-sm-12 text-md-right">Asunto</div>
                     <div class="col-md-6 col-sm-12 text-md-left">
-                        <select id="contact-topic" name="topic" class="form-input field-validate"
-                                data-validations="required">
+                        <select id="asunto" name="asunto">
                             <option value="">Escoge</option>
                             <option value="Colaboración">Colaboración</option>
                             <option value="Comportamiento inadecuado">Comportamiento inadecuado</option>
@@ -61,14 +57,12 @@
                 <div class="row">
                     <div class="col-md-6 col-sm-12 text-md-right">Comentarios</div>
                     <div class="col-md-6 col-sm-12 text-md-left">
-                        <textarea class="formulario" name="message" placeholder="Comentarios" rows="10"
-                                  cols="30"></textarea>
+                        <textarea class="formulario" name="comentarios" placeholder="Comentarios" rows="10" cols="30"></textarea>
                     </div>
                 </div>
                 <hr>
                 <div class="row">
-                    <div class="col-md-12 col-sm-12 text-md-center"><input type="submit" name="enviar" value="Enviar"
-                                                                           class="btn btn-primary"/></div>
+                    <div class="col-md-12 col-sm-12 text-md-center"><input type="submit" name="enviar" value="Enviar" class="btn btn-primary"/></div>
                 </div>
             </form>
             <hr class="col-4">
@@ -76,33 +70,27 @@
             <!-- Redes-->
             <div class="row text-center">
                 <div class="col-md col-sm-6">
-                    <a href="https://www.twitch.tv/linustech"><i class="fa fa-twitch"
-                                                                 style="font-size:50px;color:purple"></i></a>
+                    <a href="https://www.twitch.tv/linustech"><i class="redes fa fa-twitch" style="color:purple"></i></a>
                     <p class="col-md-12">Twitch</p>
                 </div>
                 <div class="col-md col-sm-6">
-                    <a href="https://www.facebook.com/LinusTech"><i class="fa fa-facebook-square"
-                                                                    style="font-size:50px;color:blue"></i></a>
+                    <a href="https://www.facebook.com/LinusTech"><i class="redes fa fa-facebook-square" style="color:blue"></i></a>
                     <p class="col-md-12">Facebook</p>
                 </div>
                 <div class="col-md col-sm-6">
-                    <a href="https://github.com/psp-97/proyectoDIW.git"><i class="fa fa-git-square"
-                                                                           style="font-size:50px;color:burlywood"></i></a>
+                    <a href="https://github.com/psp-97/proyectoDIW.git"><i class="redes fa fa-git-square" style="color:burlywood"></i></a>
                     <p class="col-md-12">GitHub</p>
                 </div>
                 <div class="col-md col-sm-6">
-                    <a href="https://www.instagram.com/linustech/"><i class="fa fa-instagram"
-                                                                      style="font-size:50px;color:purple"></i></a>
+                    <a href="https://www.instagram.com/linustech/"><i class="redes fa fa-instagram" style="color:purple"></i></a>
                     <p class="col-md-12">Instagram</p>
                 </div>
                 <div class="col-md col-sm-6">
-                    <a href="https://twitter.com/LinusTech"><i class="fa fa-twitter-square"
-                                                               style="font-size:50px;color:cyan"></i></a>
+                    <a href="https://twitter.com/LinusTech"><i class="redes fa fa-twitter-square" style="color:cyan"></i></a>
                     <p class="col-md-12">Twiter</p>
                 </div>
                 <div class="col-md col-sm-6">
-                    <a href="https://www.youtube.com/user/LinusTechTips/videos"><i class="fa fa-youtube-play"
-                                                                                   style="font-size:48px;color:red"></i></a>
+                    <a href="https://www.youtube.com/user/LinusTechTips/videos"><i class="redes fa fa-youtube-play" style="color:red"></i></a>
                     <p class="col-md-12">Youtube</p>
                 </div>
             </div>
