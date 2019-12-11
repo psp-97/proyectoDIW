@@ -7,7 +7,7 @@
         <span class="navbar-toggler-icon"></span>
     </button>
     <div class="collapse navbar-collapse" id="navbarTogglerDemo01">
-        <a class="navbar-brand d-none d-md-block" href="index.php"><img class="logo" src="images/Momazos_Logo_Completo.png"></a>
+        <a class="navbar-brand d-none d-md-block" href="index.php"><img class="logo" src="images/iconos/Momazos_Logo_Completo.png"></a>
         <ul class="navbar-nav mr-auto mt-2 mt-lg-0">
             <li class="nav-item">
                 <a class="nav-link" href="subirMeme.php">Añadir contenido</a>

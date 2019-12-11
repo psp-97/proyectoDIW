@@ -28,17 +28,17 @@
             </div>
             <div class="row text-center">
                 <div class="col-md">
-                    <img src="images/quienes-somos-01.png" class="img-fluid imagen-meme"/>
+                    <img src="images/iconos/quienesSomos/quienes-somos-01.png" class="img-fluid imagen-meme"/>
                     <p class="col">No te guardas ninguna duda o pregunta sobre ese artículo que tanto te gusta. En
                         nuestro Centro de Soporte estamos deseando poder ayudarte. ¡Pero qué majos somos!</p>
                 </div>
                 <div class="col-md">
-                    <img src="images/quienes-somos-02.png" class="img-fluid imagen-meme"/>
+                    <img src="images/iconos/quienesSomos/quienes-somos-02.png" class="img-fluid imagen-meme"/>
                     <p class="col-md-12">Nuestra web ha sido diseñada atendiendo a las opiniones y sugerencias de
                         personas como tú, que queréis una web sencilla, rápida y atractiva.</p>
                 </div>
                 <div class="col-md">
-                    <img src="images/quienes-somos-03.png" class="img-fluid imagen-meme"/>
+                    <img src="images/iconos/quienesSomos/quienes-somos-03.png" class="img-fluid imagen-meme"/>
                     <p class="col-md-12">Paga de forma cómoda, rápida y segura en nuestra tienda. Utiliza el método de
                         pago que más se adapte a ti, transferencia, ingreso, tarjeta o contrareembolso. Fináncialo o
                         págalo directamente en metálico en nuestra tienda. ¡Anda que no te lo ponemos fácil!</p>
@@ -46,17 +46,17 @@
             </div>
             <div class="row text-center">
                 <div class="col-md">
-                    <img src="images/quienes-somos-04.png" class="img-fluid imagen-meme"/>
+                    <img src="images/iconos/quienesSomos/quienes-somos-04.png" class="img-fluid imagen-meme"/>
                     <p class="col-md-12">Nada más realizar tu pedido nos ponemos en marcha para que llegue lo antes
                         posible. Si el artículo se encuentra en stock, el paquete queda preparado el mismo día.</p>
                 </div>
                 <div class="col-md">
-                    <img src="images/quienes-somos-05.png" class="img-fluid imagen-meme"/>
+                    <img src="images/iconos/quienesSomos/quienes-somos-05.png" class="img-fluid imagen-meme"/>
                     <p class="col-md-12">Nuestro equipo de manitas es experto en montaje y reparación de equipos
                         informáticos. No te pierdas entre tanto cable, ¡Nosotros lo hacemos por ti!</p>
                 </div>
                 <div class="col-md">
-                    <img src="images/quienes-somos-06.png" class="img-fluid imagen-meme"/>
+                    <img src="images/iconos/quienesSomos/quienes-somos-06.png" class="img-fluid imagen-meme"/>
                     <p class="col-md-12">Además de ser la tienda online de referencia, también puedes visitarnos en
                         nuestra tienda física. Aquí te asesoraremos en persona y recoger tus pedidos realizados mediante
                         la web.</p>

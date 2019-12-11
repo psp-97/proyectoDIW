@@ -12,19 +12,19 @@
             <form action="" method="POST">
                 <a href="">
                     <div class=row id="linea">
-                        <div class="col-2"><img src="images/joker.png" width="50"></i></button></div>
+                        <div class="col-2"><img src="images/iconos/joker.png" width="50"></i></button></div>
                         <div class="col-10 my-auto">Categoria 1</div>
                     </div>
                 </a>
                 <a href="">
                     <div class=row id="linea">
-                        <div class="col-2"><img src="images/joker.png" width="50"></i></button></div>
+                        <div class="col-2"><img src="images/iconos/joker.png" width="50"></i></button></div>
                         <div class="col-10 my-auto">Categoria 1</div>
                     </div>
                 </a>
                 <a href="">
                     <div class=row id="linea">
-                        <div class="col-2"><img src="images/joker.png" width="50"></i></button></div>
+                        <div class="col-2"><img src="images/iconos/joker.png" width="50"></i></button></div>
                         <div class="col-10 my-auto">Categoria 1</div>
                     </div>
                 </a>

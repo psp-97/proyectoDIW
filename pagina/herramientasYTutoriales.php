@@ -14,7 +14,7 @@
         <div class="col-sm-8">
             <div class="row" id="columna">
                 <h4>¿Cómo hacer memes?</h4>
-                <img src="images/Captura.PNG" width="500" alt="Sample Image" class="item-image"/>
+                <img src="images/memes/Captura.PNG" width="500" alt="Sample Image" class="item-image"/>
                 <p>Existen páginas como por ejemplo <a href="https://imgur.com/memegen/create/nTxcG3I">Imgur</a> en
                     las
                     que se puede hacer

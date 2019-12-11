@@ -15,8 +15,8 @@
                 <div class="row" id="columna">
                     <h4>Gobierno entre PSOE y Podemos</h4>
                     <div>
-                        <img id="imagen" src="images/meme1.jpg">
-                        <img id="imagen" src="images/meme2.jpg">
+                        <img id="imagen" src="images/memes/meme1.jpg">
+                        <img id="imagen" src="images/memes/meme2.jpg">
                         <p>El nuevo gobierno que parece que estará formado por la izquierda está dando mucho que hablar
                             en las redes, y no han tardado en hacer memes.</p>
                     </div>
@@ -24,8 +24,8 @@
                 <div class="row" id="columna">
                     <h4>El debate de Albert Rivera</h4>
                     <div>
-                        <img id="imagen" src="images/meme3.jpg">
-                        <img id="imagen" src="images/meme4.jpg">
+                        <img id="imagen" src="images/memes/meme3.jpg">
+                        <img id="imagen" src="images/memes/meme4.jpg">
                     </div>
                     <p>Sin duda, junto con el "lapsus" de Iglesias, el momento que más se ha aprovechado para hacer
                         memes.</p>

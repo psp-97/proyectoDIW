@@ -43,7 +43,7 @@
                     </div>
                     <div class=row>
                         <div class="col-6">
-                            <input type="image" name="submit" src="images/logingoogle.png" border="0" alt="Submit"
+                            <input type="image" name="submit" src="images/iconos/logingoogle.png" border="0" alt="Submit"
                                    style="width: 200px;"/>
                         </div>
                     </div>

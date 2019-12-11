@@ -15,11 +15,11 @@
         </div>
         <div class="col-10">
             <h2 class="aside-title">Título del meme</h2>
-            <img src="images/meme1.jpeg" alt="Sample Image" class="img-fluid imagen-meme"/>
+            <img src="images/memes/meme1.jpeg" alt="Sample Image" class="img-fluid imagen-meme"/>
             <div class="float-right">
-                <img class="logito" src="images/like.png" alt="coment">
-                <img class="logito" src="images/coment.png" alt="coment">
-                <img class="logito" src="images/share.png" alt="share">
+                <img class="logito" src="images/iconos/like.png" alt="coment">
+                <img class="logito" src="images/iconos/coment.png" alt="coment">
+                <img class="logito" src="images/iconos/share.png" alt="share">
             </div>
             <div class="descripcion">
                 <h3 class="aside-title">Descripción</h3>
@@ -31,35 +31,35 @@
                 <h4 class="aside-title">Comentarios</h4>
                 <div class="col-12 comentario">
                     <div class="float-right">
-                        <img class="logito" src="images/like.png" alt="like">
+                        <img class="logito" src="images/iconos/like.png" alt="like">
                     </div>
                     <h6>Nombre del que comenta</h6>
                     <p>De los peores memes que se recuerdan.</p>
                 </div>
                 <div class="col-12 comentario">
                     <div class="float-right">
-                        <img class="logito" src="images/like.png" alt="like">
+                        <img class="logito" src="images/iconos/like.png" alt="like">
                     </div>
                     <h6>Nombre del que comenta</h6>
                     <p>De los peores memes que se recuerdan.</p>
                 </div>
                 <div class="col-12 comentario">
                     <div class="float-right">
-                        <img class="logito" src="images/like.png" alt="like">
+                        <img class="logito" src="images/iconos/like.png" alt="like">
                     </div>
                     <h6>Nombre del que comenta</h6>
                     <p>De los peores memes que se recuerdan.</p>
                 </div>
                 <div class="col-12 comentario">
                     <div class="float-right">
-                        <img class="logito" src="images/like.png" alt="like">
+                        <img class="logito" src="images/iconos/like.png" alt="like">
                     </div>
                     <h6>Nombre del que comenta</h6>
                     <p>De los peores memes que se recuerdan.</p>
                 </div>
                 <div class="col-12 comentario">
                     <div class="float-right">
-                        <img class="logito" src="images/like.png" alt="like">
+                        <img class="logito" src="images/iconos/like.png" alt="like">
                     </div>
                     <h6>Nombre del que comenta</h6>
                     <p>De los peores memes que se recuerdan.</p>
