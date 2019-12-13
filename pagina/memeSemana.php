@@ -16,7 +16,12 @@
         <div class="col-10 aside">
             <a class="enlaceAMeme" href="meme.php">
                 <h3 class="aside-title">Meme de la semana</h3>
-                <img src="images/memes/meme1.jpeg" alt="Sample Image" class="item-image"/>
+                <img src="images/memes/index/pineapple.jpg" alt="Sample Image" class="item-image"/>
+                <div class="row">
+                    <div class="col text-right">
+                        <a class="fuente" href="https://9gag.com/">Fuente: www.9gag.com</a>
+                    </div>
+                </div>
                 <p>Frankly, it's ludicrous to have these interlocking bodies and not...interlock.
                     My Uncle Rory was the stodgiesey! I wa me. If I could make you purtier, I would.</p>
             </a>

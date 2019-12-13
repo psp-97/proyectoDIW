@@ -14,8 +14,12 @@
             </a>
         </div>
         <div class="col-10">
-            <h2 class="aside-title">Título del meme</h2>
-            <img src="images/memes/meme1.jpeg" alt="Sample Image" class="img-fluid imagen-meme"/>
+            <img src="images/memes/index/pineapple.jpg" alt="Sample Image" class="img-fluid imagen-meme"/>
+            <div class="row">
+                <div class="col text-left">
+                    <a class="fuente" href="https://9gag.com/">Fuente: www.9gag.com</a>
+                </div>
+            </div>
             <div class="float-right">
                 <img class="logito" src="images/iconos/like.png" alt="coment">
                 <img class="logito" src="images/iconos/coment.png" alt="coment">
