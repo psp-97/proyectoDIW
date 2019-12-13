@@ -12,8 +12,12 @@
                 <div class="col-md-5">
                     <div class="card m-20">
                         <a class="enlaceAMeme" href="meme.php">
-                            <h4 class="card-title">This is the post title</h4>
-                            <img src="images/memes/meme1.jpeg" alt="Sample Image" class="card-image m-20"/>
+                            <img src="images/memes/aleatorio/simpsons.jpg" alt="Sample Image" class="card-image m-20"/>
+                            <div class="row">
+                                <div class="col text-left">
+                                    <a class="fuente" href="https://es.memedroid.com/memes/">Fuente: es.memedroid.com/memes/</a>
+                                </div>
+                            </div>
                             <p class="card-content">Frankly, it's ludicrous to have these interlocking bodies and
                                 not...interlock. My Uncle Rogfhtrjhtyjjtyjry was
                                 the stodgiest taxidermist you've ever met by day. But I haven't spent any money! I wa
@@ -26,8 +30,12 @@
                 <div class="col-md-5">
                     <div class="card m-20">
                         <a class="enlaceAMeme" href="meme.php">
-                            <h4 class="card-title">This is the post title</h4>
-                            <img src="images/memes/meme1.jpeg" alt="Sample Image" class="card-image"/>
+                            <img src="images/memes/aleatorio/rick.jpg" alt="Sample Image" class="card-image"/>
+                            <div class="row">
+                                <div class="col text-left">
+                                    <a class="fuente" href="https://es.memedroid.com/memes/">Fuente: es.memedroid.com/memes/</a>
+                                </div>
+                            </div>
                             <p class="card-content">Frankly, it's ludicrous to have these interlocking bodies and
                                 not...interlock. My Uncle Rogfhtrjhtyjjtyjry was
                                 the stodgiest taxidermist you've ever met by day. But I haven't spent any money! I wa
