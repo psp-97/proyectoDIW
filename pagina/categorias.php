@@ -3,6 +3,7 @@
 <head>
     <?php include("includes/head-tag-contents.php"); ?>
 </head>
+
 <body>
 <?php include("includes/navigation.php"); ?>
 <div class="container">
@@ -12,20 +13,32 @@
             <form action="" method="POST">
                 <a href="">
                     <div class=row id="linea">
-                        <div class="col-2"><img src="images/iconos/joker.png" width="50"></i></button></div>
-                        <div class="col-10 my-auto">Categoria 1</div>
+                        <div class="col-2"><img src="images/iconos/categorias/gamers.png" width="50"></i></button></div>
+                        <div class="col-10 my-auto">Gamers</div>
                     </div>
                 </a>
                 <a href="">
                     <div class=row id="linea">
-                        <div class="col-2"><img src="images/iconos/joker.png" width="50"></i></button></div>
-                        <div class="col-10 my-auto">Categoria 1</div>
+                        <div class="col-2"><img src="images/iconos/categorias/programing.png" width="50"></i></button></div>
+                        <div class="col-10 my-auto">Informaticos</div>
                     </div>
                 </a>
                 <a href="">
                     <div class=row id="linea">
-                        <div class="col-2"><img src="images/iconos/joker.png" width="50"></i></button></div>
-                        <div class="col-10 my-auto">Categoria 1</div>
+                        <div class="col-2"><img src="images/iconos/categorias/films.png" width="50"></i></button></div>
+                        <div class="col-10 my-auto">Peliculas</div>
+                    </div>
+                </a>
+                <a href="">
+                    <div class=row id="linea">
+                        <div class="col-2"><img src="images/iconos/categorias/alcohol.png" width="50"></i></button></div>
+                        <div class="col-10 my-auto">Borracheras</div>
+                    </div>
+                </a>
+                <a href="">
+                    <div class=row id="linea">
+                        <div class="col-2"><img src="images/iconos/categorias/tortuga.png" width="50"></i></button></div>
+                        <div class="col-10 my-auto">Dibujos animados</div>
                     </div>
                 </a>
         </div>
