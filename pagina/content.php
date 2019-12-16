@@ -14,10 +14,8 @@
                             <a class="fuente" href="https://www.cabroworld.com/cabronazi/">Fuente: www.cabroworld.com/cabronazi/</a>
                         </div>
                     </div>
-                    <p class="card-content">Frankly, it's ludicrous to have these interlocking bodies and
-                        not...interlock. My Uncle Rory was
-                        the stodgiest taxidermist you've ever met by day. But I haven't spent any money! I wa me. If I
-                        could make you purtier, I would.</p>
+                    <p class="card-content">A veces, las grandes superficies nos dejan en bandeja imagenes dignas
+                    de compratir en internet. Este es uno de esos casos y le damos las gracias a esta superficie.</p>
                 </div>
             </a>
             <a class="enlaceAMeme" href="meme.php">
@@ -28,10 +26,7 @@
                             <a class="fuente" href="https://es.memedroid.com/memes/">Fuente: es.memedroid.com/memes/</a>
                         </div>
                     </div>
-                    <p class="card-content">Frankly, it's ludicrous to have these interlocking bodies and
-                        not...interlock. My Uncle Rory was
-                        the stodgiest taxidermist you've ever met by day. But I haven't spent any money! I wa me. If I
-                        could make you purtier, I would.</p>
+                    <p class="card-content">No olvideis pagar siempre el internet. MOROSOS.</p>
                 </div>
             </a>
             <a class="enlaceAMeme" href="meme.php">
@@ -42,10 +37,7 @@
                             <a class="fuente" href="https://www.cuantocabron.com/">Fuente: www.cuantocabron.com/</a>
                         </div>
                     </div>
-                    <p class="card-content">Frankly, it's ludicrous to have these interlocking bodies and
-                        not...interlock. My Uncle Rory was
-                        the stodgiest taxidermist you've ever met by day. But I haven't spent any money! I wa me. If I
-                        could make you purtier, I would.</p>
+                    <p class="card-content"></p>
                 </div>
             </a>
             <a class="enlaceAMeme" href="meme.php">
@@ -56,10 +48,8 @@
                             <a class="fuente" href="https://www.instagram.com/cabronazi/">Fuente: www.instagram.com/cabronazi/</a>
                         </div>
                     </div>
-                    <p class="card-content">Frankly, it's ludicrous to have these interlocking bodies and
-                        not...interlock. My Uncle Rory was
-                        the stodgiest taxidermist you've ever met by day. But I haven't spent any money! I wa me. If I
-                        could make you purtier, I would.</p>
+                    <p class="card-content">-Mamá que ya he echo la cama<br>
+                    -Eso lo tendré que ver yo</p>
                 </div>
             </a>
             <a class="enlaceAMeme" href="meme.php">
@@ -70,10 +60,8 @@
                             <a class="fuente" href="https://www.instagram.com/kodevimresmi/">Fuente: www.instagram.com/kodevimresmi/</a>
                         </div>
                     </div>
-                    <p class="card-content">Frankly, it's ludicrous to have these interlocking bodies and
-                        not...interlock. My Uncle Rory was
-                        the stodgiest taxidermist you've ever met by day. But I haven't spent any money! I wa me. If I
-                        could make you purtier, I would.</p>
+                    <p class="card-content">¿Alguien mas piensa que habría sido mas fácil mover el reloj de sitio?<br>
+                    El ser humano siempre se supera a si mismo</p>
                 </div>
             </a>
         </div>
@@ -88,8 +76,8 @@
                                 <a class="fuente" href="https://9gag.com/">Fuente: www.9gag.com</a>
                             </div>
                         </div>
-                        <p>Frankly, it's ludicrous to have these interlocking bodies and not...interlock. My Uncle Rory
-                            was the stodgiesey! I wa me. If I could make you purtier, I would.</p>
+                        <p>Este meme se ha merecido el galardón a meme de la semana tras ser el más votado
+                            por nuestros visitantes. ¡Enhorabuena al creador!</p>
                     </a>
                 </div>
                 <div class="col-12 aside">

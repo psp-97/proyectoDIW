@@ -62,6 +62,9 @@ body {
 .formulario {
   border-radius: 5px; }
 
+#linea img {
+  margin: 5px; }
+
 #linea:hover {
   background-color: #2b33eb !important; }
 

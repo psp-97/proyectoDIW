@@ -1,6 +1,6 @@
 <nav class="navbar navbar-expand-md navbar-light bg-light">
     <div class="navbar-toggler logoPequeño">
-        <a class="navbar-brand" href="index.php"><img class="logo" src="images/Momazos_Logo_Completo.png"></a>
+        <a class="navbar-brand" href="index.php"><img class="logo" src="images/iconos/Momazos_Logo_Completo.png"></a>
     </div>
     <button class="navbar-toggler btn btn-primary" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo01"
             aria-controls="navbarTogglerDemo01" aria-expanded="false" aria-label="Toggle navigation">

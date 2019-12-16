@@ -18,12 +18,7 @@
                                     <a class="fuente" href="https://es.memedroid.com/memes/">Fuente: es.memedroid.com/memes/</a>
                                 </div>
                             </div>
-                            <p class="card-content">Frankly, it's ludicrous to have these interlocking bodies and
-                                not...interlock. My Uncle Rogfhtrjhtyjjtyjry was
-                                the stodgiest taxidermist you've ever met by day. But I haven't spent any money! I wa
-                                me. If
-                                I
-                                could make you purtier, I would.</p>
+                            <p class="card-content"></p>
                         </a>
                     </div>
                 </div>
@@ -36,12 +31,7 @@
                                     <a class="fuente" href="https://es.memedroid.com/memes/">Fuente: es.memedroid.com/memes/</a>
                                 </div>
                             </div>
-                            <p class="card-content">Frankly, it's ludicrous to have these interlocking bodies and
-                                not...interlock. My Uncle Rogfhtrjhtyjjtyjry was
-                                the stodgiest taxidermist you've ever met by day. But I haven't spent any money! I wa
-                                me. If
-                                I
-                                could make you purtier, I would.</p>
+                            <p class="card-content"></p>
                         </a>
                     </div>
                 </div>
@@ -54,12 +44,7 @@
                                     <a class="fuente" href="https://www.instagram.com/cabronazi/">Fuente: www.instagram.com/cabronazi/</a>
                                 </div>
                             </div>
-                            <p class="card-content">Frankly, it's ludicrous to have these interlocking bodies and
-                                not...interlock. My Uncle Rogfhtrjhtyjjtyjry was
-                                the stodgiest taxidermist you've ever met by day. But I haven't spent any money! I wa
-                                me. If
-                                I
-                                could make you purtier, I would.</p>
+                            <p class="card-content">Bebe yoda, el meme mas fácil actualmente.</p>
                         </a>
                     </div>
                 </div>
@@ -72,12 +57,7 @@
                                     <a class="fuente" href="https://www.cuantocabron.com/">Fuente: www.cuantocabron.com/</a>
                                 </div>
                             </div>
-                            <p class="card-content">Frankly, it's ludicrous to have these interlocking bodies and
-                                not...interlock. My Uncle Rogfhtrjhtyjjtyjry was
-                                the stodgiest taxidermist you've ever met by day. But I haven't spent any money! I wa
-                                me. If
-                                I
-                                could make you purtier, I would.</p>
+                            <p class="card-content"></p>
                         </a>
                     </div>
                 </div>
@@ -90,12 +70,7 @@
                                     <a class="fuente" href="https://www.cuantocabron.com/">Fuente: www.cuantocabron.com/</a>
                                 </div>
                             </div>
-                            <p class="card-content">Frankly, it's ludicrous to have these interlocking bodies and
-                                not...interlock. My Uncle Rogfhtrjhtyjjtyjry was
-                                the stodgiest taxidermist you've ever met by day. But I haven't spent any money! I wa
-                                me. If
-                                I
-                                could make you purtier, I would.</p>
+                            <p class="card-content"></p>
                         </a>
                     </div>
                 </div>
@@ -108,12 +83,8 @@
                                     <a class="fuente" href="https://www.instagram.com/cabronazi/">Fuente: www.instagram.com/cabronazi/</a>
                                 </div>
                             </div>
-                            <p class="card-content">Frankly, it's ludicrous to have these interlocking bodies and
-                                not...interlock. My Uncle Rogfhtrjhtyjjtyjry was
-                                the stodgiest taxidermist you've ever met by day. But I haven't spent any money! I wa
-                                me. If
-                                I
-                                could make you purtier, I would.</p>
+                            <p class="card-content">-Mamá que ya he echo la cama<br>
+                                -Eso lo tendré que ver yo</p>
                         </a>
                     </div>
                 </div>
@@ -126,12 +97,7 @@
                                     <a class="fuente" href="https://www.instagram.com/kodevimresmi/">Fuente: www.instagram.com/kodevimresmi/</a>
                                 </div>
                             </div>
-                            <p class="card-content">Frankly, it's ludicrous to have these interlocking bodies and
-                                not...interlock. My Uncle Rogfhtrjhtyjjtyjry was
-                                the stodgiest taxidermist you've ever met by day. But I haven't spent any money! I wa
-                                me. If
-                                I
-                                could make you purtier, I would.</p>
+                            <p class="card-content"></p>
                         </a>
                     </div>
                 </div>
@@ -144,12 +110,7 @@
                                     <a class="fuente" href="https://www.cuantocabron.com/">Fuente: www.cuantocabron.com/</a>
                                 </div>
                             </div>
-                            <p class="card-content">Frankly, it's ludicrous to have these interlocking bodies and
-                                not...interlock. My Uncle Rogfhtrjhtyjjtyjry was
-                                the stodgiest taxidermist you've ever met by day. But I haven't spent any money! I wa
-                                me. If
-                                I
-                                could make you purtier, I would.</p>
+                            <p class="card-content">Mejor no comentamos acerca de esta imagen. xD</p>
                         </a>
                     </div>
                 </div>

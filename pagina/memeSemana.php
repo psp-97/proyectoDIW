@@ -22,8 +22,8 @@
                         <a class="fuente" href="https://9gag.com/">Fuente: www.9gag.com</a>
                     </div>
                 </div>
-                <p>Frankly, it's ludicrous to have these interlocking bodies and not...interlock.
-                    My Uncle Rory was the stodgiesey! I wa me. If I could make you purtier, I would.</p>
+                <p>Este meme se ha merecido el galardón a meme de la semana tras ser el más votado
+                por nuestros visitantes. ¡Enhorabuena al creador!</p>
             </a>
         </div>
         <div class="col-10 aside">
