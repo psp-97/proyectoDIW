@@ -13,7 +13,7 @@
                 
             </div>
             <div class="row">
-            <div class="col text-center"><img src="./images/grupo.jpg" style= "width: 70%"></div>
+            <div class="col text-center"><img src="./images/grupo.jpg" class="imagen-grupal"></div>
             </div>
             <div class="col-md-4 col-sm-12">
                 

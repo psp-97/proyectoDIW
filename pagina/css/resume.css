@@ -147,6 +147,9 @@ span.textoMenu {
 .imagen-meme {
   margin-bottom: 20px; }
 
+.imagen-grupal {
+  width: 70% !important; }
+
 .logito {
   margin: 2px; }
 
