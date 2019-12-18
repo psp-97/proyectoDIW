@@ -26,9 +26,26 @@
             </div>
             <div class="row" id="columna">
                 <h4>Tutorial de hacer memes</h4>
-                <iframe width="560" height="315" src="https://www.youtube.com/embed/8mxFXTEcTCc" frameborder="0"
-                        allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
-                        allowfullscreen></iframe>
+                <div id="video-container">
+                    <!-- Video -->
+                    <video id="video" width="620" height="365">
+                        <source src="videos/ComoHacerMemesFacilmente_1.webm" type="video/webm">
+                        <source src="videos/ComoHacerMemesFacilmente.ogv" type="video/ogv">
+                        <source src="videos/ComoHacerMemesFacilmente.mp4" type="video/mp4">
+                        <p>
+                            Your browser doesn't support HTML5 video.
+                            <a href="videos/ComoHacerMemesFacilmente.mp4">Download</a> the video instead.
+                        </p>
+                    </video>
+                    <!-- Video Controls -->
+                    <div id="video-controls">
+                        <button type="button" id="play-pause" class="play">Play</button>
+                        <input type="range" id="seek-bar" value="0">
+                        <button type="button" id="mute">Mute</button>
+                        <input type="range" id="volume-bar" min="0" max="1" step="0.1" value="1">
+                        <button type="button" id="full-screen">Full</button>
+                    </div>
+                </div>
             </div>
         </div>
         <div class="col-sm-4" id="derecha">
