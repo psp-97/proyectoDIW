@@ -64,6 +64,8 @@
                         la web.</p>
                 </div>
             </div>
+            <h2>¿Donde?</h2>
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d12676.11039548619!2d-4.472037893933112!3d37.4128225559846!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xd6d77340dd27b81%3A0xa30a6a3c19e0aa04!2sInstituto%20de%20Educaci%C3%B3n%20Secundaria%20Juan%20de%20Ar%C3%A9jula!5e0!3m2!1ses!2ses!4v1576676311149!5m2!1ses!2ses" class="w-100 h-600px" height="600" frameborder="0" allowfullscreen=""></iframe>
         </div>
     </div>
 </div>
