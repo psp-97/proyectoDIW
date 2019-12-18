@@ -10,11 +10,13 @@
         <div class="col">
             <h2>¿Quiénes Somos?</h2>
             <div class="col-md-4 col-sm-12">
-                <hr>
+                
             </div>
-            <h2>Aqui foto grupal</h2>
+            <div class="row">
+            <div class="col text-center"><img src="./images/grupo.jpg" style= "width: 70%"></div>
+            </div>
             <div class="col-md-4 col-sm-12">
-                <hr>
+                
             </div>
             <div class="col text-justify">
                 <p>Momazos se funda en el 2019 por cuatro frikis amantes de Internet y de la diversion decidieron
@@ -24,7 +26,7 @@
                     moverse.</p>
             </div>
             <div class="col-md-4 col-sm-12">
-                <hr>
+                
             </div>
             <div class="row text-center">
                 <div class="col-md">
