@@ -337,19 +337,19 @@ span.textoMenu {
   -o-transition: opacity .3s;
   -ms-transition: opacity .3s;
   transition: opacity .3s;
-  background-image: linear-gradient(bottom, #2B33EB, #0088cc 100%);
-  background-image: -o-linear-gradient(bottom, #2B33EB, #0088cc 100%);
-  background-image: -moz-linear-gradient(bottom, #2B33EB, rg #E8F4FA #0371a8 13%, #0088cc 100%);
-  background-image: -ms-linear-gradient(bottom, #2B33EB, #0088cc 100%);
-  background-image: -webkit-gradient(linear, left bottom, left top, color-stop(0.13, #2B33EB), color-stop(1, #2B33EB)); }
+  background-image: linear-gradient(bottom, #2b33eb, #0088cc 100%);
+  background-image: -o-linear-gradient(bottom, #2b33eb, #0088cc 100%);
+  background-image: -moz-linear-gradient(bottom, #2b33eb, #dee2e6 #0371a8 13%, #0088cc 100%);
+  background-image: -ms-linear-gradient(bottom, #2b33eb, #0088cc 100%);
+  background-image: -webkit-gradient(linear, left bottom, left top, color-stop(0.13, #2b33eb), color-stop(1, #2b33eb)); }
 
 #video-container:hover #video-controls {
   opacity: .9; }
 
 button {
-  background: #E8F4FA;
+  background: #dee2e6;
   border: 0;
-  color: black;
+  color: #000;
   -webkit-border-radius: 3px;
   -moz-border-radius: 3px;
   -o-border-radius: 3px;
