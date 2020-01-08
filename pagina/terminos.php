@@ -21,6 +21,10 @@
                 Datos registrales: Registro Mercantil de Lleida, Tomo 1.252, Folio 151, Hoja L24.996, Inscripción 1.
             </p>
             <h3>2. Derechos de autor</h3>
+            <p>
+                Cada uno de los contenidos de la página posee los terminos del autor o página originales de los que se han tomado.
+                Estas son los diferentes sitios de los que se han tomado contenido:
+            </p>
                 <h4><a href="https://www.cuantocabron.com/">1. Cuanto Cabron</a></h4>
                 <p>Usted acepta que en caso de ser publicados dichos Archivos de Usuario, serán puestos a libre disposición 
                 del resto de usuarios del Sitio Web, sin limitación alguna.</p>
