@@ -64,6 +64,116 @@
                     El ser humano siempre se supera a si mismo</p>
                 </div>
             </a>
+            <a class="enlaceAMeme" href="meme.php">
+                <div class="card">
+                    <img src="images/memes/index/halo2.jpeg" alt="Sample Image" class="card-image"/>
+                    <div class="row">
+                        <div class="col text-left">
+                            <a class="fuente" href="https://es.memedroid.com/memes/">Fuente: es.memedroid.com/memes/</a>
+                        </div>
+                    </div>
+                    <p class="card-content"></p>
+                </div>
+            </a><a class="enlaceAMeme" href="meme.php">
+                <div class="card">
+                    <img src="images/memes/index/jenga.jpeg" alt="Sample Image" class="card-image"/>
+                    <div class="row">
+                        <div class="col text-left">
+                            <a class="fuente" href="https://es.memedroid.com/memes/">Fuente: es.memedroid.com/memes/</a>
+                        </div>
+                    </div>
+                    <p class="card-content"></p>
+                </div>
+            </a>
+            <a class="enlaceAMeme" href="meme.php">
+                <div class="card">
+                    <img src="images/memes/index/pasadizo.jpeg" alt="Sample Image" class="card-image"/>
+                    <div class="row">
+                        <div class="col text-left">
+                            <a class="fuente" href="https://es.memedroid.com/memes/">Fuente: es.memedroid.com/memes/</a>
+                        </div>
+                    </div>
+                    <p class="card-content"></p>
+                </div>
+            </a>
+            <a class="enlaceAMeme" href="meme.php">
+                <div class="card">
+                    <img src="images/memes/index/quimica.jpeg" alt="Sample Image" class="card-image"/>
+                    <div class="row">
+                        <div class="col text-left">
+                            <a class="fuente" href="https://es.memedroid.com/memes/">Fuente: es.memedroid.com/memes/</a>
+                        </div>
+                    </div>
+                    <p class="card-content"></p>
+                </div>
+            </a>
+            <a class="enlaceAMeme" href="meme.php">
+                <div class="card">
+                    <img src="images/memes/index/teachers.jpeg" alt="Sample Image" class="card-image"/>
+                    <div class="row">
+                        <div class="col text-left">
+                            <a class="fuente" href="https://es.memedroid.com/memes/">Fuente: es.memedroid.com/memes/</a>
+                        </div>
+                    </div>
+                    <p class="card-content"></p>
+                </div>
+            </a>
+            <a class="enlaceAMeme" href="meme.php">
+                <div class="card">
+                    <img src="images/memes/index/trump.jpeg" alt="Sample Image" class="card-image"/>
+                    <div class="row">
+                        <div class="col text-left">
+                            <a class="fuente" href="https://es.memedroid.com/memes/">Fuente: es.memedroid.com/memes/</a>
+                        </div>
+                    </div>
+                    <p class="card-content"></p>
+                </div>
+            </a>
+            <a class="enlaceAMeme" href="meme.php">
+                <div class="card">
+                    <img src="images/memes/index/wifi.jpeg" alt="Sample Image" class="card-image"/>
+                    <div class="row">
+                        <div class="col text-left">
+                            <a class="fuente" href="https://es.memedroid.com/memes/">Fuente: es.memedroid.com/memes/</a>
+                        </div>
+                    </div>
+                    <p class="card-content"></p>
+                </div>
+            </a>
+            <a class="enlaceAMeme" href="meme.php">
+                <div class="card">
+                    <img src="images/memes/index/buho.png" alt="Sample Image" class="card-image"/>
+                    <div class="row">
+                        <div class="col text-left">
+                            <a class="fuente" href="https://www.cabroworld.com/cabronazi/">Fuente: www.cabroworld.com/cabronazi/</a>
+                        </div>
+                    </div>
+                    <p class="card-content"></p>
+                </div>
+            </a>
+            <a class="enlaceAMeme" href="meme.php">
+                <div class="card">
+                    <img src="images/memes/index/buzz.jpg" alt="Sample Image" class="card-image"/>
+                    <div class="row">
+                        <div class="col text-left">
+                            <a class="fuente" href="https://www.cuantocabron.com/">Fuente: www.cuantocabron.com/</a>
+                        </div>
+                    </div>
+                    <p class="card-content"></p>
+                </div>
+            </a>
+            <a class="enlaceAMeme" href="meme.php">
+                <div class="card">
+                    <img src="images/memes/index/juntamos.jpg" alt="Sample Image" class="card-image"/>
+                    <div class="row">
+                        <div class="col text-left">
+                            <a class="fuente" href="https://www.cuantocabron.com/">Fuente: www.cuantocabron.com/</a>
+                        </div>
+                    </div>
+                    <p class="card-content"></p>
+                </div>
+            </a>
+
         </div>
         <div class="col-md-4 d-none d-md-block lateral">
             <div class="row">
