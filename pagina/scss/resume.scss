@@ -424,12 +424,18 @@ span.textoMenu{
 
 /************VIDEO*************************/
 
-#video-container {
-  width: 620px;
-  height: 365px;
-  position: relative;
+video {
+  width: 100%;
+  height: auto;
 }
 
+/*
+#video-container {
+    width: 640px;
+    height: 365px;
+    position: relative;
+}
+*/
 #video-controls {
   position: absolute;
   bottom: 0;
@@ -442,17 +448,17 @@ span.textoMenu{
   -o-transition: opacity .3s;
   -ms-transition: opacity .3s;
   transition: opacity .3s;
-  background-image: linear-gradient(bottom, $primary, rgb(0,136,204) 100%);
-  background-image: -o-linear-gradient(bottom,$primary, rgb(0,136,204) 100%);
-  background-image: -moz-linear-gradient(bottom, $primary, $gray-300 rgb(3,113,168) 13%, rgb(0,136,204) 100%);
-  background-image: -ms-linear-gradient(bottom, $primary, rgb(0,136,204) 100%);
+  background-image: linear-gradient(bottom, #2B33EB, rgb(0, 136, 204) 100%);
+  background-image: -o-linear-gradient(bottom, #2B33EB, rgb(0, 136, 204) 100%);
+  background-image: -moz-linear-gradient(bottom, #2B33EB, rg #E8F4FA rgb(3, 113, 168) 13%, rgb(0, 136, 204) 100%);
+  background-image: -ms-linear-gradient(bottom, #2B33EB, rgb(0, 136, 204) 100%);
 
   background-image: -webkit-gradient(
                   linear,
                   left bottom,
                   left top,
-                  color-stop(0.13,$primary),
-                  color-stop(1, $primary)
+                  color-stop(0.13, #2B33EB),
+                  color-stop(1, #2B33EB)
   );
 }
 
@@ -461,9 +467,9 @@ span.textoMenu{
 }
 
 button {
-  background: $gray-300;
+  background: #E8F4FA;
   border: 0;
-  color: $black;
+  color: black;
   -webkit-border-radius: 3px;
   -moz-border-radius: 3px;
   -o-border-radius: 3px;
@@ -480,6 +486,12 @@ button:hover {
 
 #volume-bar {
   width: 60px;
+}
+
+@media only screen and (max-width: 768px) {
+  #seek-bar {
+    width: 100%;
+  }
 }
 
 /*******************************************/

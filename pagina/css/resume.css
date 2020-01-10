@@ -320,11 +320,17 @@ span.textoMenu {
     margin-left: 10px;
     margin-right: 10px; } }
 /************VIDEO*************************/
-#video-container {
-  width: 620px;
-  height: 365px;
-  position: relative; }
+video {
+  width: 100%;
+  height: auto; }
 
+/*
+#video-container {
+    width: 640px;
+    height: 365px;
+    position: relative;
+}
+*/
 #video-controls {
   position: absolute;
   bottom: 0;
@@ -337,19 +343,19 @@ span.textoMenu {
   -o-transition: opacity .3s;
   -ms-transition: opacity .3s;
   transition: opacity .3s;
-  background-image: linear-gradient(bottom, #2b33eb, #0088cc 100%);
-  background-image: -o-linear-gradient(bottom, #2b33eb, #0088cc 100%);
-  background-image: -moz-linear-gradient(bottom, #2b33eb, #dee2e6 #0371a8 13%, #0088cc 100%);
-  background-image: -ms-linear-gradient(bottom, #2b33eb, #0088cc 100%);
-  background-image: -webkit-gradient(linear, left bottom, left top, color-stop(0.13, #2b33eb), color-stop(1, #2b33eb)); }
+  background-image: linear-gradient(bottom, #2B33EB, #0088cc 100%);
+  background-image: -o-linear-gradient(bottom, #2B33EB, #0088cc 100%);
+  background-image: -moz-linear-gradient(bottom, #2B33EB, rg #E8F4FA #0371a8 13%, #0088cc 100%);
+  background-image: -ms-linear-gradient(bottom, #2B33EB, #0088cc 100%);
+  background-image: -webkit-gradient(linear, left bottom, left top, color-stop(0.13, #2B33EB), color-stop(1, #2B33EB)); }
 
 #video-container:hover #video-controls {
   opacity: .9; }
 
 button {
-  background: #dee2e6;
+  background: #E8F4FA;
   border: 0;
-  color: #000;
+  color: black;
   -webkit-border-radius: 3px;
   -moz-border-radius: 3px;
   -o-border-radius: 3px;
@@ -364,6 +370,9 @@ button:hover {
 #volume-bar {
   width: 60px; }
 
+@media only screen and (max-width: 768px) {
+  #seek-bar {
+    width: 100%; } }
 /*******************************************/
 
 /*# sourceMappingURL=resume.css.map */
