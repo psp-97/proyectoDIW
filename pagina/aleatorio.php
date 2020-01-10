@@ -234,10 +234,192 @@
                 <div class="col-md-5">
                     <div class="card m-20">
                         <a class="enlaceAMeme" href="meme.php">
+                            <img src="images/memes/aleatorio/chrome.jpg" alt="Sample Image" class="card-image"/>
+                            <div class="row">
+                                <div class="col text-left">
+                                    <a class="fuente" href="https://www.cuantocabron.com/">Fuente: www.cuantocabron.com/</a>
+                                </div>
+                            </div>
+                            <p class="card-content"></p>
+                        </a>
+                    </div>
+                </div>
+                <div class="col-md-5">
+                    <div class="card m-20">
+                        <a class="enlaceAMeme" href="meme.php">
+                            <img src="images/memes/aleatorio/doctor.jpg" alt="Sample Image" class="card-image m-20"/>
+                            <div class="row">
+                                <div class="col text-left">
+                                    <a class="fuente" href="https://www.cuantocabron.com/">Fuente: www.cuantocabron.com/</a>
+                                </div>
+                            </div>
+                            <p class="card-content"></p>
+                        </a>
+                    </div>
+                </div>
+                <div class="col-md-5">
+                    <div class="card m-20">
+                        <a class="enlaceAMeme" href="meme.php">
+                            <img src="images/memes/aleatorio/family.jpg" alt="Sample Image" class="card-image"/>
+                            <div class="row">
+                                <div class="col text-left">
+                                    <a class="fuente" href="https://www.cuantocabron.com/">Fuente: www.cuantocabron.com/</a>
+                                </div>
+                            </div>
+                            <p class="card-content"></p>
+                        </a>
+                    </div>
+                </div>
+                <div class="col-md-5">
+                    <div class="card m-20">
+                        <a class="enlaceAMeme" href="meme.php">
+                            <img src="images/memes/aleatorio/foto.jpg" alt="Sample Image" class="card-image m-20"/>
+                            <div class="row">
+                                <div class="col text-left">
+                                    <a class="fuente" href="https://www.cuantocabron.com/">Fuente: www.cuantocabron.com/</a>
+                                </div>
+                            </div>
+                            <p class="card-content"></p>
+                        </a>
+                    </div>
+                </div>
+                <div class="col-md-5">
+                    <div class="card m-20">
+                        <a class="enlaceAMeme" href="meme.php">
+                            <img src="images/memes/aleatorio/greta.jpg" alt="Sample Image" class="card-image"/>
+                            <div class="row">
+                                <div class="col text-left">
+                                    <a class="fuente" href="https://www.cuantocabron.com/">Fuente: www.cuantocabron.com/</a>
+                                </div>
+                            </div>
+                            <p class="card-content"></p>
+                        </a>
+                    </div>
+                </div>
+                <div class="col-md-5">
+                    <div class="card m-20">
+                        <a class="enlaceAMeme" href="meme.php">
+                            <img src="images/memes/aleatorio/joker.jpg" alt="Sample Image" class="card-image m-20"/>
+                            <div class="row">
+                                <div class="col text-left">
+                                    <a class="fuente" href="https://www.cuantocabron.com/">Fuente: www.cuantocabron.com/</a>
+                                </div>
+                            </div>
+                            <p class="card-content"></p>
+                        </a>
+                    </div>
+                </div>
+                <div class="col-md-5">
+                    <div class="card m-20">
+                        <a class="enlaceAMeme" href="meme.php">
+                            <img src="images/memes/aleatorio/maquina.jpg" alt="Sample Image" class="card-image"/>
+                            <div class="row">
+                                <div class="col text-left">
+                                    <a class="fuente" href="https://www.cuantocabron.com/">Fuente: www.cuantocabron.com/</a>
+                                </div>
+                            </div>
+                            <p class="card-content"></p>
+                        </a>
+                    </div>
+                </div>
+                <div class="col-md-5">
+                    <div class="card m-20">
+                        <a class="enlaceAMeme" href="meme.php">
+                            <img src="images/memes/aleatorio/mostro.jpg" alt="Sample Image" class="card-image m-20"/>
+                            <div class="row">
+                                <div class="col text-left">
+                                    <a class="fuente" href="https://www.cuantocabron.com/">Fuente: www.cuantocabron.com/</a>
+                                </div>
+                            </div>
+                            <p class="card-content"></p>
+                        </a>
+                    </div>
+                </div>
+                <div class="col-md-5">
+                    <div class="card m-20">
+                        <a class="enlaceAMeme" href="meme.php">
+                            <img src="images/memes/aleatorio/propositos.jpg" alt="Sample Image" class="card-image"/>
+                            <div class="row">
+                                <div class="col text-left">
+                                    <a class="fuente" href="https://www.cuantocabron.com/">Fuente: www.cuantocabron.com/</a>
+                                </div>
+                            </div>
+                            <p class="card-content"></p>
+                        </a>
+                    </div>
+                </div>
+                <div class="col-md-5">
+                    <div class="card m-20">
+                        <a class="enlaceAMeme" href="meme.php">
+                            <img src="images/memes/aleatorio/reyes.jpg" alt="Sample Image" class="card-image m-20"/>
+                            <div class="row">
+                                <div class="col text-left">
+                                    <a class="fuente" href="https://www.cuantocabron.com/">Fuente: www.cuantocabron.com/</a>
+                                </div>
+                            </div>
+                            <p class="card-content"></p>
+                        </a>
+                    </div>
+                </div>
+                <div class="col-md-5">
+                    <div class="card m-20">
+                        <a class="enlaceAMeme" href="meme.php">
+                            <img src="images/memes/aleatorio/tocha.jpg" alt="Sample Image" class="card-image"/>
+                            <div class="row">
+                                <div class="col text-left">
+                                    <a class="fuente" href="https://www.cuantocabron.com/">Fuente: www.cuantocabron.com/</a>
+                                </div>
+                            </div>
+                            <p class="card-content"></p>
+                        </a>
+                    </div>
+                </div>
+                <div class="col-md-5">
+                    <div class="card m-20">
+                        <a class="enlaceAMeme" href="meme.php">
+                            <img src="images/memes/aleatorio/viagra.jpg" alt="Sample Image" class="card-image m-20"/>
+                            <div class="row">
+                                <div class="col text-left">
+                                    <a class="fuente" href="https://www.cuantocabron.com/">Fuente: www.cuantocabron.com/</a>
+                                </div>
+                            </div>
+                            <p class="card-content"></p>
+                        </a>
+                    </div>
+                </div>
+                <div class="col-md-5">
+                    <div class="card m-20">
+                        <a class="enlaceAMeme" href="meme.php">
+                            <img src="images/memes/aleatorio/viejo.jpg" alt="Sample Image" class="card-image"/>
+                            <div class="row">
+                                <div class="col text-left">
+                                    <a class="fuente" href="https://www.cuantocabron.com/">Fuente: www.cuantocabron.com/</a>
+                                </div>
+                            </div>
+                            <p class="card-content"></p>
+                        </a>
+                    </div>
+                </div>
+                <div class="col-md-5">
+                    <div class="card m-20">
+                        <a class="enlaceAMeme" href="meme.php">
+                            <img src="images/memes/aleatorio/witcher.jpg" alt="Sample Image" class="card-image m-20"/>
+                            <div class="row">
+                                <div class="col text-left">
+                                    <a class="fuente" href="https://www.cuantocabron.com/">Fuente: www.cuantocabron.com/</a>
+                                </div>
+                            </div>
+                            <p class="card-content"></p>
+                        </a>
+                    </div>
+                </div>
+                <div class="col-md-5">
+                    <div class="card m-20">
+                        <a class="enlaceAMeme" href="meme.php">
                             <img src="images/memes/aleatorio/rick.jpg" alt="Sample Image" class="card-image"/>
                             <div class="row">
                                 <div class="col text-left">
-                                    <a class="fuente" href="https://es.memedroid.com/memes/">Fuente: es.memedroid.com/memes/</a>
+                                    <a class="fuente" href="https://www.cuantocabron.com/">Fuente: www.cuantocabron.com/</a>
                                 </div>
                             </div>
                             <p class="card-content"></p>
@@ -250,7 +432,7 @@
                             <img src="images/memes/aleatorio/simpsons.jpg" alt="Sample Image" class="card-image m-20"/>
                             <div class="row">
                                 <div class="col text-left">
-                                    <a class="fuente" href="https://es.memedroid.com/memes/">Fuente: es.memedroid.com/memes/</a>
+                                    <a class="fuente" href="https://www.cuantocabron.com/">Fuente: www.cuantocabron.com/</a>
                                 </div>
                             </div>
                             <p class="card-content"></p>
@@ -263,7 +445,20 @@
                             <img src="images/memes/aleatorio/rick.jpg" alt="Sample Image" class="card-image"/>
                             <div class="row">
                                 <div class="col text-left">
-                                    <a class="fuente" href="https://es.memedroid.com/memes/">Fuente: es.memedroid.com/memes/</a>
+                                    <a class="fuente" href="https://www.cuantocabron.com/">Fuente: www.cuantocabron.com/</a>
+                                </div>
+                            </div>
+                            <p class="card-content"></p>
+                        </a>
+                    </div>
+                </div>
+                <div class="col-md-5">
+                    <div class="card m-20">
+                        <a class="enlaceAMeme" href="meme.php">
+                            <img src="images/memes/aleatorio/rick.jpg" alt="Sample Image" class="card-image"/>
+                            <div class="row">
+                                <div class="col text-left">
+                                    <a class="fuente" href="https://www.cuantocabron.com/">Fuente: www.cuantocabron.com/</a>
                                 </div>
                             </div>
                             <p class="card-content"></p>
@@ -276,7 +471,7 @@
                             <img src="images/memes/aleatorio/simpsons.jpg" alt="Sample Image" class="card-image m-20"/>
                             <div class="row">
                                 <div class="col text-left">
-                                    <a class="fuente" href="https://es.memedroid.com/memes/">Fuente: es.memedroid.com/memes/</a>
+                                    <a class="fuente" href="https://www.cuantocabron.com/">Fuente: www.cuantocabron.com/</a>
                                 </div>
                             </div>
                             <p class="card-content"></p>
@@ -289,7 +484,20 @@
                             <img src="images/memes/aleatorio/rick.jpg" alt="Sample Image" class="card-image"/>
                             <div class="row">
                                 <div class="col text-left">
-                                    <a class="fuente" href="https://es.memedroid.com/memes/">Fuente: es.memedroid.com/memes/</a>
+                                    <a class="fuente" href="https://www.cuantocabron.com/">Fuente: www.cuantocabron.com/</a>
+                                </div>
+                            </div>
+                            <p class="card-content"></p>
+                        </a>
+                    </div>
+                </div>
+                <div class="col-md-5">
+                    <div class="card m-20">
+                        <a class="enlaceAMeme" href="meme.php">
+                            <img src="images/memes/aleatorio/rick.jpg" alt="Sample Image" class="card-image"/>
+                            <div class="row">
+                                <div class="col text-left">
+                                    <a class="fuente" href="https://www.cuantocabron.com/">Fuente: www.cuantocabron.com/</a>
                                 </div>
                             </div>
                             <p class="card-content"></p>
@@ -302,150 +510,7 @@
                             <img src="images/memes/aleatorio/simpsons.jpg" alt="Sample Image" class="card-image m-20"/>
                             <div class="row">
                                 <div class="col text-left">
-                                    <a class="fuente" href="https://es.memedroid.com/memes/">Fuente: es.memedroid.com/memes/</a>
-                                </div>
-                            </div>
-                            <p class="card-content"></p>
-                        </a>
-                    </div>
-                </div>
-                <div class="col-md-5">
-                    <div class="card m-20">
-                        <a class="enlaceAMeme" href="meme.php">
-                            <img src="images/memes/aleatorio/rick.jpg" alt="Sample Image" class="card-image"/>
-                            <div class="row">
-                                <div class="col text-left">
-                                    <a class="fuente" href="https://es.memedroid.com/memes/">Fuente: es.memedroid.com/memes/</a>
-                                </div>
-                            </div>
-                            <p class="card-content"></p>
-                        </a>
-                    </div>
-                </div>
-                <div class="col-md-5">
-                    <div class="card m-20">
-                        <a class="enlaceAMeme" href="meme.php">
-                            <img src="images/memes/aleatorio/simpsons.jpg" alt="Sample Image" class="card-image m-20"/>
-                            <div class="row">
-                                <div class="col text-left">
-                                    <a class="fuente" href="https://es.memedroid.com/memes/">Fuente: es.memedroid.com/memes/</a>
-                                </div>
-                            </div>
-                            <p class="card-content"></p>
-                        </a>
-                    </div>
-                </div>
-                <div class="col-md-5">
-                    <div class="card m-20">
-                        <a class="enlaceAMeme" href="meme.php">
-                            <img src="images/memes/aleatorio/rick.jpg" alt="Sample Image" class="card-image"/>
-                            <div class="row">
-                                <div class="col text-left">
-                                    <a class="fuente" href="https://es.memedroid.com/memes/">Fuente: es.memedroid.com/memes/</a>
-                                </div>
-                            </div>
-                            <p class="card-content"></p>
-                        </a>
-                    </div>
-                </div>
-                <div class="col-md-5">
-                    <div class="card m-20">
-                        <a class="enlaceAMeme" href="meme.php">
-                            <img src="images/memes/aleatorio/simpsons.jpg" alt="Sample Image" class="card-image m-20"/>
-                            <div class="row">
-                                <div class="col text-left">
-                                    <a class="fuente" href="https://es.memedroid.com/memes/">Fuente: es.memedroid.com/memes/</a>
-                                </div>
-                            </div>
-                            <p class="card-content"></p>
-                        </a>
-                    </div>
-                </div>
-                <div class="col-md-5">
-                    <div class="card m-20">
-                        <a class="enlaceAMeme" href="meme.php">
-                            <img src="images/memes/aleatorio/rick.jpg" alt="Sample Image" class="card-image"/>
-                            <div class="row">
-                                <div class="col text-left">
-                                    <a class="fuente" href="https://es.memedroid.com/memes/">Fuente: es.memedroid.com/memes/</a>
-                                </div>
-                            </div>
-                            <p class="card-content"></p>
-                        </a>
-                    </div>
-                </div>
-                <div class="col-md-5">
-                    <div class="card m-20">
-                        <a class="enlaceAMeme" href="meme.php">
-                            <img src="images/memes/aleatorio/simpsons.jpg" alt="Sample Image" class="card-image m-20"/>
-                            <div class="row">
-                                <div class="col text-left">
-                                    <a class="fuente" href="https://es.memedroid.com/memes/">Fuente: es.memedroid.com/memes/</a>
-                                </div>
-                            </div>
-                            <p class="card-content"></p>
-                        </a>
-                    </div>
-                </div>
-                <div class="col-md-5">
-                    <div class="card m-20">
-                        <a class="enlaceAMeme" href="meme.php">
-                            <img src="images/memes/aleatorio/rick.jpg" alt="Sample Image" class="card-image"/>
-                            <div class="row">
-                                <div class="col text-left">
-                                    <a class="fuente" href="https://es.memedroid.com/memes/">Fuente: es.memedroid.com/memes/</a>
-                                </div>
-                            </div>
-                            <p class="card-content"></p>
-                        </a>
-                    </div>
-                </div>
-                <div class="col-md-5">
-                    <div class="card m-20">
-                        <a class="enlaceAMeme" href="meme.php">
-                            <img src="images/memes/aleatorio/simpsons.jpg" alt="Sample Image" class="card-image m-20"/>
-                            <div class="row">
-                                <div class="col text-left">
-                                    <a class="fuente" href="https://es.memedroid.com/memes/">Fuente: es.memedroid.com/memes/</a>
-                                </div>
-                            </div>
-                            <p class="card-content"></p>
-                        </a>
-                    </div>
-                </div>
-                <div class="col-md-5">
-                    <div class="card m-20">
-                        <a class="enlaceAMeme" href="meme.php">
-                            <img src="images/memes/aleatorio/rick.jpg" alt="Sample Image" class="card-image"/>
-                            <div class="row">
-                                <div class="col text-left">
-                                    <a class="fuente" href="https://es.memedroid.com/memes/">Fuente: es.memedroid.com/memes/</a>
-                                </div>
-                            </div>
-                            <p class="card-content"></p>
-                        </a>
-                    </div>
-                </div>
-                <div class="col-md-5">
-                    <div class="card m-20">
-                        <a class="enlaceAMeme" href="meme.php">
-                            <img src="images/memes/aleatorio/simpsons.jpg" alt="Sample Image" class="card-image m-20"/>
-                            <div class="row">
-                                <div class="col text-left">
-                                    <a class="fuente" href="https://es.memedroid.com/memes/">Fuente: es.memedroid.com/memes/</a>
-                                </div>
-                            </div>
-                            <p class="card-content"></p>
-                        </a>
-                    </div>
-                </div>
-                <div class="col-md-5">
-                    <div class="card m-20">
-                        <a class="enlaceAMeme" href="meme.php">
-                            <img src="images/memes/aleatorio/rick.jpg" alt="Sample Image" class="card-image"/>
-                            <div class="row">
-                                <div class="col text-left">
-                                    <a class="fuente" href="https://es.memedroid.com/memes/">Fuente: es.memedroid.com/memes/</a>
+                                    <a class="fuente" href="https://www.cuantocabron.com/">Fuente: www.cuantocabron.com/</a>
                                 </div>
                             </div>
                             <p class="card-content"></p>
