@@ -26,6 +26,16 @@
                 <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
                     <a class="dropdown-item" href="herramientasYTutoriales.php">Herramientas y tutoriales</a>
                     <a class="dropdown-item" href="NoticiasMemables.php">Noticias "memables"</a>
+                    <a class="dropdown-item" href="#" id="navbarDropdownMenuLink2" data-toggle="dropdown"
+                       aria-haspopup="true" aria-expanded="false">
+                        Juegos
+                    </a>
+                    <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink2">
+                        <a class="dropdown-item" href="juegoPedro.php">"Nombre del juego"</a>
+                        <a class="dropdown-item" href="juegoAlberto.php">"Nombre del juego"</a>
+                        <a class="dropdown-item" href="juegoJavi.php">"Nombre del juego"</a>
+                        <a class="dropdown-item" href="juegoAntonio.php">Pong</a>
+                    </div>
                 </div>
             </li>
             <li class="nav-item dropdown">

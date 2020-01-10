@@ -374,5 +374,14 @@ button:hover {
   #seek-bar {
     width: 100%; } }
 /*******************************************/
+/***************PONG***********************/
+#canvas {
+  background-color: black; }
+
+.btn-pong {
+  background-color: #2B33EB !important;
+  color: white !important; }
+
+/**********************************************/
 
 /*# sourceMappingURL=resume.css.map */
