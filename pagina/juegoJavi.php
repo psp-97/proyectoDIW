@@ -2,20 +2,6 @@
 <html>
 <head>
     <?php include("includes/head-tag-contents.php"); ?>
-    <style>
-        body {
-            width: 800px;
-            margin: auto;
-        }
-
-        h1 {
-            text-align: center
-        }
-
-        #miCanvas {
-            border: solid 1px;
-        }
-    </style>
 </head>
 <body>
 <?php include("includes/navigation.php"); ?>
@@ -23,7 +9,7 @@
     <div class="row">
         <div class="col text-center mt-2">
             <h2>3 EN RAYA (Francisco Javier Trujillo Muñoz)</h2>
-            <canvas id="miCanvas"></canvas>
+            <canvas id="miCanvasJavi"></canvas>
         </div>
     </div>
 </div>

@@ -33,7 +33,7 @@ do {
 
 /* INICIAR EL JUEGO */
 function iniciar() {
-    canvas = document.getElementById("miCanvas");
+    canvas = document.getElementById("miCanvasJavi");
     canvas.width = ancho;
     canvas.height = alto;
     if (canvas && canvas.getContext) {
