@@ -11,31 +11,31 @@
         <div class="col-12">
             <h2 class="aside-title">CATEGORIAS</h2>
             <form action="" method="POST">
-                <a href="">
+                <a href="aleatorio.php">
                     <div class=row id="linea">
                         <div class="col-2"><img src="images/iconos/categorias/gamers.png" width="50"></i></button></div>
                         <div class="col-10 my-auto">Gamers</div>
                     </div>
                 </a>
-                <a href="">
+                <a href="aleatorio.php">
                     <div class=row id="linea">
                         <div class="col-2"><img src="images/iconos/categorias/programing.png" width="50"></i></button></div>
                         <div class="col-10 my-auto">Informaticos</div>
                     </div>
                 </a>
-                <a href="">
+                <a href="aleatorio.php">
                     <div class=row id="linea">
                         <div class="col-2"><img src="images/iconos/categorias/films.png" width="50"></i></button></div>
                         <div class="col-10 my-auto">Peliculas</div>
                     </div>
                 </a>
-                <a href="">
+                <a href="aleatorio.php">
                     <div class=row id="linea">
                         <div class="col-2"><img src="images/iconos/categorias/alcohol.png" width="50"></i></button></div>
                         <div class="col-10 my-auto">Borracheras</div>
                     </div>
                 </a>
-                <a href="">
+                <a href="aleatorio.php">
                     <div class=row id="linea">
                         <div class="col-2"><img src="images/iconos/categorias/tortuga.png" width="50"></i></button></div>
                         <div class="col-10 my-auto">Dibujos animados</div>
