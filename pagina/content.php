@@ -72,7 +72,7 @@
                             <a class="fuente" href="https://es.memedroid.com/memes/">Fuente: es.memedroid.com/memes/</a>
                         </div>
                     </div>
-                    <p class="card-content"></p>
+                    <p class="card-content">Eso era posiblemente lo mas doloroso que nos podía pasar de pequeños.</p>
                 </div>
             </a><a class="enlaceAMeme" href="meme.php">
                 <div class="card">
@@ -82,7 +82,7 @@
                             <a class="fuente" href="https://es.memedroid.com/memes/">Fuente: es.memedroid.com/memes/</a>
                         </div>
                     </div>
-                    <p class="card-content"></p>
+                    <p class="card-content">Como si no fuera dificil jugarlo en una mesa.</p>
                 </div>
             </a>
             <a class="enlaceAMeme" href="meme.php">
@@ -126,7 +126,7 @@
                             <a class="fuente" href="https://es.memedroid.com/memes/">Fuente: es.memedroid.com/memes/</a>
                         </div>
                     </div>
-                    <p class="card-content"></p>
+                    <p class="card-content">Imaginamos que muchos de nosotros hemos pensado lo mismo.</p>
                 </div>
             </a>
             <a class="enlaceAMeme" href="meme.php">
@@ -148,7 +148,7 @@
                             <a class="fuente" href="https://www.cabroworld.com/cabronazi/">Fuente: www.cabroworld.com/cabronazi/</a>
                         </div>
                     </div>
-                    <p class="card-content"></p>
+                    <p class="card-content">Los animalitos siempre son buenos para un meme...</p>
                 </div>
             </a>
             <a class="enlaceAMeme" href="meme.php">
@@ -159,7 +159,7 @@
                             <a class="fuente" href="https://www.cuantocabron.com/">Fuente: www.cuantocabron.com/</a>
                         </div>
                     </div>
-                    <p class="card-content"></p>
+                    <p class="card-content">¿Se piensan que este gobierno va a ser una maldita revolución o que?</p>
                 </div>
             </a>
             <a class="enlaceAMeme" href="meme.php">
@@ -180,7 +180,7 @@
                 <div class="col-12 aside">
                     <a class="enlaceAMeme" href="meme.php">
                         <h3 class="aside-title">Meme de la semana</h3>
-                        <img src="images/memes/index/pineapple.jpg" alt="Sample Image" class="item-image"/>
+                        <img src="images/memes/index/min/pineapple.jpg" alt="Sample Image" class="item-image"/>
                         <div class="row">
                             <div class="col text-right">
                                 <a class="fuente" href="https://9gag.com/">Fuente: www.9gag.com</a>
