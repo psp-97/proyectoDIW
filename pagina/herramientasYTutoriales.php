@@ -2,6 +2,11 @@
 <html lang="en">
 <head>
     <?php include("includes/head-tag-contents.php"); ?>
+    <style>
+        #imagen2 {
+            width: 630px;
+            height: 370px; }
+    </style>
 </head>
 <body>
 <?php include("includes/navigation.php"); ?>
@@ -57,6 +62,53 @@
                     </div>
                 </div>
             </div>
+            <div class="row" id="columna">
+                <h4>Facebook saca su propia herramienta para crear memes</h4>
+                <img id="imagen2" src="images/memes/noticiasMemables/face.png">                <p>Existen páginas como por ejemplo <a href="https://imgur.com/memegen/create/nTxcG3I">Imgur</a> en
+                    las
+                    que se puede hacer
+                    memes desde plantillas a partir de otros memes, o personalizar otros, siempre sin ser desde 0.
+                </p>
+                <p>Por supuesto, siempre queda también la opción de hacerlos desde 0 con Photoshop o cualquier otro
+                    editor
+                    de fotos.</p>
+            </div>
+            <div class="row" id="columna">
+                <h4>¿Cómo hacer memes?</h4>
+                <img src="images/memes/Captura.PNG" width="500" alt="Sample Image" class="item-image"/>
+                <p>Existen páginas como por ejemplo <a href="https://imgur.com/memegen/create/nTxcG3I">Imgur</a> en
+                    las
+                    que se puede hacer
+                    memes desde plantillas a partir de otros memes, o personalizar otros, siempre sin ser desde 0.
+                </p>
+                <p>Por supuesto, siempre queda también la opción de hacerlos desde 0 con Photoshop o cualquier otro
+                    editor
+                    de fotos.</p>
+            </div>
+            <div class="row" id="columna">
+                <h4>¿Cómo hacer memes?</h4>
+                <img src="images/memes/Captura.PNG" width="500" alt="Sample Image" class="item-image"/>
+                <p>Existen páginas como por ejemplo <a href="https://imgur.com/memegen/create/nTxcG3I">Imgur</a> en
+                    las
+                    que se puede hacer
+                    memes desde plantillas a partir de otros memes, o personalizar otros, siempre sin ser desde 0.
+                </p>
+                <p>Por supuesto, siempre queda también la opción de hacerlos desde 0 con Photoshop o cualquier otro
+                    editor
+                    de fotos.</p>
+            </div>
+            <div class="row" id="columna">
+                <h4>¿Cómo hacer memes?</h4>
+                <img src="images/memes/herramientasYTutoriales/Captura.PNG" width="500" alt="Sample Image" class="item-image"/>
+                <p>Existen páginas como por ejemplo <a href="https://imgur.com/memegen/create/nTxcG3I">Imgur</a> en
+                    las
+                    que se puede hacer
+                    memes desde plantillas a partir de otros memes, o personalizar otros, siempre sin ser desde 0.
+                </p>
+                <p>Por supuesto, siempre queda también la opción de hacerlos desde 0 con Photoshop o cualquier otro
+                    editor
+                    de fotos.</p>
+            </div>
         </div>
         <div class="col-sm-4" id="derecha">
             <h3>Coméntanos cómo haces tú los memes</h3>
@@ -69,6 +121,7 @@
 </div>
 <div class="footer text-center">
     <p>&copy; <?php print date("Y"); ?> <a href="https://iesmarquesdecomares.org/"> IES Marqués de Comares.</a></p>
+    <a href="javascript:void(0);" id="scroll" title="Scroll to Top" style="display: none;">Top<span></span></a>
 </div>
 </body>
 </html>
