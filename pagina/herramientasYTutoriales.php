@@ -64,50 +64,23 @@
             </div>
             <div class="row" id="columna">
                 <h4>Facebook saca su propia herramienta para crear memes</h4>
-                <img id="imagen2" src="images/memes/noticiasMemables/face.png">                <p>Existen páginas como por ejemplo <a href="https://imgur.com/memegen/create/nTxcG3I">Imgur</a> en
-                    las
-                    que se puede hacer
-                    memes desde plantillas a partir de otros memes, o personalizar otros, siempre sin ser desde 0.
+                <img id="imagen2" src="images/memes/herramientasYTutoriales/face.png">
+                   <p>Facebook ha sacado su propio editor de memes. <a href="https://www.20minutos.es/noticia/4102092/0/facebook-se-fija-en-los-memes-y-prueba-una-app-propia-para-disenarlos/">Link de la noticia...</a></p>
+            </div>
+           
+            <div class="row" id="columna">
+                <h4>Memes con Photoshop</h4>
+                    <img id="imagen2" src="images/memes/herramientasYTutoriales/photo.jpg">
+                <p>Siempre está la opción de crear los memes desde 0 sin ningún tipo de aplicación asistente para hacer memes.
                 </p>
-                <p>Por supuesto, siempre queda también la opción de hacerlos desde 0 con Photoshop o cualquier otro
-                    editor
-                    de fotos.</p>
             </div>
             <div class="row" id="columna">
-                <h4>¿Cómo hacer memes?</h4>
-                <img src="images/memes/Captura.PNG" width="500" alt="Sample Image" class="item-image"/>
-                <p>Existen páginas como por ejemplo <a href="https://imgur.com/memegen/create/nTxcG3I">Imgur</a> en
-                    las
-                    que se puede hacer
-                    memes desde plantillas a partir de otros memes, o personalizar otros, siempre sin ser desde 0.
+                <h4>Memes con APKs</h4>
+                <img src="images/memes/herramientasYTutoriales/meme.jpeg" width="500" alt="Sample Image" class="item-image"/>
+                <p>Aparte de creadores de memes online, también se pueden crear memes mediante aplicaciones para móvil u ordenador descargables.
+                Una de la más famosas es Meme Generator Free.
+                <a href="https://meme-generator-free.uptodown.com/android">Enlace para Android...</a>
                 </p>
-                <p>Por supuesto, siempre queda también la opción de hacerlos desde 0 con Photoshop o cualquier otro
-                    editor
-                    de fotos.</p>
-            </div>
-            <div class="row" id="columna">
-                <h4>¿Cómo hacer memes?</h4>
-                <img src="images/memes/Captura.PNG" width="500" alt="Sample Image" class="item-image"/>
-                <p>Existen páginas como por ejemplo <a href="https://imgur.com/memegen/create/nTxcG3I">Imgur</a> en
-                    las
-                    que se puede hacer
-                    memes desde plantillas a partir de otros memes, o personalizar otros, siempre sin ser desde 0.
-                </p>
-                <p>Por supuesto, siempre queda también la opción de hacerlos desde 0 con Photoshop o cualquier otro
-                    editor
-                    de fotos.</p>
-            </div>
-            <div class="row" id="columna">
-                <h4>¿Cómo hacer memes?</h4>
-                <img src="images/memes/herramientasYTutoriales/Captura.PNG" width="500" alt="Sample Image" class="item-image"/>
-                <p>Existen páginas como por ejemplo <a href="https://imgur.com/memegen/create/nTxcG3I">Imgur</a> en
-                    las
-                    que se puede hacer
-                    memes desde plantillas a partir de otros memes, o personalizar otros, siempre sin ser desde 0.
-                </p>
-                <p>Por supuesto, siempre queda también la opción de hacerlos desde 0 con Photoshop o cualquier otro
-                    editor
-                    de fotos.</p>
             </div>
         </div>
         <div class="col-sm-4" id="derecha">
