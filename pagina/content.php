@@ -66,7 +66,7 @@
             </a>
             <a class="enlaceAMeme" href="meme.php">
                 <div class="card">
-                    <img src="images/memes/index/halo2.jpeg" alt="Sample Image" class="card-image"/>
+                    <img src="images/memes/index/halo2.jpg" alt="Sample Image" class="card-image"/>
                     <div class="row">
                         <div class="col text-left">
                             <a class="fuente" href="https://es.memedroid.com/memes/">Fuente: es.memedroid.com/memes/</a>
@@ -76,7 +76,7 @@
                 </div>
             </a><a class="enlaceAMeme" href="meme.php">
                 <div class="card">
-                    <img src="images/memes/index/jenga.jpeg" alt="Sample Image" class="card-image"/>
+                    <img src="images/memes/index/jenga.jpg" alt="Sample Image" class="card-image"/>
                     <div class="row">
                         <div class="col text-left">
                             <a class="fuente" href="https://es.memedroid.com/memes/">Fuente: es.memedroid.com/memes/</a>
@@ -87,7 +87,7 @@
             </a>
             <a class="enlaceAMeme" href="meme.php">
                 <div class="card">
-                    <img src="images/memes/index/pasadizo.jpeg" alt="Sample Image" class="card-image"/>
+                    <img src="images/memes/index/pasadizo.jpg" alt="Sample Image" class="card-image"/>
                     <div class="row">
                         <div class="col text-left">
                             <a class="fuente" href="https://es.memedroid.com/memes/">Fuente: es.memedroid.com/memes/</a>
@@ -98,7 +98,7 @@
             </a>
             <a class="enlaceAMeme" href="meme.php">
                 <div class="card">
-                    <img src="images/memes/index/quimica.jpeg" alt="Sample Image" class="card-image"/>
+                    <img src="images/memes/index/quimica.jpg" alt="Sample Image" class="card-image"/>
                     <div class="row">
                         <div class="col text-left">
                             <a class="fuente" href="https://es.memedroid.com/memes/">Fuente: es.memedroid.com/memes/</a>
@@ -109,7 +109,7 @@
             </a>
             <a class="enlaceAMeme" href="meme.php">
                 <div class="card">
-                    <img src="images/memes/index/teachers.jpeg" alt="Sample Image" class="card-image"/>
+                    <img src="images/memes/index/teachers.jpg" alt="Sample Image" class="card-image"/>
                     <div class="row">
                         <div class="col text-left">
                             <a class="fuente" href="https://es.memedroid.com/memes/">Fuente: es.memedroid.com/memes/</a>
@@ -120,7 +120,7 @@
             </a>
             <a class="enlaceAMeme" href="meme.php">
                 <div class="card">
-                    <img src="images/memes/index/trump.jpeg" alt="Sample Image" class="card-image"/>
+                    <img src="images/memes/index/trump.jpg" alt="Sample Image" class="card-image"/>
                     <div class="row">
                         <div class="col text-left">
                             <a class="fuente" href="https://es.memedroid.com/memes/">Fuente: es.memedroid.com/memes/</a>
@@ -131,7 +131,7 @@
             </a>
             <a class="enlaceAMeme" href="meme.php">
                 <div class="card">
-                    <img src="images/memes/index/wifi.jpeg" alt="Sample Image" class="card-image"/>
+                    <img src="images/memes/index/wifi.jpg" alt="Sample Image" class="card-image"/>
                     <div class="row">
                         <div class="col text-left">
                             <a class="fuente" href="https://es.memedroid.com/memes/">Fuente: es.memedroid.com/memes/</a>
@@ -142,7 +142,7 @@
             </a>
             <a class="enlaceAMeme" href="meme.php">
                 <div class="card">
-                    <img src="images/memes/index/buho.png" alt="Sample Image" class="card-image"/>
+                    <img src="images/memes/index/buho.jpg" alt="Sample Image" class="card-image"/>
                     <div class="row">
                         <div class="col text-left">
                             <a class="fuente" href="https://www.cabroworld.com/cabronazi/">Fuente: www.cabroworld.com/cabronazi/</a>

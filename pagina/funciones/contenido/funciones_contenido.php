@@ -1,18 +1,44 @@
 <?php
+require_once("Conexion.php");
 
-require_once ("../Conexion.php");
+/**
+ * Ordenado por el id que va a ser autoincrement
+ */
+/*
+function getContenidoLast()
+{
 
-function getContenidoLast(){
-    //Ordenado por el id que va a ser autoincrement
+}
+*/
+/**
+ * orderby rand()
+ */
+function getContenidoAleatorio()
+{
+    $c = new Conexion();
+    $resultado = $c->query("SELECT * FROM contenido ORDER BY RAND() LIMIT 10");
+
+    while ($objeto = $resultado->fetch(PDO::FETCH_OBJ)) {
+        $contenido[] = $objeto;
+    }
+
+    return $contenido;
 
 }
 
-function getContenidoAleatorio(){
-    //orderby rand()
+//var_dump(getContenidoAleatorio());
+
+/**
+ * @param $id del contenido
+ */
+/*
+function getContenidoId($id)
+{
 
 }
-
+*/
 //Prueba de conexion
+/*
 try{
     $c = new Conexion();
     $resultado = $c->query("SELECT * FROM prueba");
@@ -23,3 +49,4 @@ try{
 }catch (PDOException $e){
     echo $e;
 }
+*/
