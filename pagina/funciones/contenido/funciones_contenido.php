@@ -1,5 +1,5 @@
 <?php
-require_once("Conexion.php");
+require_once("funciones/Conexion.php");
 
 /**
  * Ordenado por el id que va a ser autoincrement
