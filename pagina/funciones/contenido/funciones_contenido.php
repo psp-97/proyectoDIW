@@ -31,12 +31,16 @@ function getContenidoAleatorio()
 /**
  * @param $id del contenido
  */
-/*
 function getContenidoId($id)
 {
-
+    $c = new Conexion();
+    $resultado = $c->query("SELECT * FROM contenido where id=$id");
+    if ($objeto = $resultado->fetch(PDO::FETCH_OBJ)) {
+       return $objeto;
+    }else{
+        return null;
+    }
 }
-*/
 //Prueba de conexion
 /*
 try{

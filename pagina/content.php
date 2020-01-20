@@ -13,7 +13,7 @@ include ("funciones/contenido/funciones_contenido.php");
             $contenido = getContenidoLast();
             foreach ($contenido as $c) {
                 ?>
-                <a class="enlaceAMeme" href="meme.php">
+                <a class="enlaceAMeme" href="meme.php?id=<?php echo $c->id; ?>">
                     <div class="card">
                         <img src="images/memes/<?php echo $c->imagen; ?>" alt="Sample Image" class="card-image"/>
                         <div class="row">

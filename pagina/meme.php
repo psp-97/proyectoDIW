@@ -1,3 +1,6 @@
+<?php
+include "funciones/contenido/funciones_contenido.php";
+?>
 <!DOCTYPE html>
 <html>
 <head>
@@ -5,6 +8,9 @@
 </head>
 <body>
 <?php include("includes/navigation.php"); ?>
+<?php
+$meme = getContenidoId($_GET['id']);
+?>
 <div class="container">
     <div class="row content">
         <div class="fixed-bottom text-right">
@@ -14,10 +20,10 @@
             </a>
         </div>
         <div class="col-10">
-            <img src="images/memes/index/pineapple.jpg" alt="Sample Image" class="img-fluid imagen-meme"/>
+            <img src="images/memes/<?php echo $meme->imagen; ?>" alt="Sample Image" class="img-fluid imagen-meme"/>
             <div class="row">
                 <div class="col text-left">
-                    <a class="fuente" href="https://9gag.com/">Fuente: www.9gag.com</a>
+                    <a class="fuente" href="<?php echo $meme->fuente; ?>">Fuente: <?php echo $meme->fuente; ?></a>
                 </div>
             </div>
             <div class="float-right">
@@ -27,8 +33,11 @@
             </div>
             <div class="descripcion">
                 <h3 class="aside-title">Descripción</h3>
-                <p>Este meme se ha merecido el galardón a meme de la semana tras ser el más votado
-                    por nuestros visitantes. ¡Enhorabuena al creador!</p>
+                <p><?php if ($meme->descripcion != ""){
+                        echo $meme->descripcion;
+                    }else{
+                        echo "(Sin descripción)";
+                    }  ?></p>
             </div>
             <hr>
             <div class="row comentarios">
