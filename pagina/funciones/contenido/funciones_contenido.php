@@ -41,6 +41,16 @@ function getContenidoId($id)
         return null;
     }
 }
+
+function getcontenidoSemana(){
+    $c = new Conexion();
+    $resultado = $c->query("SELECT * FROM contenido where meme_semana='si'");
+    if ($objeto = $resultado->fetch(PDO::FETCH_OBJ)) {
+        return $objeto;
+    }else{
+        return null;
+    }
+}
 //Prueba de conexion
 /*
 try{

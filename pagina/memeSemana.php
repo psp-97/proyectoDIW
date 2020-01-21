@@ -1,3 +1,6 @@
+<?php
+include "funciones/contenido/funciones_contenido.php";
+?>
 <!DOCTYPE html>
 <html>
 <head>
@@ -14,12 +17,15 @@
     </div>
     <div class="row content">
         <div class="col-10 aside">
-            <a class="enlaceAMeme" href="meme.php">
+            <?php
+            $memeSemana = getcontenidoSemana();
+            ?>
+            <a class="enlaceAMeme" href="meme.php?id=<?php echo $memeSemana->id ?>">
                 <h3 class="aside-title">Meme de la semana</h3>
-                <img src="images/memes/index/pineapple.jpg" alt="Sample Image" class="item-image"/>
+                <img src="images/memes/<?php echo $memeSemana->imagen?>" alt="Sample Image" class="item-image"/>
                 <div class="row">
                     <div class="col text-right">
-                        <a class="fuente" href="https://9gag.com/">Fuente: www.9gag.com</a>
+                        <a class="fuente" href="<?php echo $memeSemana->fuente ?>">Fuente: <?php echo $memeSemana->fuente?></a>
                     </div>
                 </div>
                 <p>Este meme se ha merecido el galardón a meme de la semana tras ser el más votado

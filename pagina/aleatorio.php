@@ -18,7 +18,7 @@ require_once("funciones/contenido/funciones_contenido.php");
                     ?>
                     <div class="col-md-5">
                         <div class="card m-20">
-                            <a class="enlaceAMeme" href="meme.php">
+                            <a class="enlaceAMeme" href="meme.php?id=<?php echo $c->id ?>">
                                 <img src="images/memes/min/<?php echo $c->imagen;?>" alt="Sample Image" class="card-image m-20"/>
                                 <div class="row">
                                     <div class="col text-left">

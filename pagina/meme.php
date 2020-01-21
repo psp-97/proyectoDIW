@@ -1,5 +1,8 @@
 <?php
 include "funciones/contenido/funciones_contenido.php";
+if (!isset($_GET['id'])){
+    header("Location:index.php");
+}
 ?>
 <!DOCTYPE html>
 <html>
