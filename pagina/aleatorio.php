@@ -1,5 +1,5 @@
 <?php
-require_once("funciones/contenido/funciones_contenido.php");
+include("funciones/contenido/funciones_contenido.php");
 ?>
 <!DOCTYPE html>
 <html>

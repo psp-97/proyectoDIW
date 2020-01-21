@@ -2,9 +2,8 @@
 require_once("funciones/Conexion.php");
 
 /**
- * Ordenado por el id que va a ser autoincrement
+ * @return array Con el contenido ordenado con el ultimo primero
  */
-
 function getContenidoLast()
 {
     $c = new Conexion();
@@ -16,7 +15,7 @@ function getContenidoLast()
 }
 
 /**
- * orderby rand()
+ * @return array Con el contenido de manera aleatoria cada llamada
  */
 function getContenidoAleatorio()
 {
@@ -30,6 +29,7 @@ function getContenidoAleatorio()
 
 /**
  * @param $id del contenido
+ * @return mixed|null Objeto o nulo dependiendo si existe o no
  */
 function getContenidoId($id)
 {
@@ -42,25 +42,16 @@ function getContenidoId($id)
     }
 }
 
+/**
+ * @return mixed|null Objeto o nulo dependiendo si existe o no
+ */
 function getcontenidoSemana(){
     $c = new Conexion();
-    $resultado = $c->query("SELECT * FROM contenido where meme_semana='si'");
+    $resultado = $c->query("SELECT * FROM contenido, configuracion where configuracion.campo='meme_semana' and configuracion.valor=contenido.id");
     if ($objeto = $resultado->fetch(PDO::FETCH_OBJ)) {
         return $objeto;
     }else{
         return null;
     }
 }
-//Prueba de conexion
-/*
-try{
-    $c = new Conexion();
-    $resultado = $c->query("SELECT * FROM prueba");
 
-    while ($objeto = $resultado->fetch(PDO::FETCH_OBJ)){
-        var_dump($objeto);
-    }
-}catch (PDOException $e){
-    echo $e;
-}
-*/
