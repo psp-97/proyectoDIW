@@ -1,16 +1,13 @@
 <?php
-require "funciones/Conexion.php";
+include "../Conexion.php";
+
 $conexion = new Conexion();
-$resultado = "Inicial";
+$datos = [];
 
 $usuario=$_GET['usuario'];
-$resultado=mysqli_query($conexion,"select * from usuario where id=$usuario");
-if (mysqli_num_rows($resultado)>0){
-    $resultado = "si";
-}else{
-    $resultado = "no";
+//$resultado=mysqli_query($conexion,"select * from usuario where id=$usuario");
+$resultado = $conexion->query("select * from usuario where id=$usuario");
+if ($objeto = $resultado->fetch(PDO::FETCH_OBJ)){
+    echo json_encode($objeto);
 }
-
-echo $resultado;
-mysqli_close($conexion);
 ?>

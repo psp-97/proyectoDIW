@@ -1,5 +1,5 @@
 <?php
-require_once("funciones/Conexion.php");
+//require_once("funciones/Conexion.php");
 
 function getUsuarios(){
     $usuarios = [];

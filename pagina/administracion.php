@@ -1,4 +1,5 @@
 <?php
+include "funciones/Conexion.php";
 include "funciones/usuarios/funciones_usuario.php";
 ?>
 <!DOCTYPE html>
@@ -85,6 +86,10 @@ include "funciones/usuarios/funciones_usuario.php";
                         <div class="form-group">
                             <label for="idModal" class="col-form-label">Id:</label>
                             <input type="text" class="form-control" id="idModalEditar" name="idModal" readonly>
+                            <label for="usernameModalEditar" class="col-form-label">Username:</label>
+                            <input type="text" class="form-control" id="usernameModalEditar" name="usernameModal">
+                            <label for="passwordModalEditar" class="col-form-label">Password:</label>
+                            <input type="text" class="form-control" id="passwordModalEditar" name="passwordEditar">
                         </div>
                     </div>
                     <div class="modal-footer">
@@ -136,11 +141,9 @@ include "funciones/usuarios/funciones_usuario.php";
                 function (respuestaJson) {
                 }
             ).done(function (respuestaJson) {
-                    if (respuestaJson == "si") {
-                        alert("Usuario existente");
-                        console.log("Existe");
-                        //$("#usuario").val("");
-                    }
+                    json = JSON.parse(respuestaJson);
+                    $("#usernameModalEditar").val(json.username);
+                    $("#passwordModalEditar").val(json.password);
                 }
             ).fail(function () {
                     alert("Falla");
