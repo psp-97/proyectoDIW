@@ -2,16 +2,26 @@
     <div class="navbar-toggler logoPequeño">
         <a class="navbar-brand" href="index.php"><img class="logo" src="images/iconos/Momazos_Logo_Completo.png"></a>
     </div>
-    <button class="navbar-toggler btn btn-primary" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo01"
+    <button class="navbar-toggler btn btn-primary" type="button" data-toggle="collapse"
+            data-target="#navbarTogglerDemo01"
             aria-controls="navbarTogglerDemo01" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
     </button>
     <div class="collapse navbar-collapse" id="navbarTogglerDemo01">
-        <a class="navbar-brand d-none d-md-block" href="index.php"><img class="logo" src="images/iconos/Momazos_Logo_Completo.png"></a>
+        <a class="navbar-brand d-none d-md-block" href="index.php"><img class="logo"
+                                                                        src="images/iconos/Momazos_Logo_Completo.png"></a>
         <ul class="navbar-nav mr-auto mt-2 mt-lg-0">
-            <li class="nav-item">
-                <a class="nav-link" href="subirMeme.php">Añadir contenido</a>
-            </li>
+            <?php
+            if (isset($_SESSION['usuario']) &&
+                ($_SESSION['usuario'][0]->rol == "administrador" || $_SESSION['usuario'][0]->rol == "editor")) {
+                ?>
+                <li class="nav-item">
+                    <a class="nav-link" href="subirMeme.php">Añadir contenido</a>
+                </li>
+                <?php
+            }
+            ?>
+
             <li class="nav-item">
                 <a class="nav-link" href="categorias.php">Categorias</a>
             </li>
@@ -50,8 +60,20 @@
                 </div>
             </li>
         </ul>
-        <form action="login.php" class="form-inline my-2 my-lg-0">
-            <button class="btn btn-outline-primary my-2 my-sm-0 login" type="submit">Log in</button>
-        </form>
+        <?php
+        if (isset($_SESSION['usuario'])) {
+            ?>
+            <form action="logout.php" class="form-inline my-2 my-lg-0">
+                <button class="btn btn-outline-primary my-2 my-sm-0 login" type="submit">Log out</button>
+            </form>
+            <?php
+        } else {
+            ?>
+            <form action="login.php" class="form-inline my-2 my-lg-0">
+                <button class="btn btn-outline-primary my-2 my-sm-0 login" type="submit">Log in</button>
+            </form>
+            <?php
+        }
+        ?>
     </div>
 </nav>

@@ -43,3 +43,16 @@ function updateUsuario($datos){
         return false;
     }
 }
+
+function getUser()
+{
+    $usuarios = [];
+    $correo = $_POST['email'];
+    $contra = $_POST['pass'];
+    $c = new Conexion();
+    $resultado = $c->query("SELECT * FROM usuario where correo = '$correo' AND password = '$contra'");
+    while ($objeto = $resultado->fetch(PDO::FETCH_OBJ)) {
+        $usuarios[] = $objeto;
+    }
+    return $usuarios;
+}
