@@ -82,12 +82,18 @@ include("includes/navigation.php"); ?>
             $password = $_POST['password'];
             $correo = $_POST['correo'];
             $otraVez = $_POST['otraVez'];
-            if($username != null && $password != null && $correo != null) {
-                if ($password == $otraVez) {
-                    registrar($username, $password, $correo);
+            if(!empty($username) && !empty($password) && !empty($correo)) {
+                if (filter_var($correo, FILTER_VALIDATE_EMAIL)) {
+                    if ($password == $otraVez) {
+                        registrar($username, $password, $correo);
+                        $mensaje = "<div class='alert alert-success'>Usuario creado correctamente</div>";
+                    } else {
+                        $mensaje = "<div class='alert alert-danger'>Las contraseñas no coinciden</div>";
+                    }
                 } else {
-                    $mensaje = "<div class='alert alert-danger'>Las contraseñas no coinciden</div>";
+                    $mensaje = "<div class='alert alert-danger'>Correo electrónico no válido</div>";
                 }
+                
             } else {
                 $mensaje = "<div class='alert alert-danger'>Debe rellenar todos los campos</div>";
             }
