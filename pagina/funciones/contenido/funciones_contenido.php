@@ -55,3 +55,8 @@ function getcontenidoSemana(){
     }
 }
 
+function addContenido($id_usuario, $descripcion, $imagen, $fuente) {
+    $c = new Conexion();
+    $c->query("INSERT INTO contenido(id_usuario, descripcion, imagen, fuente) VALUES ($id_usuario, '$descripcion', '$imagen', '$fuente')");
+}
+
