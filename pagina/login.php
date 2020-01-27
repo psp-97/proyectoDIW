@@ -79,9 +79,9 @@ include("includes/navigation.php"); ?>
         $mensaje = "";
         if(isset($_POST['registrar'])) {
             $username = $_POST['username'];
-            $password = $_POST['password'];
+            $password = md5($_POST['password']);
             $correo = $_POST['correo'];
-            $otraVez = $_POST['otraVez'];
+            $otraVez = md5($_POST['otraVez']);
             if(!empty($username) && !empty($password) && !empty($correo)) {
                 if (filter_var($correo, FILTER_VALIDATE_EMAIL)) {
                     if ($password == $otraVez) {
