@@ -1,4 +1,6 @@
-<?php require_once("funciones/contenido/funciones_contenido.php"); ?>
+<?php require_once("funciones/contenido/funciones_contenido.php");
+session_start();
+?>
 <!DOCTYPE html>
 <html>
 <head>
@@ -17,14 +19,14 @@
                 $descripcion = $_POST['descripcion'];
                 $fuente = $_POST['fuente'];
                 if ($fuente == null || $imagen == null || $descripcion == null) {
-                    echo "<h3>DEBE RELLENAR TODOS LOS CAMPOS</h3>";
+                    echo "<div class='alert alert-danger'>Debe rellenar todos los campos</div>";
                 } else {
                     if (is_uploaded_file($_FILES['imagen']['tmp_name'])) {
                         $fich_unique = time(). $imagen;
                         $ruta = "images/memes/" . $fich_unique;
                         move_uploaded_file($_FILES['imagen']['tmp_name'], $ruta);
                     }
-                    addContenido(1, $descripcion, $fich_unique, $fuente);
+                    addContenido($_SESSION['usuario'][0]->id, $descripcion, $fich_unique, $fuente);
                     echo "<h3>MEME AÑADIDO CORRECTAMENTE</h3>";
                 }
             }

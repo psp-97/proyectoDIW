@@ -1,6 +1,8 @@
 <?php session_start();
 include("funciones/Conexion.php");
 include("funciones/usuarios/funciones_usuario.php");
+include("funciones/login/funciones_login.php");
+
 if (isset($_SESSION['usuario'])) {
     header("Location:index.php");
 }
@@ -73,40 +75,61 @@ include("includes/navigation.php"); ?>
         </div>
 
         <div class="col-md-5 col-sm-12">
+        <?php
+        $mensaje = "";
+        if(isset($_POST['registrar'])) {
+            $username = $_POST['username'];
+            $password = $_POST['password'];
+            $correo = $_POST['correo'];
+            $otraVez = $_POST['otraVez'];
+            if($username != null && $password != null && $correo != null) {
+                if ($password == $otraVez) {
+                    registrar($username, $password, $correo);
+                } else {
+                    $mensaje = "<div class='alert alert-danger'>Las contraseñas no coinciden</div>";
+                }
+            } else {
+                $mensaje = "<div class='alert alert-danger'>Debe rellenar todos los campos</div>";
+            }
+                       
+        }
+        ?>
             <form action="" method="POST">
                 <div class=row>
-
-
-                    <div class="col-12"><h2 class="aside-title">Registrar</h2></div>
-
+                    <div class="col-12">
+                    <span>
+                        <?php echo $mensaje; ?>
+                    </span>
+                    <h2 class="aside-title">Registrar</h2>
+                    </div>
                 </div>
                 <div class=row>
                     <div class="col-md-1 col-sm-12"></div>
                     <div class="col-md-5 col-sm-12">EMAIL:</div>
-                    <div class="col-md-6 col-sm-12"><input class="formulario" type="text" id="correo"></div>
+                    <div class="col-md-6 col-sm-12"><input class="formulario" name="correo" type="text" id="correo"></div>
                 </div>
                 <hr>
                 <div class=row>
                     <div class="col-md-1 col-sm-12"></div>
                     <div class="col-md-5 col-sm-12">USUARIO:</div>
-                    <div class="col-md-6 col-sm-12"><input class="formulario" type="text" id="usuario"></div>
+                    <div class="col-md-6 col-sm-12"><input class="formulario" name="username" type="text" id="usuario"></div>
                 </div>
                 <hr>
                 <div class=row>
                     <div class="col-md-1 col-sm-12"></div>
                     <div class="col-md-5 col-sm-12">CONTRASEÑA:</div>
-                    <div class="col-md-6 col-sm-12"><input class="formulario" type="password" id="contra"></div>
+                    <div class="col-md-6 col-sm-12"><input class="formulario" name="password" type="password" id="contra"></div>
                 </div>
                 <hr>
                 <div class=row>
                     <div class="col-md-1 col-sm-12"></div>
                     <div class="col-md-5 col-sm-12">OTRA VEZ:</div>
-                    <div class="col-md-6 col-sm-12"><input class="formulario" type="password" id="repe"></div>
+                    <div class="col-md-6 col-sm-12"><input class="formulario" name="otraVez" type="password" id="repe"></div>
                 </div>
                 <hr>
                 <div class=row>
                     <div class="col-md-5 col-sm-12"></div>
-                    <div class="col-md-7 col-sm-12"><input type="submit"
+                    <div class="col-md-7 col-sm-12"><input type="submit" name="registrar"
                                                            class="btn btn-outline-primary my-2 my-sm-0 login"
                                                            type="submit" value="Registrarse"></button></div>
                 </div>
