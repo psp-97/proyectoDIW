@@ -30,7 +30,7 @@ include("includes/navigation.php"); ?>
     <div class="row content">
         <div class="col-md-6 col-sm-12">
             <?php
-                if ($errorLogin){
+                if (isset($errorLogin) && $errorLogin){
                     echo "<div class='alert alert-danger'>Correo o contraseña incorrectos</div>";
                 }
             ?>
