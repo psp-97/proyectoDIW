@@ -1,3 +1,6 @@
+<?php
+session_start();
+?>
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -19,7 +22,7 @@
         <div class="col-sm-8">
             <div class="row" id="columna">
                 <h4>¿Cómo hacer memes?</h4>
-                <img src="images/memes/Captura.PNG" width="500" alt="Sample Image" class="item-image"/>
+                <img src="images/herramientasYTutoriales/Captura.PNG" width="500" alt="Sample Image" class="item-image"/>
                 <p>Existen páginas como por ejemplo <a href="https://imgur.com/memegen/create/nTxcG3I">Imgur</a> en
                     las
                     que se puede hacer
@@ -64,19 +67,19 @@
             </div>
             <div class="row" id="columna">
                 <h4>Facebook saca su propia herramienta para crear memes</h4>
-                <img id="imagen2" src="images/memes/herramientasYTutoriales/face.png">
+                <img id="imagen2" src="images/herramientasYTutoriales/face.png">
                    <p>Facebook ha sacado su propio editor de memes. <a href="https://www.20minutos.es/noticia/4102092/0/facebook-se-fija-en-los-memes-y-prueba-una-app-propia-para-disenarlos/">Link de la noticia...</a></p>
             </div>
            
             <div class="row" id="columna">
                 <h4>Memes con Photoshop</h4>
-                    <img id="imagen2" src="images/memes/herramientasYTutoriales/photo.jpg">
+                    <img id="imagen2" src="images/herramientasYTutoriales/photo.jpg">
                 <p>Siempre está la opción de crear los memes desde 0 sin ningún tipo de aplicación asistente para hacer memes.
                 </p>
             </div>
             <div class="row" id="columna">
                 <h4>Memes con APKs</h4>
-                <img src="images/memes/herramientasYTutoriales/meme.jpeg" width="500" alt="Sample Image" class="item-image"/>
+                <img src="images/herramientasYTutoriales/meme.jpeg" width="500" alt="Sample Image" class="item-image"/>
                 <p>Aparte de creadores de memes online, también se pueden crear memes mediante aplicaciones para móvil u ordenador descargables.
                 Una de la más famosas es Meme Generator Free.
                 <a href="https://meme-generator-free.uptodown.com/android">Enlace para Android...</a>

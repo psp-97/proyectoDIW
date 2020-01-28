@@ -63,8 +63,20 @@
         <?php
         if (isset($_SESSION['usuario'])) {
             ?>
-            <form action="logout.php" class="form-inline my-2 my-lg-0">
-                <button class="btn btn-outline-primary my-2 my-sm-0 login" type="submit">Log out</button>
+            <form action="logout.php" class="form-inline my-2 my-lg-0 miCuenta">
+                <!--<button class="btn btn-outline-primary my-2 my-sm-0 login" type="submit">Log out</button>-->
+                <ul class="navbar-nav mr-auto mt-2 mt-lg-0">
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" data-toggle="dropdown"
+                           aria-haspopup="true" aria-expanded="false">
+                            <?php echo $_SESSION['usuario'][0]->username; ?>
+                        </a>
+                        <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                            <a class="dropdown-item" href="micuenta.php">Mi cuenta</a>
+                            <a class="dropdown-item" href="logout.php">Cerrar sesión</a>
+                        </div>
+                    </li>
+                </ul>
             </form>
             <?php
         } else {

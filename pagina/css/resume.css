@@ -139,6 +139,15 @@ span.textoMenu {
   font-family: "Gochi Hand";
 }
 
+.miCuenta {
+  background-color: #2b33eb;
+  color: white;
+  font-family: "Gochi Hand";
+  margin-right: 10px;
+  background-color: #2b33eb;
+  border-radius: 5px;
+}
+
 .navbar {
   background-color: #000 !important;
   position: fixed !important;

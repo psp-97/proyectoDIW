@@ -1,4 +1,5 @@
 <?php
+session_start();
 include("funciones/contenido/funciones_contenido.php");
 ?>
 <!DOCTYPE html>
