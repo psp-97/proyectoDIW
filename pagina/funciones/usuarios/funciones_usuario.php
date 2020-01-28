@@ -27,7 +27,7 @@ function updateUsuario($datos){
     try{
         $c = new Conexion();
         $c->exec("UPDATE usuario SET username='" . $datos['username'] .
-            "', password='" . $datos['password'] .
+            //"', password='" . $datos['password'] .
             "', nombre='" . $datos['nombre'] .
             "', apellido1='" . $datos['apellido1'] .
             "', apellido2='" . $datos['apellido2'] .

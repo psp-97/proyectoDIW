@@ -1,4 +1,5 @@
 <?php
+session_start();
 include "funciones/Conexion.php";
 include "funciones/usuarios/funciones_usuario.php";
 ?>
@@ -14,7 +15,7 @@ include "funciones/usuarios/funciones_usuario.php";
     if (isset($_POST['editarModal'])) {
         if (updateUsuario(array("id" => $_POST['idModal'],
             "username" => $_POST['usernameModal'],
-            "password" => $_POST['passwordModal'],
+            //"password" => $_POST['passwordModal'],
             "nombre" => $_POST['nombreModal'],
             "apellido1" => $_POST['apellido1Modal'],
             "apellido2" => $_POST['apellido2Modal'],
@@ -99,8 +100,10 @@ include "funciones/usuarios/funciones_usuario.php";
                             <input type="text" class="form-control" id="idModalEditar" name="idModal" readonly>
                             <label for="usernameModalEditar" class="col-form-label">Username:</label>
                             <input type="text" class="form-control" id="usernameModalEditar" name="usernameModal">
+                            <!--
                             <label for="passwordModalEditar" class="col-form-label">Password:</label>
                             <input type="text" class="form-control" id="passwordModalEditar" name="passwordModal">
+                            -->
                             <label for="nombreModalEditar" class="col-form-label">Nombre:</label>
                             <input type="text" class="form-control" id="nombreModalEditar" name="nombreModal">
                             <label for="apellido1ModalEditar" class="col-form-label">Apellido 1:</label>
@@ -177,7 +180,7 @@ include "funciones/usuarios/funciones_usuario.php";
             ).done(function (respuestaJson) {
                     json = JSON.parse(respuestaJson);
                     $("#usernameModalEditar").val(json.username);
-                    $("#passwordModalEditar").val(json.password);
+                    //$("#passwordModalEditar").val(json.password);
                     $("#nombreModalEditar").val(json.nombre);
                     $("#apellido1ModalEditar").val(json.apellido1);
                     $("#apellido2ModalEditar").val(json.apellido2);
