@@ -14,13 +14,17 @@ include("funciones/contenido/funciones_contenido.php");
         <div class="col memes">
             <div class="row">
                 <?php
-                $contenido = getContenidoAleatorio();
+                if (isset($_GET['id_cat'])){
+                    $contenido = getContenidoAleatorioCategorias($_GET['id_cat']);
+                }else{
+                    $contenido = getContenidoAleatorio();
+                }
                 foreach ($contenido as $c){
                     ?>
                     <div class="col-md-5">
                         <div class="card m-20">
                             <a class="enlaceAMeme" href="meme.php?id=<?php echo $c->id ?>">
-                                <img src="images/memes/min/<?php echo $c->imagen;?>" alt="Sample Image" class="card-image m-20"/>
+                                <img src="images/memes/<?php echo $c->imagen;?>" alt="Sample Image" class="card-image m-20"/>
                                 <div class="row">
                                     <div class="col text-left">
                                         <a class="fuente" href="<?php echo $c->fuente; ?>">Fuente: <?php echo $c->fuente; ?></a>

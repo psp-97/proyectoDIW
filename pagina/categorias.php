@@ -1,5 +1,6 @@
 <?php
 session_start();
+require_once("funciones/categorias/funciones_categorias.php");
 ?>
 <!DOCTYPE html>
 <html>
@@ -14,6 +15,21 @@ session_start();
         <div class="col-12">
             <h2 class="aside-title">CATEGORIAS</h2>
             <form action="" method="POST">
+                <?php
+                $categorias = getCategorias();
+                foreach ($categorias as $c) {
+                    ?>
+                    <a href="aleatorio.php?id_cat=<?php echo $c->id; ?>">
+                        <div class=row id="linea">
+                            <div class="col-2"><img src="images/iconos/categorias/<?php echo $c->logo; ?>" width="50"></i></button>
+                            </div>
+                            <div class="col-10 my-auto"><?php echo $c->nombre ?></div>
+                        </div>
+                    </a>
+                    <?php
+                }
+                ?>
+                <!--
                 <a href="aleatorio.php">
                     <div class=row id="linea">
                         <div class="col-2"><img src="images/iconos/categorias/gamers.png" width="50"></i></button></div>
@@ -44,6 +60,7 @@ session_start();
                         <div class="col-10 my-auto">Dibujos animados</div>
                     </div>
                 </a>
+                -->
         </div>
     </div>
 </div>

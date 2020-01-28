@@ -1,4 +1,5 @@
 <?php require_once("funciones/contenido/funciones_contenido.php");
+require_once("funciones/categorias/funciones_categorias.php");
 session_start();
 ?>
 <!DOCTYPE html>
@@ -14,19 +15,20 @@ session_start();
         <div class="col-10">
             <h2 class="aside-title">Subir meme</h2>
             <?php
-            if (isset($_POST['submit'])) {      
-                $imagen = $_FILES['imagen']['name'];          
+            if (isset($_POST['submit'])) {
+                $imagen = $_FILES['imagen']['name'];
                 $descripcion = $_POST['descripcion'];
                 $fuente = $_POST['fuente'];
+                $categoria = $_POST['categoria'];
                 if ($fuente == null || $imagen == null || $descripcion == null) {
                     echo "<div class='alert alert-danger'>Debe rellenar todos los campos</div>";
                 } else {
                     if (is_uploaded_file($_FILES['imagen']['tmp_name'])) {
-                        $fich_unique = time(). $imagen;
+                        $fich_unique = time() . $imagen;
                         $ruta = "images/memes/" . $fich_unique;
                         move_uploaded_file($_FILES['imagen']['tmp_name'], $ruta);
                     }
-                    addContenido($_SESSION['usuario'][0]->id, $descripcion, $fich_unique, $fuente);
+                    addContenido($_SESSION['usuario'][0]->id, $descripcion, $fich_unique, $fuente, $categoria);
                     echo "<h3>MEME AÑADIDO CORRECTAMENTE</h3>";
                 }
             }
@@ -53,14 +55,31 @@ session_start();
                 </div>
                 <hr>
                 <div class=row>
+                    <div class="col-md-4 col-sm-12"></div>
+                    <div class="col-md-2 col-sm-12">Categoria:</div>
+                    <div class="col-md-6 col-sm-12">
+                        <select class="formulario" name="categoria">
+                            <?php
+                            $categorias = getCategorias();
+                            foreach ($categorias as $categoria) {
+                                echo "<option value='$categoria->id'>$categoria->nombre</option>";
+                            }
+                            ?>
+                        </select>
+                    </div>
+                </div>
+                <hr>
+                <div class=row>
                     <div class="col-md-5 col-sm-12"></div>
-                    <div class="col-md-7 col-sm-12"><textarea class="formulario" name="descripcion" rows="10" cols="30" placeholder="Introduce aquí la descripción..."></textarea>
+                    <div class="col-md-7 col-sm-12"><textarea class="formulario" name="descripcion" rows="10" cols="30"
+                                                              placeholder="Introduce aquí la descripción..."></textarea>
                     </div>
                 </div>
                 <hr>
                 <div class=row>
                     <div class="col-md-6 col-sm-12"></div>
-                    <div class="col-md-6 col-sm-12"><input type="submit" name="submit" value="Subir" class="btn btn-primary"/></div>
+                    <div class="col-md-6 col-sm-12"><input type="submit" name="submit" value="Subir"
+                                                           class="btn btn-primary"/></div>
                 </div>
                 <hr>
             </form>

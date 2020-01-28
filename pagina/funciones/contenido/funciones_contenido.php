@@ -28,6 +28,19 @@ function getContenidoAleatorio()
 }
 
 /**
+ * @return array Con el contenido de manera aleatoria cada llamada
+ */
+function getContenidoAleatorioCategorias($categoria)
+{
+    $c = new Conexion();
+    $resultado = $c->query("SELECT * FROM contenido WHERE categoria=$categoria ORDER BY RAND() LIMIT 10");
+    while ($objeto = $resultado->fetch(PDO::FETCH_OBJ)) {
+        $contenido[] = $objeto;
+    }
+    return $contenido;
+}
+
+/**
  * @param $id del contenido
  * @return mixed|null Objeto o nulo dependiendo si existe o no
  */
@@ -55,8 +68,8 @@ function getcontenidoSemana(){
     }
 }
 
-function addContenido($id_usuario, $descripcion, $imagen, $fuente) {
+function addContenido($id_usuario, $descripcion, $imagen, $fuente, $categoria) {
     $c = new Conexion();
-    $c->query("INSERT INTO contenido(id_usuario, descripcion, imagen, fuente) VALUES ($id_usuario, '$descripcion', '$imagen', '$fuente')");
+    $c->query("INSERT INTO contenido(id_usuario, descripcion, imagen, fuente, categoria) VALUES ($id_usuario, '$descripcion', '$imagen', '$fuente', $categoria)");
 }
 
