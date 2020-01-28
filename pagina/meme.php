@@ -13,6 +13,7 @@ if (!isset($_GET['id'])){
 <?php include("includes/navigation.php"); ?>
 <?php
 $meme = getContenidoId($_GET['id']);
+$meme2 = getValoracionId($_GET['id']);
 ?>
 <div class="container">
     <div class="row content">
@@ -51,6 +52,16 @@ $meme = getContenidoId($_GET['id']);
                     </div>
                     <h6>Nombre del que comenta</h6>
                     <p>De los peores memes que se recuerdan.</p>
+                    <p>
+                        <?php 
+                            if ($meme != null) {
+                                echo $meme2->comentario;
+                            }
+                            else {
+                                echo "Sin comentarios en este meme :v";
+                            }
+                        ?>
+                    </p>
                 </div>
                 <div class="col-12 comentario">
                     <div class="float-right">

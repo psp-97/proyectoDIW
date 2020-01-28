@@ -60,3 +60,30 @@ function addContenido($id_usuario, $descripcion, $imagen, $fuente) {
     $c->query("INSERT INTO contenido(id_usuario, descripcion, imagen, fuente) VALUES ($id_usuario, '$descripcion', '$imagen', '$fuente')");
 }
 
+
+
+
+/**
+ * @param $id del contenido
+ * @return mixed|null Objeto o nulo dependiendo si existe o no
+ */
+function getValoracionId($id)
+{
+    $c = new Conexion();
+    $resultado = $c->query("SELECT * FROM valoracion where id_contenido=$id");
+    /*
+    while ($objeto = $resultado->fetch(PDO::FETCH_OBJ)) {
+        $contenido[] = $objeto;
+    }
+    return $contenido;
+    */
+
+    
+    if ($objeto = $resultado->fetch(PDO::FETCH_OBJ)) {
+       return $objeto;
+    }else{
+        return null;
+    }
+    
+}
+
