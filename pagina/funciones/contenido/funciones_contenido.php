@@ -76,27 +76,5 @@ function addContenido($id_usuario, $descripcion, $imagen, $fuente, $categoria) {
 
 
 
-/**
- * @param $id del contenido
- * @return mixed|null Objeto o nulo dependiendo si existe o no
- */
-function getValoracionId($id)
-{
-    $c = new Conexion();
-    $resultado = $c->query("SELECT * FROM valoracion where id_contenido=$id");
-    /*
-    while ($objeto = $resultado->fetch(PDO::FETCH_OBJ)) {
-        $contenido[] = $objeto;
-    }
-    return $contenido;
-    */
 
-    
-    if ($objeto = $resultado->fetch(PDO::FETCH_OBJ)) {
-       return $objeto;
-    }else{
-        return null;
-    }
-    
-}
 

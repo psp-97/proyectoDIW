@@ -1,6 +1,7 @@
 <?php
 session_start();
 include "funciones/contenido/funciones_contenido.php";
+include "funciones/valoraciones/funciones_valoraciones.php";
 if (!isset($_GET['id'])){
     header("Location:index.php");
 }
@@ -14,7 +15,7 @@ if (!isset($_GET['id'])){
 <?php include("includes/navigation.php"); ?>
 <?php
 $meme = getContenidoId($_GET['id']);
-$meme2 = getValoracionId($_GET['id']);
+$valoracionMeme = getValoracionId($_GET['id']);
 ?>
 <div class="container">
     <div class="row content">
@@ -48,50 +49,57 @@ $meme2 = getValoracionId($_GET['id']);
             <div class="row comentarios">
                 <h4 class="aside-title">Comentarios</h4>
                 <div class="col-12 comentario">
-                    <div class="float-right">
-                        <img class="logito" src="images/iconos/like.png" alt="like">
+                    <form action="" method="POST">
+                    <div class=row>
+                        <div class="col-md-12 col-sm-12">COMENTARIO:</div>
+                        <div class="col-md-12 col-sm-12"><input class="formulario" type="text" style="width:100%" id="correo" name="email"></div>
                     </div>
-                    <h6>Nombre del que comenta</h6>
-                    <p>De los peores memes que se recuerdan.</p>
-                    <p>
-                        <?php 
-                            if ($meme != null) {
-                                echo $meme2->comentario;
-                            }
-                            else {
-                                echo "Sin comentarios en este meme :v";
-                            }
+                    <div class="row">
+                        <div class="col-md-5 col-sm-12"></div>
+                        <div class="col-md-7 col-sm-12"><input type="submit"
+                            class="btn btn-outline-primary my-2 my-sm-0 login"
+                            type="submit" value="Enviar Comentario" name="comentar"></button></div>
+                    </div>
+                    <hr>
+                </form>
+                </div>
+                
+            
+
+
+
+
+
+                <?php
+                if ($valoracionMeme != null) {
+
+
+                    
+                    //while ($object=$valoracionMeme->fetch_object()) { //Si hay los recorremos
+                        //foreach ($valoracion as $valoracionMeme) {
                         ?>
-                    </p>
-                </div>
-                <div class="col-12 comentario">
-                    <div class="float-right">
-                        <img class="logito" src="images/iconos/like.png" alt="like">
+                        <div class="col-12 comentario">
+                            <h6><?php echo $valoracionMeme->username; ?></h6>
+                            <p>
+                                <?php 
+                                    //echo $valoracion->comentario;
+                                    echo $valoracionMeme->comentario;
+                                ?>
+                            </p>
+                        </div>
+                        
+                        <?php  
+                    //}
+                }
+                else {
+                    ?>
+                    <div class="col-12 comentario">
+                        <p>No existen comentarios para este meme, se el primero en comentar</p>
                     </div>
-                    <h6>Nombre del que comenta</h6>
-                    <p>De los peores memes que se recuerdan.</p>
-                </div>
-                <div class="col-12 comentario">
-                    <div class="float-right">
-                        <img class="logito" src="images/iconos/like.png" alt="like">
-                    </div>
-                    <h6>Nombre del que comenta</h6>
-                    <p>De los peores memes que se recuerdan.</p>
-                </div>
-                <div class="col-12 comentario">
-                    <div class="float-right">
-                        <img class="logito" src="images/iconos/like.png" alt="like">
-                    </div>
-                    <h6>Nombre del que comenta</h6>
-                    <p>De los peores memes que se recuerdan.</p>
-                </div>
-                <div class="col-12 comentario">
-                    <div class="float-right">
-                        <img class="logito" src="images/iconos/like.png" alt="like">
-                    </div>
-                    <h6>Nombre del que comenta</h6>
-                    <p>De los peores memes que se recuerdan.</p>
-                </div>
+                    <?php
+                }      
+                ?>
+
             </div>
         </div>
     </div>
