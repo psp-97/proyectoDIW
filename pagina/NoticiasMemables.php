@@ -93,9 +93,11 @@ session_start();
                 </div>
             </div>
             <div class="col-sm-4" id="derecha">
+                <form action="" method="post">
                 <h3>Coméntanos las noticias que veas para hacer más memes</h3>
                 <textarea placeholder="Deja tu comentario aquí..."></textarea>
                 <input type="submit" name="enviar" value="Comentar">
+                </form>
                 <hr class="linea">
                 <p id="pie"><a href="masComentarios.php">Más comentarios...</a></p>
             </div>
