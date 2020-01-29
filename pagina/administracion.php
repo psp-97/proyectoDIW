@@ -2,6 +2,11 @@
 session_start();
 include "funciones/Conexion.php";
 include "funciones/usuarios/funciones_usuario.php";
+
+if (!isset($_SESSION['usuario']) || $_SESSION['usuario'][0]->rol!='administrador'){
+    header("Location:index.php");
+}
+
 ?>
 <!DOCTYPE html>
 <html>
@@ -121,7 +126,12 @@ include "funciones/usuarios/funciones_usuario.php";
                             <label for="telefonoModalEditar" class="col-form-label">Telefono:</label>
                             <input type="number" class="form-control" id="telefonoModalEditar" name="telefonoModal">
                             <label for="rolModalEditar" class="col-form-label">Rol:</label>
-                            <input type="text" class="form-control" id="rolModalEditar" name="rolModal">
+                            <!--<input type="text" class="form-control" id="rolModalEditar" name="rolModal">-->
+                            <select class="form-control" id="rolModalEditar" name="rolModal">
+                                <option value="administrador">Administrador</option>
+                                <option value="editor">Editor</option>
+                                <option value="lector">Lector</option>
+                            </select>
                         </div>
 
                         <div class="modal-footer">
