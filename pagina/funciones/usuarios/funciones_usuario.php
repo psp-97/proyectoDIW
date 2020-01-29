@@ -1,7 +1,19 @@
 <?php
 //require_once("funciones/Conexion.php");
 
-function getUsuarios(){
+function getUsuario($id)
+{
+    $usuarios = [];
+    $c = new Conexion();
+    $resultado = $c->query("SELECT * FROM usuario where id=$id");
+    while ($objeto = $resultado->fetch(PDO::FETCH_OBJ)) {
+        $usuarios[] = $objeto;
+    }
+    return $usuarios;
+}
+
+function getUsuarios()
+{
     $usuarios = [];
     $c = new Conexion();
     $resultado = $c->query("SELECT * FROM usuario where rol not like 'administrador'");
@@ -11,20 +23,25 @@ function getUsuarios(){
     return $usuarios;
 }
 
-function delUsuario($id){
-    try{
+function delUsuario($id)
+{
+    try {
         $c = new Conexion();
         $c->exec("DELETE FROM valoracion WHERE id_usuario=$id");
         $c->exec("UPDATE contenido SET id_usuario=1 WHERE id_usuario=$id");
         $c->exec("DELETE FROM usuario WHERE id=$id");
         return true;
-    }catch (PDOException $e){
+    } catch (PDOException $e) {
         return false;
     }
 }
 
-function updateUsuario($datos){
-    try{
+function updateUsuario($datos)
+{
+    $datos['cp'] = intval($datos['cp']);
+    $datos['telefono'] =  intval($datos['telefono']);
+
+    try {
         $c = new Conexion();
         $c->exec("UPDATE usuario SET username='" . $datos['username'] .
             //"', password='" . $datos['password'] .
@@ -39,7 +56,7 @@ function updateUsuario($datos){
             ", rol='" . $datos['rol'] .
             "' WHERE id=" . $datos['id']);
         return true;
-    }catch (PDOException $e){
+    } catch (PDOException $e) {
         return false;
     }
 }
