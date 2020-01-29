@@ -73,7 +73,15 @@ function addContenido($id_usuario, $descripcion, $imagen, $fuente, $categoria) {
     $c->query("INSERT INTO contenido(id_usuario, descripcion, imagen, fuente, categoria) VALUES ($id_usuario, '$descripcion', '$imagen', '$fuente', $categoria)");
 }
 
-
+function nuevoMemeSemana($id){
+    try {
+        $c = new Conexion();
+        $c->exec("UPDATE configuracion SET valor=$id WHERE campo='meme_semana'");
+        return true;
+    } catch (PDOException $e) {
+        return false;
+    }
+}
 
 
 

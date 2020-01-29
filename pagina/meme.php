@@ -17,10 +17,30 @@ if (!isset($_GET['id'])){
 <body>
 <?php include("includes/navigation.php"); ?>
 <?php
+if (isset($_POST['memeSemana'])) {
+    nuevoMemeSemana($_POST['id']);
+}
+
+$memeSemana = getcontenidoSemana();
 $meme = getContenidoId($_GET['id']);
 $valoracionMeme = getValoracionId($_GET['id']);
 ?>
 <div class="container">
+    <?php
+    if ($meme->id == $memeSemana->id) {
+        echo "<div class='alert alert-primary'>Este es el meme de la semana</div>";
+    } else {
+        ?>
+        <div class="alert alert-primary">
+            <form action="" method="post">
+                Para hacerlo el meme de la semana pulse
+                <input type="text" name="id" value="<?php echo $meme->id; ?>" hidden>
+                <input class="btn btn-primary" type="submit" name="memeSemana" value="aqui">
+            </form>
+        </div>
+        <?php
+    }
+    ?>
     <div class="row content">
         <div class="fixed-bottom text-right">
             <a href="index.php">
