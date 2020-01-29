@@ -29,3 +29,16 @@ function getValoracionId($id) {
         return null;
     }
 }
+
+
+
+
+function delValoracion($id_comentario){
+    try{
+        $c = new Conexion();
+        $c->exec("DELETE FROM valoracion WHERE id=$id_comentario");
+        return true;
+    }catch (PDOException $e){
+        return false;
+    }
+}

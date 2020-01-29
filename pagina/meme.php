@@ -2,6 +2,9 @@
 session_start();
 include "funciones/contenido/funciones_contenido.php";
 include "funciones/valoraciones/funciones_valoraciones.php";
+
+//include "funciones/Conexion.php";
+include "funciones/usuarios/funciones_usuario.php";
 if (!isset($_GET['id'])){
     header("Location:index.php");
 }
@@ -33,7 +36,19 @@ $valoracionMeme = getValoracionId($_GET['id']);
                 </div>
             </div>
             <div class="float-right">
-                <img class="logito" src="images/iconos/like.png" alt="coment">
+                <?php 
+                if ($valoracionMeme->megusta == 0) {
+                    ?>
+                    <img class="logito" src="images/iconos/like.png" alt="coment">
+                    <?php
+                }
+                else {
+                    ?>
+                    <img class="logito" src="images/iconos/likeok.png" alt="coment">
+                    <?php
+                }
+                
+                ?>
                 <img class="logito" src="images/iconos/coment.png" alt="coment">
                 <img class="logito" src="images/iconos/share.png" alt="share">
             </div>
@@ -84,9 +99,58 @@ $valoracionMeme = getValoracionId($_GET['id']);
                                 <?php 
                                     //echo $valoracion->comentario;
                                     echo $valoracionMeme->comentario;
+                                    
+                                    if (isset($_SESSION['usuario']) &&
+                                        ($_SESSION['usuario'][0]->rol == "administrador" || $_SESSION['usuario'][0]->rol == "editor")) {
+                                        ?>
+                                        <button type="button" class="btn btn-danger borrar" data-toggle="modal"
+                                            data-target="#borrarModal" value="<?php echo $u->id; ?>">Borrar
+                                        </button>
+                                        <?php
+                                    }
+                                    
+
+
+
                                 ?>
                             </p>
                         </div>
+
+                        <div class="modal fade" id="borrarModal" tabindex="-1" role="dialog" aria-labelledby="ModalLabel"
+                            aria-hidden="true">
+                            <div class="modal-dialog" role="document">
+                                <div class="modal-content">
+                                    <div class="modal-header">
+                                        <h5 class="modal-title" id="ModalLabel">¿Está seguro de que desea borrar este comentario?</h5>
+                                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                            <span aria-hidden="true">&times;</span>
+                                        </button>
+                                    </div>
+                                    <form action="" method="post">
+                                        <div class="modal-body">
+                                            <div class="alert alert-danger">
+                                                Esta accion eliminara este comentario por completo y no se podra recuperar.
+                                            </div>
+                                            <div class="form-group">
+                                                <label for="idModal" class="col-form-label">Id Comentario:</label>
+                                                <input type="text" class="form-control" id="idModalBorrar" name="idModal" readonly>
+                                            </div>
+                                        </div>
+                                        <div class="modal-footer">
+                                            <button type="button" class="btn btn-secondary" data-dismiss="modal">Cancelar</button>
+                                            <button type="submit" name="borrarModal" class="btn btn-danger">Borrar</button>
+                                        </div>
+                                    </form>
+                                </div>
+                            </div>
+                        </div>
+
+                        <script>
+                            $(".borrar").click(function ($e) {
+                                $("#idModalBorrar").val($e.currentTarget.value);
+                            });
+                        </script>
+
                         
                         <?php  
                     //}
