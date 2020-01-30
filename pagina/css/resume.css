@@ -483,5 +483,30 @@ button:hover {
 }
 
 /***************************************************/
+/******************MI CUENTA*************************/
+.datos {
+  font-size: 20px;
+  padding: 5px;
+}
+
+/*****************************************************/
+/******************PASSWORD*************************/
+div.error {
+  float: none;
+  color: red;
+  padding-left: 0.5em;
+  vertical-align: middle;
+  font-size: 12px;
+}
+
+#passwordModalPass {
+  margin: 10px;
+}
+
+#repitepasswordModalPass {
+  margin: 10px;
+}
+
+/*****************************************************/
 
 /*# sourceMappingURL=resume.css.map */

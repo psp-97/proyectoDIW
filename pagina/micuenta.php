@@ -57,6 +57,42 @@ include "funciones/usuarios/funciones_usuario.php";
 
     ?>
 
+    <h2>Tus datos</h2>
+    <div class="row datos">
+        <div class="col-md-4">
+            <strong>Username: </strong><?php echo $_SESSION['usuario'][0]->username; ?>
+        </div>
+        <div class="col-md-4">
+            <strong>Nombre: </strong><?php echo $_SESSION['usuario'][0]->nombre; ?>
+        </div>
+        <div class="col-md-4">
+            <strong>Apellido 1: </strong><?php echo $_SESSION['usuario'][0]->apellido1; ?>
+        </div>
+        <div class="col-md-4">
+            <strong>Apellido 2: </strong><?php echo $_SESSION['usuario'][0]->apellido2; ?>
+        </div>
+        <div class="col-md-4">
+            <strong>Correo: </strong><?php echo $_SESSION['usuario'][0]->correo; ?>
+        </div>
+        <div class="col-md-4">
+            <strong>Fecha de nacimiento: </strong><?php echo $_SESSION['usuario'][0]->fecha_nacimiento; ?>
+        </div>
+        <div class="col-md-4">
+            <strong>Pais: </strong><?php echo $_SESSION['usuario'][0]->pais; ?>
+        </div>
+        <div class="col-md-4">
+            <strong>Código postal: </strong><?php echo $_SESSION['usuario'][0]->codigo_postal; ?>
+        </div>
+        <div class="col-md-4">
+            <strong>Telefono: </strong><?php echo $_SESSION['usuario'][0]->telefono; ?>
+        </div>
+    </div>
+    <button type="button" class="btn btn-success editar" data-toggle="modal"
+            data-target="#editarModal">Editar mis datos
+    </button>
+
+
+
     <div class="modal fade" id="editarModal" tabindex="-1" role="dialog" aria-labelledby="ModalLabel"
          aria-hidden="true">
         <div class="modal-dialog" role="document">

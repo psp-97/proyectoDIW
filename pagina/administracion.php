@@ -3,7 +3,7 @@ session_start();
 include "funciones/Conexion.php";
 include "funciones/usuarios/funciones_usuario.php";
 
-if (!isset($_SESSION['usuario']) || $_SESSION['usuario'][0]->rol!='administrador'){
+if (!isset($_SESSION['usuario']) || $_SESSION['usuario'][0]->rol != 'administrador') {
     header("Location:index.php");
 }
 
@@ -13,10 +13,37 @@ if (!isset($_SESSION['usuario']) || $_SESSION['usuario'][0]->rol!='administrador
 <head>
     <?php include("includes/head-tag-contents.php"); ?>
 </head>
+
+<style>
+    div.error {
+        float: none;
+        color: red;
+        padding-left: .5em;
+        vertical-align: middle;
+        font-size: 12px;
+    }
+
+    #passwordModalPass {
+        margin: 10px;
+    }
+
+    #repitepasswordModalPass {
+        margin: 10px;
+    }
+</style>
+
 <body>
 <?php include("includes/navigation.php"); ?>
 <div class="container">
     <?php
+    if (isset($_POST['passModal'])) {
+        if (updatePass(array("id" => $_POST['idPass'],
+            "password" => md5($_POST['passwordModal'])))) {
+            echo "<div class='alert alert-success'>Contraseña editada con éxito</div>";
+        } else {
+            echo "<div class='alert alert-danger'>Error al editar la contraseña</div>";
+        }
+    }
     if (isset($_POST['editarModal'])) {
         if (updateUsuario(array("id" => $_POST['idModal'],
             "username" => $_POST['usernameModal'],
@@ -29,9 +56,9 @@ if (!isset($_SESSION['usuario']) || $_SESSION['usuario'][0]->rol!='administrador
             "pais" => $_POST['paisModal'],
             "cp" => $_POST['cpModal'],
             "telefono" => $_POST['telefonoModal'],
-            "rol" => $_POST['rolModal']))){
+            "rol" => $_POST['rolModal']))) {
             echo "<div class='alert alert-success'>Usuario editado con éxito</div>";
-        }else{
+        } else {
             echo "<div class='alert alert-danger'>Error al editar el usuario</div>";
         }
     }
@@ -54,6 +81,7 @@ if (!isset($_SESSION['usuario']) || $_SESSION['usuario'][0]->rol!='administrador
             <th scope="col">Rol</th>
             <th scope="col"></th>
             <th scope="col"></th>
+            <th scope="col"></th>
         </tr>
         </thead>
         <tbody>
@@ -69,6 +97,11 @@ if (!isset($_SESSION['usuario']) || $_SESSION['usuario'][0]->rol!='administrador
                     <td><?php echo $u->username; ?></td>
                     <td><?php echo $u->correo; ?></td>
                     <td><?php echo $u->rol; ?></td>
+                    <td>
+                        <button type="button" class="btn btn-success pass" data-toggle="modal"
+                                data-target="#passModal" value="<?php echo $u->id; ?>">Cambiar contraseña
+                        </button>
+                    </td>
                     <td>
                         <button type="button" class="btn btn-success editar" data-toggle="modal"
                                 data-target="#editarModal" value="<?php echo $u->id; ?>">Editar
@@ -86,6 +119,37 @@ if (!isset($_SESSION['usuario']) || $_SESSION['usuario'][0]->rol!='administrador
         ?>
         </tbody>
     </table>
+
+    <div class="modal fade" id="passModal" tabindex="-1" role="dialog" aria-labelledby="ModalLabel"
+         aria-hidden="true">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="ModalLabel">Inserte la nueva contraseña</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    <form action="" method="post" id="formPass">
+                        <div class="form-group">
+                            <input type="text" id="idPass" name="idPass" hidden>
+                            <input type="text" class="form-control" id="passwordModalPass" name="passwordModal"
+                                   placeholder="Escribe la nueva contraseña">
+                            <input type="text" class="form-control" id="repitepasswordModalPass"
+                                   name="repitepasswordModal" placeholder="Repite la contraseña" hidden>
+                            <div class="alert alert-danger" id="error">Las contraseñas deben de coincidir</div>
+                        </div>
+                        <div class="modal-footer">
+                            <button type="button" class="btn btn-secondary" data-dismiss="modal">Cancelar</button>
+                            <button type="submit" id="botonPass" name="passModal" class="btn btn-success">Cambiar
+                            </button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
 
     <div class="modal fade" id="editarModal" tabindex="-1" role="dialog" aria-labelledby="ModalLabel"
          aria-hidden="true">
@@ -174,46 +238,9 @@ if (!isset($_SESSION['usuario']) || $_SESSION['usuario'][0]->rol!='administrador
         </div>
     </div>
 
-    <script>
-        $(".editar").click(function ($e) {
-            $("#idModalEditar").val($e.currentTarget.value);
-
-            $e.preventDefault();
-            var datousuario = new Object();
-            //datousuario.usuario = $("#usuario").val();
-            datousuario.usuario = $e.currentTarget.value;
-            dato_str_usuario = JSON.stringify(datousuario);
-            console.log("Antes del get");
-            $.get("funciones/usuarios/datosUsuario.php", JSON.parse(dato_str_usuario),
-                function (respuestaJson) {
-                }
-            ).done(function (respuestaJson) {
-                    json = JSON.parse(respuestaJson);
-                    $("#usernameModalEditar").val(json.username);
-                    //$("#passwordModalEditar").val(json.password);
-                    $("#nombreModalEditar").val(json.nombre);
-                    $("#apellido1ModalEditar").val(json.apellido1);
-                    $("#apellido2ModalEditar").val(json.apellido2);
-                    $("#correoModalEditar").val(json.correo);
-                    $("#fechaModalEditar").val(json.fecha_nacimiento);
-                    $("#paisModalEditar").val(json.pais);
-                    $("#cpModalEditar").val(json.codigo_postal);
-                    $("#telefonoModalEditar").val(json.telefono);
-                    $("#rolModalEditar").val(json.rol);
-                }
-            ).fail(function () {
-                    alert("Falla");
-                    console.log("Falla");
-                }
-            )
-
-        });
-
-        $(".borrar").click(function ($e) {
-            $("#idModalBorrar").val($e.currentTarget.value);
-        });
-    </script>
+    <script src="js/administracion.js"></script>
 
 </div>
+<script src="js/jquery.validate.min.js"></script>
 </body>
 </html>

@@ -73,3 +73,14 @@ function getUser()
     }
     return $usuarios;
 }
+
+function updatePass($datos)
+{
+    try {
+        $c = new Conexion();
+        $c->exec("UPDATE usuario SET password='" . $datos['password'] . "' WHERE id=" . $datos['id']);
+        return true;
+    } catch (PDOException $e) {
+        return false;
+    }
+}
