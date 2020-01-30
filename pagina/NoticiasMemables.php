@@ -1,5 +1,13 @@
 <?php
 session_start();
+include("funciones/Conexion.php");
+
+if (isset($_POST['enviar']) && isset($_SESSION['usuario'])){
+    $usuario = $_SESSION['usuario'][0]->id;
+    $comentario = $_POST['comentario'];
+    $c = new Conexion();
+    $resultado = $c->query("INSERT INTO `ncomentarios` (`id`, `id_usuario`, `comentario`) VALUES (NULL, $usuario, '$comentario');");
+}
 ?>
 <!DOCTYPE html>
 <html lang="en">
@@ -95,7 +103,7 @@ session_start();
             <div class="col-sm-4" id="derecha">
                 <form action="" method="post">
                 <h3>Coméntanos las noticias que veas para hacer más memes</h3>
-                <textarea placeholder="Deja tu comentario aquí..."></textarea>
+                <textarea placeholder="Deja tu comentario aquí..." name="comentario"></textarea>
                 <input type="submit" name="enviar" value="Comentar">
                 </form>
                 <hr class="linea">
