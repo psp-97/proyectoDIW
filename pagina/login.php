@@ -2,6 +2,7 @@
 include("funciones/Conexion.php");
 include("funciones/usuarios/funciones_usuario.php");
 include("funciones/login/funciones_login.php");
+include("includes/head-tag-contents.php");
 
 if (isset($_SESSION['usuario'])) {
     header("Location:index.php");
@@ -23,7 +24,8 @@ if (isset($_POST['login'])) {
 ?>
 <!DOCTYPE html>
 <html>
-<head><?php include("includes/head-tag-contents.php"); ?></head>
+<head>
+</head>
 <body>
 <?php
 include("includes/navigation.php"); ?>
@@ -53,11 +55,6 @@ include("includes/navigation.php"); ?>
                     </div>
                 </div>
                 <hr>
-                <div class=row>
-                    <div class="col-12 mt-4"></div>
-
-                </div>
-                <hr>
                 <div class="row">
                     <div class="col-md-5 col-sm-12"></div>
                     <div class="col-md-7 col-sm-12"><input type="submit"
@@ -66,6 +63,19 @@ include("includes/navigation.php"); ?>
                     </div>
                 </div>
                 <hr>
+            </form>
+            <form action="" method="POST">
+                <div class=row>
+                    <div class="col-md-5 col-sm-12 mt-4"></div>
+                    <div id="dropdownLoginLI" class="col-md-7 col-sm-12">
+                        <button id="googleSignInBtn" class="btn btn-outline-primary my-2 my-sm-0 login">SIGN IN WITH GOOGLE</button>
+                    </div>
+            </form>
+            <form action="" method="POST">
+                    <div id="dropdownLogoutLI" class="col-md-7 col-sm-12" style="display:none;">
+                        <button id="googleSignOutBtn" onclick="signOut()" class="btn btn-outline-primary my-2 my-sm-0 login">SIGN OUT</button>
+                    </div>
+                </div>
             </form>
         </div>
 
@@ -152,5 +162,6 @@ include("includes/navigation.php"); ?>
 <div class="footer text-center">
     <p>&copy; <?php print date("Y"); ?> <a href="https://iesmarquesdecomares.org/"> IES Marqués de Comares.</a></p>
 </div>
+<script>startApp();</script>
 </body>
 </html>

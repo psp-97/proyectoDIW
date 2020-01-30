@@ -29,7 +29,7 @@ session_start();
                         move_uploaded_file($_FILES['imagen']['tmp_name'], $ruta);
                     }
                     addContenido($_SESSION['usuario'][0]->id, $descripcion, $fich_unique, $fuente, $categoria);
-                    echo "<h3>MEME AÑADIDO CORRECTAMENTE</h3>";
+                    echo "<div class='alert alert-success'>Meme añadido correctamente</div>";
                 }
             }
             ?>
