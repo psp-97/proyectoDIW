@@ -6,7 +6,7 @@ if (isset($_POST['enviar']) && isset($_SESSION['usuario'])){
     $usuario = $_SESSION['usuario'][0]->id;
     $comentario = $_POST['comentario'];
     $c = new Conexion();
-    $resultado = $c->query("INSERT INTO `tcomentarios` (`id`, `id_usuario`, `comentario`) VALUES (NULL, $usuario, '$comentario');");
+    $resultado = $c->query("INSERT INTO `tcomentarios` (`id`, `id_usuario`, `comentario`) VALUES (NULL, $usuario, '$comentario')");
 }
 ?>
 <!DOCTYPE html>
