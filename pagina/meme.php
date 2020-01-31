@@ -29,18 +29,20 @@ $valoracionMeme = getValoracionId($_GET['id']);
 ?>
 <div class="container">
     <?php
-    if ($meme->id == $memeSemana->id) {
-        echo "<div class='alert alert-primary'>Este es el meme de la semana</div>";
-    } else {
-        ?>
-        <div class="alert alert-primary">
-            <form action="" method="post">
-                Para hacerlo el meme de la semana pulse
-                <input type="text" name="id" value="<?php echo $meme->id; ?>" hidden>
-                <input class="btn btn-primary" type="submit" name="memeSemana" value="aqui">
-            </form>
-        </div>
-        <?php
+    if (isset($_SESSION['usuario']) && $_SESSION['usuario'][0]->rol == "administrador") {
+        if ($meme->id == $memeSemana->id) {
+            echo "<div class='alert alert-primary'>Este es el meme de la semana</div>";
+        } else {
+            ?>
+            <div class="alert alert-primary">
+                <form action="" method="post">
+                    Para hacerlo el meme de la semana pulse
+                    <input type="text" name="id" value="<?php echo $meme->id; ?>" hidden>
+                    <input class="btn btn-primary" type="submit" name="memeSemana" value="aqui">
+                </form>
+            </div>
+            <?php
+        }
     }
     ?>
     <div class="row content">
