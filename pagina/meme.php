@@ -24,7 +24,7 @@ if (isset($_POST['memeSemana'])) {
 $memeSemana = getcontenidoSemana();
 $meme = getContenidoId($_GET['id']);
 //$valoracionMeme = getValoracionId($_GET['id']);
-$valoracion = getValoracionId($_GET['id']);
+
 
 if (isset($_SESSION["usuario"])) {
     $valoracionMeGusta = getMeGustaId($_GET['id'],$_SESSION['usuario'][0]->id);
@@ -119,6 +119,18 @@ if (isset($_SESSION["usuario"])) {
                 }
             }
 
+            if (isset($_POST['borrarComentario'])) {
+                if (delValoracion($_POST['idComentario'])) {
+                    echo "<div class='alert alert-success'>Comentario borrado con éxito</div>";
+                    $valoracion = getValoracionId($_GET['id']);
+                }
+                else {
+                    echo "<div class='alert alert-danger'>Error al borrar el comentario</div>";
+                }
+            }
+
+            $valoracion = getValoracionId($_GET['id']);
+
 
             if (isset($_SESSION['usuario'])) {
             ?>
@@ -166,16 +178,11 @@ if (isset($_SESSION["usuario"])) {
 
             <?php
 
-            if (isset($_POST['borrarComentario'])) {
-                if (delValoracion($_POST['idComentario'])) {
-                    echo "<div class='alert alert-success'>Comentario borrado con éxito</div>";
-                }
-                else {
-                    echo "<div class='alert alert-danger'>Error al borrar el comentario</div>";
-                }
-            }
+            
 
 
+
+            
 
 
             if ($valoracion != null) {

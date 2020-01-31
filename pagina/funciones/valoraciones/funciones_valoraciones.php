@@ -31,7 +31,7 @@ function getValoracionId($id) {
 function getValoracionId($id) {
     $valoraciones = [];
     $c = new Conexion();
-    $resultado = $c->query("SELECT val.id, val.comentario, usu.username FROM valoracion val, usuario usu where val.id_usuario=usu.id && val.id_contenido=$id");
+    $resultado = $c->query("SELECT val.id, val.comentario, usu.username FROM valoracion val, usuario usu where val.id_usuario=usu.id && val.id_contenido=$id order by val.id desc");
 
     while ($objeto = $resultado->fetch(PDO::FETCH_OBJ)) {
         $valoraciones[] = $objeto;
