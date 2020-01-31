@@ -13,7 +13,7 @@
  */
 function getValoracionId($id) {
     $c = new Conexion();
-    $resultado = $c->query("SELECT val.id, val.comentario, val.megusta, usu.username FROM valoracion val, usuario usu where val.id_usuario=usu.id && val.id_contenido=$id");
+    $resultado = $c->query("SELECT val.id, val.comentario, usu.username FROM valoracion val, usuario usu where val.id_usuario=usu.id && val.id_contenido=$id");
 
 
     if ($objeto = $resultado->fetch(PDO::FETCH_OBJ)) {
@@ -34,9 +34,25 @@ function getValoracionId($id) {
 
 }
 
+function getMeGustaId($id) {
+    $c = new Conexion();
+    $resultado = $c->query("SELECT val_mg.megusta FROM valoracion_mg val_mg, usuario usu where val_mg.id_usuario=usu.id && val_mg.id_contenido=$id");
+
+
+    if ($objeto = $resultado->fetch(PDO::FETCH_OBJ)) {
+       return $objeto;
+    }
+    else{
+        return null;
+    }
+    
+}
+
+
+
 function addValoracion($id_usuario, $id_contenido, $comentario) {
     $c = new Conexion();
-    $c->query("INSERT INTO valoracion(id_usuario, id_contenido, megusta, comentario) VALUES ($id_usuario, '$id_contenido', '1', '$comentario')");
+    $c->query("INSERT INTO valoracion(id_usuario, id_contenido, comentario) VALUES ($id_usuario, '$id_contenido', '$comentario')");
 }
 
 

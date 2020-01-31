@@ -24,6 +24,7 @@ if (isset($_POST['memeSemana'])) {
 $memeSemana = getcontenidoSemana();
 $meme = getContenidoId($_GET['id']);
 $valoracionMeme = getValoracionId($_GET['id']);
+$valoracionMeGusta = getMeGustaId($_GET['id']);
 //$contenido = getValoracionId($_GET['id']);
 
 ?>
@@ -62,7 +63,7 @@ $valoracionMeme = getValoracionId($_GET['id']);
             <div class="float-right">
                 <?php 
                 if ($valoracionMeme != null) {
-                    if ($valoracionMeme->megusta == 0 ) {
+                    if ($valoracionMeGusta->megusta == 0 ) {
                         ?>
                             <img class="logito" src="images/iconos/like.png" alt="coment">
                         <?php
@@ -166,15 +167,8 @@ $valoracionMeme = getValoracionId($_GET['id']);
 
             if ($valoracionMeme != null) {
 
-
-
                 //while ($object=$valoracionMeme->fetch_object()) { //Si hay los recorremos
                     //foreach ($valoracion as $valoracionMeme) {
-                
-
-
-
-                    
 
                     //foreach ($valoracionMeme as $c){
                     ?>
