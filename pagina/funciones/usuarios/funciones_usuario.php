@@ -84,3 +84,17 @@ function updatePass($datos)
         return false;
     }
 }
+
+function passRepetida($correo){
+    try{
+        $c = new Conexion();
+        $resultado = $c->query("SELECT * FROM usuario where correo='$correo'");
+        if ($resultado->fetch(PDO::FETCH_OBJ)) {
+            return true;
+        }else{
+            return false;
+        }
+    }catch (PDOException $e){
+        return false;
+    }
+}
