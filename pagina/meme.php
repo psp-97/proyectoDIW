@@ -25,7 +25,13 @@ $memeSemana = getcontenidoSemana();
 $meme = getContenidoId($_GET['id']);
 //$valoracionMeme = getValoracionId($_GET['id']);
 $valoracion = getValoracionId($_GET['id']);
-$valoracionMeGusta = getMeGustaId($_GET['id'],$_SESSION['usuario'][0]->id);
+
+if (isset($_SESSION["usuario"])) {
+    $valoracionMeGusta = getMeGustaId($_GET['id'],$_SESSION['usuario'][0]->id);
+}
+
+//$valoracionMeGusta = getMeGustaId($_GET['id'],$_SESSION['usuario'][0]->id);
+
 //$contenido = getValoracionId($_GET['id']);
 
 ?>
@@ -63,27 +69,33 @@ $valoracionMeGusta = getMeGustaId($_GET['id'],$_SESSION['usuario'][0]->id);
             </div>
             <div class="float-right">
                 <?php 
-                if ($valoracionMeGusta != null) {
-                    if ($valoracionMeGusta->megusta == 0 ) {
+                if (isset($_SESSION["usuario"])) {
+                    if ($valoracionMeGusta != null) {
+                        if ($valoracionMeGusta->megusta == 0 ) {
+                            ?>
+                                <img class="logito" src="images/iconos/like.png" alt="coment">
+                            <?php
+                        }
+                        else {
+                            ?>
+                                <img class="logito" src="images/iconos/likeok.png" alt="coment">
+                            <?php
+                        }
+                    }
+                    else {
                         ?>
                             <img class="logito" src="images/iconos/like.png" alt="coment">
                         <?php
                     }
-                    else {
-                        ?>
-                            <img class="logito" src="images/iconos/likeok.png" alt="coment">
-                        <?php
-                    }
-                }
-                else {
-                    ?>
-                        <img class="logito" src="images/iconos/like.png" alt="coment">
-                    <?php
                 }
                 ?>
 
+                <!--
                 <img class="logito" src="images/iconos/coment.png" alt="coment">
                 <img class="logito" src="images/iconos/share.png" alt="share">
+                -->
+
+                
             </div>
             <div class="descripcion">
                 <h3 class="aside-title">Descripción</h3>
