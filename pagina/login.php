@@ -42,7 +42,7 @@ include("includes/navigation.php"); ?>
             <form action="" method="POST">
                 <div class=row>
                     <div class="col-md-3 col-sm-12"></div>
-                    <div class="col-md-3 col-sm-12">EMAIL:</div>
+                    <div id="email" class="col-md-3 col-sm-12">EMAIL:</div>
                     <div class="col-md-6 col-sm-12"><input class="formulario" type="text" id="correo" name="email">
                     </div>
                 </div>
@@ -64,14 +64,14 @@ include("includes/navigation.php"); ?>
                 </div>
                 <hr>
             </form>
-            <form action="" method="POST">
+            <form role="form"method="POST">
                 <div class=row>
                     <div class="col-md-5 col-sm-12 mt-4"></div>
                     <div id="dropdownLoginLI" class="col-md-7 col-sm-12">
-                        <button id="googleSignInBtn" class="btn btn-outline-primary my-2 my-sm-0 login">SIGN IN WITH GOOGLE</button>
+                        <button name="google" id="googleSignInBtn" class="btn btn-outline-primary my-2 my-sm-0 login">SIGN IN WITH GOOGLE</button>
                     </div>
             </form>
-            <form action="" method="POST">
+            <form method="POST">
                     <div id="dropdownLogoutLI" class="col-md-7 col-sm-12" style="display:none;">
                         <button id="googleSignOutBtn" onclick="signOut()" class="btn btn-outline-primary my-2 my-sm-0 login">SIGN OUT</button>
                     </div>

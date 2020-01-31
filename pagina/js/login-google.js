@@ -17,6 +17,7 @@ function attachSignin(element) {
     function (googleUser) {
 
     }, function (error) {
+      alert(JSON.stringify(error, undefined, 2));
     });
   auth2.isSignedIn.listen(signinChanged);
 }
@@ -31,6 +32,29 @@ var signinChanged = function (val) {
     console.log('Family Name: ' + profile.getFamilyName());
     console.log('Image URL: ' + profile.getImageUrl());
     console.log('Email: ' + profile.getEmail());
+    $(".editar").click(function ($e) {
+      $e.preventDefault();
+      var datousuario = new Object();
+      //datousuario.usuario = $("#usuario").val();
+      datousuario.nombre = profile.getGivenName();
+      datousuario.apellido1 = profile.getFamilyName();
+      datousuario.correo = profile.getEmail();
+      dato_str_usuario = JSON.stringify(datousuario);
+      console.log("Antes del get");
+      $.get("funciones/login/insertarUsuarioGoogle.php", JSON.parse(dato_str_usuario),
+        function (respuestaJson) {
+        }
+      ).done(function (respuestaJson) {
+        alert("Datos insertados correctamente");
+        console.log("Datos insertados correctamente");
+      }
+      ).fail(function () {
+        alert("Falla");
+        console.log("Falla");
+      }
+      )
+
+    });
     document.getElementById('usuario').innerHTML = auth2.currentUser.get().getBasicProfile().getName();
     document.getElementById('dropdownLoginLI').style.display = 'none';
     document.getElementById('dropdownLogoutLI').style.display = 'block';
@@ -45,5 +69,6 @@ var signinChanged = function (val) {
 function signOut() {
   console.log("Logout");
   if (auth2.isSignedIn.get())
-    auth2.disconnect(); 
+    auth2.disconnect();
+
 }
