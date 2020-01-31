@@ -1,6 +1,7 @@
 <?php
 session_start();
 include ("funciones/contenido/funciones_contenido.php");
+include ("funciones/usuarios/funciones_usuario.php");
 ?>
 <div class="container">
     <div class="row">
@@ -51,12 +52,21 @@ include ("funciones/contenido/funciones_contenido.php");
                 <div class="col-12 aside">
                     <h3 class="aside-title">Ranking de usuarios</h3>
                     <ol class="text-center">
-                        <li id="primero">Pedro</li>
-                        <li id="segundo">Alberto</li>
-                        <li id="tercero">Trujillo</li>
-                        <li>Cobos</li>
-                        <li>Alberto</li>
-                        <li>Carlos</li>
+                        <?php
+                            $publicaciones = [];
+                            $id_ordenados = [];
+                            $id_usuarios = getIdUsuarios();
+                            foreach($id_usuarios as $id) {
+                                $publicaciones[] = getPublicacionesPorUsuario($id)->contador;
+                            }
+                            rsort($publicaciones);
+                            foreach ($publicaciones as $p) {
+                                $id_ordenados[] = getIdPorPublicaciones($p);
+                            }
+                            foreach ($id_ordenados as $id) {
+                                echo "<li>".getUsuario($id)->username."</li>";
+                            }
+                        ?>
                     </ol>
                 </div>
                 <div class="col-12 aside">

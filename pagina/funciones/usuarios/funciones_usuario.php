@@ -3,11 +3,11 @@
 
 function getUsuario($id)
 {
-    $usuarios = [];
+    $usuarios = null;
     $c = new Conexion();
     $resultado = $c->query("SELECT * FROM usuario where id=$id");
     while ($objeto = $resultado->fetch(PDO::FETCH_OBJ)) {
-        $usuarios[] = $objeto;
+        $usuarios = $objeto;
     }
     return $usuarios;
 }
@@ -34,6 +34,26 @@ function delUsuario($id)
     } catch (PDOException $e) {
         return false;
     }
+}
+
+function getUsernamePorId($id) {
+    $usuario = null;
+    $c = new Conexion();
+    $resultado = $c->query("SELECT username FROM usuario where id=$id");
+    while ($objeto = $resultado->fetch(PDO::FETCH_OBJ)) {
+        $usuario = $objeto->username;
+    }
+    return $usuario;
+}
+
+function getIdUsuarios() {
+    $id = [];
+    $c = new Conexion();
+    $resultado = $c->query("SELECT id FROM usuario");
+    while ($objeto = $resultado->fetch(PDO::FETCH_OBJ)) {
+        $id[] = $objeto->id;
+    }
+    return $id;
 }
 
 function updateUsuario($datos)

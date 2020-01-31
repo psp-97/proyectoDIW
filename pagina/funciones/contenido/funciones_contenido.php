@@ -94,7 +94,27 @@ function borrarMeme($id){
         return false;
     }
 }
+function getIdPorPublicaciones($publicaciones) {
+    try {
+        $c = new Conexion();
+        $numero = null;
+        $resultado = $c->query("SELECT id_usuario FROM contenido HAVING COUNT(id_usuario) > $publicaciones");
+        if ($objeto = $resultado->fetch(PDO::FETCH_OBJ)) {
+            return $objeto->id_usuario;
+        }
+    } catch (PDOException $e) {
+        return false;
+    }
+}
 
-
-
-
+function getPublicacionesPorUsuario($id_usuario) {
+    $c = new Conexion();
+    $numero = null;
+    $resultado = $c->query("SELECT COUNT(*) contador, id_usuario FROM contenido WHERE id_usuario = $id_usuario");
+    if ($objeto = $resultado->fetch(PDO::FETCH_OBJ)) {
+        return $objeto;
+    }
+    else {
+        return null;
+    }
+}
