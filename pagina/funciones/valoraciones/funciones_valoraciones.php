@@ -11,6 +11,8 @@
  * @param $id del contenido
  * @return mixed|null Objeto o nulo dependiendo si existe o no
  */
+
+ /*
 function getValoracionId($id) {
     $c = new Conexion();
     $resultado = $c->query("SELECT val.id, val.comentario, usu.username FROM valoracion val, usuario usu where val.id_usuario=usu.id && val.id_contenido=$id");
@@ -23,20 +25,41 @@ function getValoracionId($id) {
         return null;
     }
     
+}
+*/
 
+function getValoracionId($id) {
+    $valoraciones = [];
+    $c = new Conexion();
+    $resultado = $c->query("SELECT val.id, val.comentario, usu.username FROM valoracion val, usuario usu where val.id_usuario=usu.id && val.id_contenido=$id");
+
+    while ($objeto = $resultado->fetch(PDO::FETCH_OBJ)) {
+        $valoraciones[] = $objeto;
+    }
+    return $valoraciones;
+
+
+    /*
+    if ($objeto = $resultado->fetch(PDO::FETCH_OBJ)) {
+       return $objeto;
+    }
+    else{
+        return null;
+    }
+    */
+    
     /*
     while ($objeto = $resultado->fetch(PDO::FETCH_OBJ)) {
         $contenido[] = $objeto;
     }
     return $contenido;
     */
-
-
 }
 
-function getMeGustaId($id) {
+
+function getMeGustaId($id, $id_usuario) {
     $c = new Conexion();
-    $resultado = $c->query("SELECT val_mg.megusta FROM valoracion_mg val_mg, usuario usu where val_mg.id_usuario=usu.id && val_mg.id_contenido=$id");
+    $resultado = $c->query("SELECT val_mg.megusta FROM valoracion_mg val_mg, usuario usu where val_mg.id_usuario=usu.id && val_mg.id_contenido=$id && val_mg.id_usuario=$id_usuario");
 
 
     if ($objeto = $resultado->fetch(PDO::FETCH_OBJ)) {
