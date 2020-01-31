@@ -24,6 +24,8 @@ if (isset($_POST['memeSemana'])) {
 $memeSemana = getcontenidoSemana();
 $meme = getContenidoId($_GET['id']);
 $valoracionMeme = getValoracionId($_GET['id']);
+//$contenido = getValoracionId($_GET['id']);
+
 ?>
 <div class="container">
     <?php
@@ -90,6 +92,18 @@ $valoracionMeme = getValoracionId($_GET['id']);
             <hr>
 
             <?php
+            if (isset($_POST['submit'])) {
+                $comentario = $_POST['comentario'];
+                if ($comentario == null) {
+                    echo "<div class='alert alert-danger'>Debe rellenar el comentario si desea enviarlo</div>";
+                }
+                else {
+                    addValoracion($_SESSION['usuario'][0]->id, $meme->id, $comentario);
+                    echo "<div class='alert alert-success'>Comentario añadido correctamente</div>";
+                }
+            }
+
+
             if (isset($_SESSION['usuario'])) {
             ?>
             <div class="row comentarios">
@@ -98,14 +112,12 @@ $valoracionMeme = getValoracionId($_GET['id']);
                     <form action="" method="POST">
                     <div class=row>
                         <div class="col-md-12 col-sm-12">COMENTARIO:</div>
-                        <div class="col-md-12 col-sm-12"><input class="formulario" type="text" style="width:100%" id="correo" name="email"></div>
+                        <div class="col-md-12 col-sm-12"><input class="formulario" type="text" style="width:100%" id="comentario" name="comentario" placeholder="Escriba aqui su comentario"></div>
                     </div>
                     <br>
-                    <div class="row">
-                        <div class="col-md-5 col-sm-12"></div>
-                        <div class="col-md-7 col-sm-12"><input type="submit"
-                            class="btn btn-outline-primary my-2 my-sm-0 login"
-                            type="submit" value="Enviar Comentario" name="comentar"></button></div>
+                    <div class=row>
+                        <div class="col-md-6 col-sm-12"></div>
+                        <div class="col-md-6 col-sm-12"><input type="submit" name="submit" value="Enviar Comentario" class="btn btn-primary"/></div>
                     </div>
                     <br>
                 </form>
@@ -137,70 +149,93 @@ $valoracionMeme = getValoracionId($_GET['id']);
             ?>
 
             <?php
+
+            if (isset($_POST['borrarComentario'])) {
+                if (delValoracion($_POST['idComentario'])) {
+                    echo "<div class='alert alert-success'>Comentario borrado con éxito</div>";
+                }
+                else {
+                    echo "<div class='alert alert-danger'>Error al borrar el comentario</div>";
+                }
+            }
+
+
+
+
             if ($valoracionMeme != null) {
 
 
 
                 //while ($object=$valoracionMeme->fetch_object()) { //Si hay los recorremos
                     //foreach ($valoracion as $valoracionMeme) {
-                        
+                
 
 
 
+                    
+
+                    //foreach ($valoracionMeme as $c){
                     ?>
-                    <div class="col-12 comentario">
-                        <h6><?php echo $valoracionMeme->username; ?></h6>
-                        <p>
-                            <?php 
-                                //echo $valoracion->comentario;
-                                echo $valoracionMeme->comentario;
-                                
-                                if (isset($_SESSION['usuario']) &&
-                                    ($_SESSION['usuario'][0]->rol == "administrador" || $_SESSION['usuario'][0]->rol == "editor")) {
-                                    ?>
-                                    <button type="button" class="btn btn-danger borrar" data-toggle="modal"
-                                        data-target="#borrarModal" value="<?php echo $u->id; ?>">Borrar
-                                    </button>
-                                    <?php
-                                }
-                            ?>
-                        </p>
-                    </div>
 
-                    <div class="modal fade" id="borrarModal" tabindex="-1" role="dialog" aria-labelledby="ModalLabel"
-                        aria-hidden="true">
-                        <div class="modal-dialog" role="document">
-                            <div class="modal-content">
-                                <div class="modal-header">
-                                    <h5 class="modal-title" id="ModalLabel">¿Está seguro de que desea borrar este comentario?</h5>
-                                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                                        <span aria-hidden="true">&times;</span>
-                                    </button>
+                        <div class="col-12 comentario">
+                            <h6><?php echo $valoracionMeme->username; ?></h6>
+                            <p>
+                                <?php 
+                                    //echo $valoracion->comentario;
+                                    echo $valoracionMeme->comentario;
+                                    
+                                    if (isset($_SESSION['usuario']) &&
+                                        ($_SESSION['usuario'][0]->rol == "administrador" || $_SESSION['usuario'][0]->rol == "editor")) {
+                                        ?>
+                                        <button type="button" class="btn btn-danger borrar" data-toggle="modal"
+                                            data-target="#borrarComentario" value="<?php echo $valoracionMeme->id; ?>">Borrar
+                                        </button>
+                                        <?php
+                                    }
+                                ?>
+                            </p>
+                        </div>
+
+                        <div class="modal fade" id="borrarComentario" tabindex="-1" role="dialog" aria-labelledby="ModalLabel"
+                            aria-hidden="true">
+                            <div class="modal-dialog" role="document">
+                                <div class="modal-content">
+                                    <div class="modal-header">
+                                        <h5 class="modal-title" id="ModalLabel">¿Está seguro de que desea borrar este comentario?</h5>
+                                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                            <span aria-hidden="true">&times;</span>
+                                        </button>
+                                    </div>
+                                    <form action="" method="post">
+                                        <div class="modal-body">
+                                            <div class="alert alert-danger">
+                                                Esta accion eliminara este comentario por completo y no se podra recuperar.
+                                            </div>
+                                            <div class="form-group">
+                                                <label for="idComentario" class="col-form-label">Id Comentario:</label>
+                                                <input type="text" class="form-control" id="idComentarioBorrar" name="idComentario" readonly>
+                                            </div>
+                                        </div>
+                                        <div class="modal-footer">
+                                            <button type="button" class="btn btn-secondary" data-dismiss="modal">Cancelar</button>
+                                            <button type="submit" name="borrarComentario" class="btn btn-danger">Borrar</button>
+                                        </div>
+                                    </form>
                                 </div>
-                                <form action="" method="post">
-                                    <div class="modal-body">
-                                        <div class="alert alert-danger">
-                                            Esta accion eliminara este comentario por completo y no se podra recuperar.
-                                        </div>
-                                        <div class="form-group">
-                                            <label for="idModal" class="col-form-label">Id Comentario:</label>
-                                            <input type="text" class="form-control" id="idModalBorrar" name="idModal" readonly>
-                                        </div>
-                                    </div>
-                                    <div class="modal-footer">
-                                        <button type="button" class="btn btn-secondary" data-dismiss="modal">Cancelar</button>
-                                        <button type="submit" name="borrarModal" class="btn btn-danger">Borrar</button>
-                                    </div>
-                                </form>
                             </div>
                         </div>
-                    </div>
+
+                    <?php
+                    //}
+                    ?>
 
                     <script>
                         $(".borrar").click(function ($e) {
-                            $("#idModalBorrar").val($e.currentTarget.value);
+                            $("#idComentarioBorrar").val($e.currentTarget.value);
                         });
                     </script>
+
+                    <script src="js/jquery.validate.min.js"></script>
 
                     
                     <?php  

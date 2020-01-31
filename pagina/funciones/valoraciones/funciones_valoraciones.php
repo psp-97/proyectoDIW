@@ -13,7 +13,17 @@
  */
 function getValoracionId($id) {
     $c = new Conexion();
-    $resultado = $c->query("SELECT * FROM valoracion val, usuario usu where val.id_usuario=usu.id && val.id_contenido=$id");
+    $resultado = $c->query("SELECT val.id, val.comentario, val.megusta, usu.username FROM valoracion val, usuario usu where val.id_usuario=usu.id && val.id_contenido=$id");
+
+
+    if ($objeto = $resultado->fetch(PDO::FETCH_OBJ)) {
+       return $objeto;
+    }
+    else{
+        return null;
+    }
+    
+
     /*
     while ($objeto = $resultado->fetch(PDO::FETCH_OBJ)) {
         $contenido[] = $objeto;
@@ -21,24 +31,25 @@ function getValoracionId($id) {
     return $contenido;
     */
 
-    
-    if ($objeto = $resultado->fetch(PDO::FETCH_OBJ)) {
-       return $objeto;
-    }
-    else{
-        return null;
-    }
+
+}
+
+function addValoracion($id_usuario, $id_contenido, $comentario) {
+    $c = new Conexion();
+    $c->query("INSERT INTO valoracion(id_usuario, id_contenido, megusta, comentario) VALUES ($id_usuario, '$id_contenido', '1', '$comentario')");
 }
 
 
 
 
+
 function delValoracion($id_comentario){
-    try{
+    try {
         $c = new Conexion();
         $c->exec("DELETE FROM valoracion WHERE id=$id_comentario");
         return true;
-    }catch (PDOException $e){
+    }
+    catch (PDOException $e) {
         return false;
     }
 }
