@@ -83,6 +83,18 @@ function nuevoMemeSemana($id){
     }
 }
 
+function borrarMeme($id){
+    try {
+        $c = new Conexion();
+        $c->exec("DELETE FROM valoracion WHERE id_contenido=$id");
+        $c->exec("DELETE FROM valoracion_mg WHERE id_contenido=$id");
+        $c->exec("DELETE FROM contenido WHERE id=$id");
+        return true;
+    } catch (PDOException $e) {
+        return false;
+    }
+}
+
 
 
 
