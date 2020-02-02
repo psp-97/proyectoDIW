@@ -1,18 +1,23 @@
 <?php
+// Sesion
 session_start();
+
+// Funciones que usaremos
 include "funciones/contenido/funciones_contenido.php";
 include "funciones/valoraciones/funciones_valoraciones.php";
-
-//include "funciones/Conexion.php";
 include "funciones/usuarios/funciones_usuario.php";
+
+// Redirigir al index
 if (!isset($_GET['id'])) {
     header("Location:index.php");
 }
 
+// Hacer el meme de la semana pasandole el id del meme
 if (isset($_POST['memeSemana'])) {
     nuevoMemeSemana($_POST['id']);
 }
 
+// Borrar el meme pasandole el id del mismo y redirigiendo al index
 if (isset($_POST['borrarMeme'])) {
     borrarMeme($_POST['id']);
     header("Location:index.php");
@@ -31,8 +36,9 @@ if (isset($_POST['borrarMeme'])) {
 <?php include("includes/navigation.php"); ?>
 <?php
 
-$memeSemana = getcontenidoSemana();
-$meme = getContenidoId($_GET['id']);
+$memeSemana = getcontenidoSemana(); // Buscamos si es el meme de la semana
+$meme = getContenidoId($_GET['id']); // Obtenemos los datos del meme (imagen, descripcion)
+
 //$valoracionMeme = getValoracionId($_GET['id']);
 
 
@@ -45,10 +51,17 @@ $meme = getContenidoId($_GET['id']);
 ?>
 <div class="container">
     <?php
+
+    // Si hay un usuario logueado y es administrador
     if (isset($_SESSION['usuario']) && $_SESSION['usuario'][0]->rol == "administrador") {
+
+        // Comprobomas si el id de este meme es correspondiente al meme de la semana
         if ($meme->id == $memeSemana->id) {
+            // Si es asi indicamos que este es el meme de la semana
             echo "<div class='alert alert-primary'>Este es el meme de la semana</div>";
-        } else {
+        }
+        // De lo contrario mostramos la posibilidade de hacerlo meme de la semana
+        else {
             ?>
 
             <div class="alert alert-primary">
@@ -190,7 +203,7 @@ $meme = getContenidoId($_GET['id']);
                 <img class="logito" src="images/iconos/share.png" alt="share">
                 -->
 
-
+            <!-- Mostramos descripcion del meme -->
             </div>
             <div class="descripcion">
                 <h3 class="aside-title">Descripción</h3>
@@ -203,28 +216,39 @@ $meme = getContenidoId($_GET['id']);
             <hr>
 
             <?php
+            // Si se ha pulsado el boton de Enviar Comentario
             if (isset($_POST['submit'])) {
-                $comentario = $_POST['comentario'];
+                $comentario = $_POST['comentario']; // Recogemos el comentario
+
+                // Si el comentario esta vacio lanzamos un error
                 if ($comentario == null) {
                     echo "<div class='alert alert-danger'>Debe rellenar el comentario si desea enviarlo</div>";
-                } else {
+                }
+                // En caso contrario llamamas a la funcion que lo guarde pasandole id_usuario, id_meme y el comentario
+                else {
                     addValoracion($_SESSION['usuario'][0]->id, $meme->id, $comentario);
                     echo "<div class='alert alert-success'>Comentario añadido correctamente</div>";
                 }
             }
 
+            // Si se ha pulsado el boton de Borrar Comentario
             if (isset($_POST['borrarComentario'])) {
+
+                // Si la funcion borrar comentario ha funcionado devolvemos un mensaje de exito
                 if (delValoracion($_POST['idComentario'])) {
                     echo "<div class='alert alert-success'>Comentario borrado con éxito</div>";
-                    $valoracion = getValoracionId($_GET['id']);
-                } else {
+                    
+                    $valoracion = getValoracionId($_GET['id']); //Recargamos los comentarios
+                }
+                // Si no ha funcionado devolvemos un error
+                else {
                     echo "<div class='alert alert-danger'>Error al borrar el comentario</div>";
                 }
             }
 
-            $valoracion = getValoracionId($_GET['id']);
+            $valoracion = getValoracionId($_GET['id']); //Recargamos los comentarios
 
-
+            // Si esta el usuario logueado damos la posibilidad de enviar un comentario
             if (isset($_SESSION['usuario'])) {
             ?>
             <div class="row comentarios">
@@ -248,6 +272,7 @@ $meme = getContenidoId($_GET['id']);
                 </div>
                 <?php
                 }
+                // Si no hay ninguno logueado le indicamos que necesita loguearse para enviar un comentario
                 else {
                 ?>
                 <div class="row comentarios">
@@ -263,9 +288,10 @@ $meme = getContenidoId($_GET['id']);
                             <div class="row">
                                 <div class="col-md-5 col-sm-12"></div>
                                 <div class="col-md-7 col-sm-12"><input type="submit"
-                                                                       class="btn btn-outline-primary my-2 my-sm-0 login"
-                                                                       type="submit" value="lOG IN"
-                                                                       name="login"></button></div>
+                                    class="btn btn-outline-primary my-2 my-sm-0 login"
+                                    type="submit" value="lOG IN"
+                                    name="login"></button>
+                                </div>
                             </div>
                             <br>
                         </form>
@@ -277,9 +303,10 @@ $meme = getContenidoId($_GET['id']);
 
                     <?php
 
-
+                    // Si al menos una valoracion/comentario
                     if ($valoracion != null) {
 
+                    // Recorremos el array de valoraciones como valoracionMeme
                     foreach ($valoracion as $valoracionMeme) {
 
 
@@ -290,12 +317,14 @@ $meme = getContenidoId($_GET['id']);
                         ?>
 
                         <div class="col-12 comentario">
+                            <!-- Nombre del que comento el meme -->
                             <h6><?php echo $valoracionMeme->username; ?></h6>
                             <p>
                                 <?php
                                 //echo $valoracion->comentario;
-                                echo $valoracionMeme->comentario;
+                                echo $valoracionMeme->comentario; // Comentario
 
+                                // Si hay un usuario logueado y es el admin o un editor podra borrar un comentario
                                 if (isset($_SESSION['usuario']) &&
                                     ($_SESSION['usuario'][0]->rol == "administrador" || $_SESSION['usuario'][0]->rol == "editor")) {
                                     ?>
@@ -309,6 +338,7 @@ $meme = getContenidoId($_GET['id']);
                             </p>
                         </div>
 
+                        <!-- Borrar Comentario -->
                         <div class="modal fade" id="borrarComentario" tabindex="-1" role="dialog"
                              aria-labelledby="ModalLabel"
                              aria-hidden="true">
@@ -362,6 +392,8 @@ $meme = getContenidoId($_GET['id']);
                     <?php
                     //}
                     }
+
+                    // En caso de no haber ninguna valoracion/comentario se mostrara que no hay ninguno
                     else {
                     ?>
                         <div class="col-12 comentario">
