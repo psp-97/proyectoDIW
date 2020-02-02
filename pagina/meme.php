@@ -36,9 +36,7 @@ $meme = getContenidoId($_GET['id']);
 //$valoracionMeme = getValoracionId($_GET['id']);
 
 
-if (isset($_SESSION["usuario"])) {
-    $valoracionMeGusta = getMeGustaId($_GET['id'], $_SESSION['usuario'][0]->id);
-}
+
 
 //$valoracionMeGusta = getMeGustaId($_GET['id'],$_SESSION['usuario'][0]->id);
 
@@ -87,20 +85,101 @@ if (isset($_SESSION["usuario"])) {
             </div>
             <div class="float-right">
                 <?php
+
+                // Si existe un usuario logueado recogeremos las acciones del boton me gusta
                 if (isset($_SESSION["usuario"])) {
+
+                    if (isset($_POST['me_gusta1'])) {
+                        updateMeGustaId($_GET['id'], $_SESSION['usuario'][0]->id, 1);
+                    }
+                    if (isset($_POST['nome_gusta1'])) {
+                        updateMeGustaId($_GET['id'], $_SESSION['usuario'][0]->id, 0);
+                    }
+                
+                    if (isset($_POST['me_gusta2'])) {
+                        setMeGustaId($_GET['id'], $_SESSION['usuario'][0]->id, 1);
+                    }
+                    if (isset($_POST['nome_gusta2'])) {
+                        setMeGustaId($_GET['id'], $_SESSION['usuario'][0]->id, 0);
+                    }
+                }
+
+                // Recargamos el icono de megusta
+                if (isset($_SESSION["usuario"])) {
+                    $valoracionMeGusta = getMeGustaId($_GET['id'], $_SESSION['usuario'][0]->id);
+                }
+
+                // Si hay un usuario logueado podremos mostrar el boton de megusta
+                if (isset($_SESSION["usuario"])) {
+
+                    // Si ya hay un megusta/no_megusta en la base estos botones editaran el estado de si/no
                     if ($valoracionMeGusta != null) {
-                        if ($valoracionMeGusta->megusta == 0) {
-                            ?>
-                            <img class="logito" src="images/iconos/like.png" alt="coment">
+                        ?>
+                        <form action="" method="POST">
                             <?php
-                        } else {
+                            // Si esta en estado no_megusta el boton lo cambiara a megusta
+                            if ($valoracionMeGusta->megusta == 0) {
+                                ?>
+                                
+                                <button type="submit" name="me_gusta1" >
+                                    <img class="logito" src="images/iconos/like.png" alt="coment">
+                                </button>
+                                
+
+                                <!--
+                                <input type="image" name="me_gusta1" id="me_gusta1" src="images/iconos/like.png"/>
+                                -->
+
+                                <?php
+                            }
+                            // Si esta en estado megusta el boton lo cambiara a no_megusta
+                            else {
+                                ?>
+                                
+                                <button type="submit" name="nome_gusta1" >
+                                    <img class="logito" src="images/iconos/likeok.png" alt="coment">
+                                </button>
+                                
+
+                                <!--
+                                <input type="image" name="nome_gusta1" id="nome_gusta1" src="images/iconos/likeok.png"/>
+                                -->
+
+                                <?php
+                            }
+
                             ?>
-                            <img class="logito" src="images/iconos/likeok.png" alt="coment">
-                            <?php
-                        }
+
+                            <!--
+                            <input type="submit" name="me_gusta1" value="Me gusta" class="btn btn-primary"/>
+                            <input type="submit" name="nome_gusta1" value="No me gusta" class="btn btn-primary"/>
+                            <button type="button" data-toggle="modal"
+                                data-target="#borrarComentario" value="<?php echo $valoracionMeme->id; ?>">
+                                <img class="logito" src="images/iconos/like.png" alt="coment">
+                            </button>
+                            -->
+                        </form>
+
+                        <?php
+
+
+                    // Si no hay un megusta/no_megusta en la base estos botones crearan el registro megusta
                     } else {
                         ?>
-                        <img class="logito" src="images/iconos/like.png" alt="coment">
+                        <!--
+                        <form action="" method="POST">
+                        <input type="image" name="me_gusta2" id="me_gusta2" src="images/iconos/like.png"/>
+                        </form>
+                        -->
+
+                        
+                        <form action="" method="POST">
+                        <button type="submit" name="me_gusta2" >
+                            <img class="logito" src="images/iconos/like.png" alt="coment">
+                        </button>
+                        </form>
+                        
+
                         <?php
                     }
                 }

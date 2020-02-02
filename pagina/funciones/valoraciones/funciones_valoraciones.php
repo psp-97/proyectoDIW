@@ -28,6 +28,7 @@ function getValoracionId($id) {
 }
 */
 
+// Obtiene todos los comentarios de los usuarios que ha comentado el meme
 function getValoracionId($id) {
     $valoraciones = [];
     $c = new Conexion();
@@ -37,51 +38,40 @@ function getValoracionId($id) {
         $valoraciones[] = $objeto;
     }
     return $valoraciones;
-
-
-    /*
-    if ($objeto = $resultado->fetch(PDO::FETCH_OBJ)) {
-       return $objeto;
-    }
-    else{
-        return null;
-    }
-    */
-    
-    /*
-    while ($objeto = $resultado->fetch(PDO::FETCH_OBJ)) {
-        $contenido[] = $objeto;
-    }
-    return $contenido;
-    */
 }
 
-
+// Obtiene si este usuario ha dado megusta o no_megusta al meme
 function getMeGustaId($id, $id_usuario) {
     $c = new Conexion();
     $resultado = $c->query("SELECT val_mg.megusta FROM valoracion_mg val_mg, usuario usu where val_mg.id_usuario=usu.id && val_mg.id_contenido=$id && val_mg.id_usuario=$id_usuario");
 
-
     if ($objeto = $resultado->fetch(PDO::FETCH_OBJ)) {
        return $objeto;
     }
     else{
         return null;
-    }
-    
+    }   
 }
 
+// Crearan un registro megusta para el usuario si no existe ninguno
+function setMeGustaId($id, $id_usuario, $valor_megusta) {
+    $c = new Conexion();
+    $resultado = $c->query("INSERT INTO valoracion_mg  (`id`, `id_usuario`, `id_contenido`, `megusta`) VALUES (NULL, $id_usuario, $id, $valor_megusta)");
+}
 
+// Cambia de estado de megusta a no_megusta y viceversa segun lo desee el usuario
+function updateMeGustaId($id, $id_usuario, $valor_megusta) {
+    $c = new Conexion();
+    $resultado = $c->query("UPDATE valoracion_mg val_mg, usuario usu SET val_mg.megusta = $valor_megusta where val_mg.id_usuario=usu.id && val_mg.id_contenido=$id && val_mg.id_usuario=$id_usuario");
+}
 
+// Añade el comentario del usuario a la base de datos
 function addValoracion($id_usuario, $id_contenido, $comentario) {
     $c = new Conexion();
     $c->query("INSERT INTO valoracion(id_usuario, id_contenido, comentario) VALUES ($id_usuario, '$id_contenido', '$comentario')");
 }
 
-
-
-
-
+// Elimina el comentario del usuario de la base de datos
 function delValoracion($id_comentario){
     try {
         $c = new Conexion();
