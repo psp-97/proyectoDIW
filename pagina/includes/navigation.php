@@ -67,7 +67,7 @@
                 <!--<button class="btn btn-outline-primary my-2 my-sm-0 login" type="submit">Log out</button>-->
                 <ul class="navbar-nav mr-auto mt-2 mt-lg-0">
                     <li class="nav-item dropdown">
-                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLinkUsuario" data-toggle="dropdown"
+                        <a id="logout" class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLinkUsuario" data-toggle="dropdown"
                            aria-haspopup="true" aria-expanded="false">
                             <?php echo $_SESSION['usuario'][0]->username; ?>
                         </a>

@@ -13,6 +13,7 @@ if (isset($_POST['enviar']) && isset($_SESSION['usuario'])){
 <html lang="en">
 <head>
     <?php include("includes/head-tag-contents.php"); ?>
+    <script src="js/video.js"></script>
     <style>
         #imagen2 {
             width: 630px;
