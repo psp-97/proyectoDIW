@@ -82,3 +82,29 @@ function delValoracion($id_comentario){
         return false;
     }
 }
+
+
+
+// Obtiene si este usuario ha dado megusta o no_megusta al meme
+function getN_Comentario() {
+    $n_comentarios = [];
+    $c = new Conexion();
+    $resultado = $c->query("SELECT * FROM ncomentarios");
+
+    while ($objeto = $resultado->fetch(PDO::FETCH_OBJ)) {
+        $n_comentarios[] = $objeto;
+    }
+    return $n_comentarios;
+}
+
+// Obtiene si este usuario ha dado megusta o no_megusta al meme
+function getT_Comentario() {
+    $t_comentarios = [];
+    $c = new Conexion();
+    $resultado = $c->query("SELECT * FROM tcomentarios");
+
+    while ($objeto = $resultado->fetch(PDO::FETCH_OBJ)) {
+        $t_comentarios[] = $objeto;
+    }
+    return $t_comentarios;
+}

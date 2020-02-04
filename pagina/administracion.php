@@ -2,6 +2,7 @@
 session_start();
 include "funciones/Conexion.php";
 include "funciones/usuarios/funciones_usuario.php";
+include "funciones/valoraciones/funciones_valoraciones.php";
 
 if (!isset($_SESSION['usuario']) || $_SESSION['usuario'][0]->rol != 'administrador') {
     header("Location:index.php");
@@ -119,6 +120,107 @@ if (!isset($_SESSION['usuario']) || $_SESSION['usuario'][0]->rol != 'administrad
         ?>
         </tbody>
     </table>
+
+    <br><hr><br>
+
+    <h2>Listado de N Comentarios</h2>
+    <table class="table table-striped">
+        <thead>
+        <tr>
+            <th scope="col">Id</th>
+            <th scope="col">Username</th>
+            <th scope="col">Comentario</th>
+            <th scope="col"></th>
+            <th scope="col"></th>
+            <th scope="col"></th>
+        </tr>
+        </thead>
+        <tbody>
+        <?php
+        $n_comentarios = getN_Comentario();
+        if (empty($n_comentarios)) {
+            echo "<div class='alert alert-danger'>No hay usuarios registrados en el sistema</div>";
+        } else {
+            foreach ($n_comentarios as $n) {
+                ?>
+                <tr>
+                    <th scope="row"><?php echo $n->id; ?></th>
+                    <td><?php echo $n->id_usuario; ?></td>
+                    <td><?php echo $n->comentario; ?></td>
+                    <td>
+                        <button type="button" class="btn btn-success pass" data-toggle="modal"
+                                data-target="#passModal" value="<?php echo $n->id; ?>">Cambiar contraseña
+                        </button>
+                    </td>
+                    <td>
+                        <button type="button" class="btn btn-success editar" data-toggle="modal"
+                                data-target="#editarModal" value="<?php echo $n->id; ?>">Editar
+                        </button>
+                    </td>
+                    <td>
+                        <button type="button" class="btn btn-danger borrar" data-toggle="modal"
+                                data-target="#borrarModal" value="<?php echo $n->id; ?>">Borrar
+                        </button>
+                    </td>
+                </tr>
+                <?php
+            }
+        }
+        ?>
+        </tbody>
+    </table>
+
+
+    <br><hr><br>
+
+    <h2>Listado de T Comentarios</h2>
+    <table class="table table-striped">
+        <thead>
+        <tr>
+            <th scope="col">Id</th>
+            <th scope="col">Username</th>
+            <th scope="col">Comentario</th>
+            <th scope="col"></th>
+            <th scope="col"></th>
+            <th scope="col"></th>
+        </tr>
+        </thead>
+        <tbody>
+        <?php
+        $t_comentarios = getT_Comentario();
+        if (empty($t_comentarios)) {
+            echo "<div class='alert alert-danger'>No hay usuarios registrados en el sistema</div>";
+        } else {
+            foreach ($t_comentarios as $t) {
+                ?>
+                <tr>
+                    <th scope="row"><?php echo $t->id; ?></th>
+                    <td><?php echo $t->id_usuario; ?></td>
+                    <td><?php echo $t->comentario; ?></td>
+                    <td>
+                        <button type="button" class="btn btn-success pass" data-toggle="modal"
+                                data-target="#passModal" value="<?php echo $t->id; ?>">Cambiar contraseña
+                        </button>
+                    </td>
+                    <td>
+                        <button type="button" class="btn btn-success editar" data-toggle="modal"
+                                data-target="#editarModal" value="<?php echo $t->id; ?>">Editar
+                        </button>
+                    </td>
+                    <td>
+                        <button type="button" class="btn btn-danger borrar" data-toggle="modal"
+                                data-target="#borrarModal" value="<?php echo $t->id; ?>">Borrar
+                        </button>
+                    </td>
+                </tr>
+                <?php
+            }
+        }
+        ?>
+        </tbody>
+    </table>
+
+
 
     <div class="modal fade" id="passModal" tabindex="-1" role="dialog" aria-labelledby="ModalLabel"
          aria-hidden="true">
