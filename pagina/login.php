@@ -94,24 +94,31 @@ include("includes/navigation.php"); ?>
             <?php
             $mensaje = "";
             if (isset($_POST['registrar'])) {
-                $username = $_POST['username'];
-                $password = md5($_POST['password']);
-                $correo = $_POST['correo'];
-                $otraVez = md5($_POST['otraVez']);
-                if (!empty($username) && !empty($password) && !empty($correo)) {
-                    if (filter_var($correo, FILTER_VALIDATE_EMAIL)) {
-                        if ($password == $otraVez) {
-                            registrar($username, $password, $correo);
-                            $mensaje = "<div class='alert alert-success'>Usuario creado correctamente</div>";
+
+                if ($_POST['resultado'] == $_SESSION['captcha']) {
+
+                    $username = $_POST['username'];
+                    $password = md5($_POST['password']);
+                    $correo = $_POST['correo'];
+                    $otraVez = md5($_POST['otraVez']);
+                    if (!empty($username) && !empty($password) && !empty($correo)) {
+                        if (filter_var($correo, FILTER_VALIDATE_EMAIL)) {
+                            if ($password == $otraVez) {
+                                registrar($username, $password, $correo);
+                                $mensaje = "<div class='alert alert-success'>Usuario creado correctamente</div>";
+                            } else {
+                                $mensaje = "<div class='alert alert-danger'>Las contraseñas no coinciden</div>";
+                            }
                         } else {
-                            $mensaje = "<div class='alert alert-danger'>Las contraseñas no coinciden</div>";
+                            $mensaje = "<div class='alert alert-danger'>Correo electrónico no válido</div>";
                         }
+
                     } else {
-                        $mensaje = "<div class='alert alert-danger'>Correo electrónico no válido</div>";
+                        $mensaje = "<div class='alert alert-danger'>Debe rellenar todos los campos</div>";
                     }
 
                 } else {
-                    $mensaje = "<div class='alert alert-danger'>Debe rellenar todos los campos</div>";
+                    $errorCaptcha = true;
                 }
 
             }
@@ -159,69 +166,104 @@ include("includes/navigation.php"); ?>
                     </div>
                 </div>
                 <div class="row">
-                    <div class="col-1">
-                        <input type="text" id="primerElemento" readonly>
-                    </div>
-                    <div class="col-1">
-                        <input type="text" id="operacion" readonly>
-                    </div>
-                    <div class="col-1">
-                        <input type="text" id="segundoElemento" readonly>
-                    </div>
-                    <div class="col-1">
-                        <input type="text" id="resultado" onkeyup="calcular()">
-                    </div>
-                    <div class="alert alert-danger" id="errorResultado">
-                        Introduce el resultado corecto para enviar el formulario
-                    </div>
-                </div>
 
-                <script>
-                    var operaciones = ["+", "-", "*", "/"];
-                    var operacionN = Math.round(Math.random() * 3);
-                    var operacion = operaciones[operacionN];
-                    document.getElementById("operacion").value = operacion;
+                    <?php
 
-                    var numero1 = Math.round(Math.random() * 11);
-                    document.getElementById("primerElemento").value = numero1;
+                    $operaciones = ["+", "-", "*"];
+                    $operacioN = rand(0, 2);
+                    $operacion = $operaciones[$operacioN];
 
-                    var numero2 = Math.round(Math.random() * 11);
-                    document.getElementById("segundoElemento").value = numero2;
+                    $numero1 = rand(0, 9);
+                    $numero2 = rand(0, 9);
 
-
-                    function calcular() {
-                        var correcto = false;
-                        switch (operacion) {
-                            case "+":
-                                if (numero1 + numero2 == document.getElementById("resultado").value) {
-                                    correcto = true;
-                                }
-                                break;
-                            case "-":
-                                if (numero1 - numero2 == document.getElementById("resultado").value) {
-                                    correcto = true;
-                                }
-                                break;
-                            case "*":
-                                if (numero1 * numero2 == document.getElementById("resultado").value) {
-                                    correcto = true;
-                                }
-                                break;
-                            case "/":
-                                if (numero1 / numero2 == document.getElementById("resultado").value) {
-                                    correcto = true;
-                                }
-                                break;
-                        }
-                        if (correcto) {
-                            document.getElementById("registrar").removeAttribute("disabled");
-                            document.getElementById("errorResultado").setAttribute("hidden", "hidden");
-                        } else {
-                            document.getElementById("registrar").setAttribute("disabled", "disabled");
-                            document.getElementById("errorResultado").removeAttribute("hidden");
-                        }
+                    switch ($operacion) {
+                        case "+":
+                            $resultado = $numero1 + $numero2;
+                            break;
+                        case "-":
+                            $resultado = $numero1 - $numero2;
+                            break;
+                        case "*":
+                            $resultado = $numero1 * $numero2;
+                            break;
                     }
 
+                    $_SESSION['captcha'] = $resultado;
+
+                    ?>
+
+                    <div class="col-2">
+                        <?php echo $numero1; ?>
+                    </div>
+                    <div class="col-2">
+                        <?php echo $operacion; ?>
+                    </div>
+                    <div class="col-2">
+                        <?php echo $numero2 . " = "; ?>
+                    </div>
+                    <div class="col-2">
+                        <input type="text" name="resultado" id="resultado">
+                    </div>
+                    <?php
+                    if (isset($errorCaptcha) && $errorCaptcha) {
+                        ?>
+                        <div class="alert alert-danger">
+                            Resultado incorrecto
+                        </div>
+                        <?php
+                    }
+                    ?>
+                </div>
+
+
+                <script>
+
+                    /*
+                                        var operaciones = ["+", "-", "*", "/"];
+                                        var operacionN = Math.round(Math.random() * 3);
+                                        var operacion = operaciones[operacionN];
+                                        document.getElementById("operacion").value = operacion;
+
+                                        var numero1 = Math.round(Math.random() * 11);
+                                        document.getElementById("primerElemento").value = numero1;
+
+                                        var numero2 = Math.round(Math.random() * 11);
+                                        document.getElementById("segundoElemento").value = numero2;
+
+
+                                        function calcular() {
+                                            var correcto = false;
+                                            switch (operacion) {
+                                                case "+":
+                                                    if (numero1 + numero2 == document.getElementById("resultado").value) {
+                                                        correcto = true;
+                                                    }
+                                                    break;
+                                                case "-":
+                                                    if (numero1 - numero2 == document.getElementById("resultado").value) {
+                                                        correcto = true;
+                                                    }
+                                                    break;
+                                                case "*":
+                                                    if (numero1 * numero2 == document.getElementById("resultado").value) {
+                                                        correcto = true;
+                                                    }
+                                                    break;
+                                                case "/":
+                                                    if (numero1 / numero2 == document.getElementById("resultado").value) {
+                                                        correcto = true;
+                                                    }
+                                                    break;
+                                            }
+                                            if (correcto) {
+                                                document.getElementById("registrar").removeAttribute("disabled");
+                                                document.getElementById("errorResultado").setAttribute("hidden", "hidden");
+                                            } else {
+                                                document.getElementById("registrar").setAttribute("disabled", "disabled");
+                                                document.getElementById("errorResultado").removeAttribute("hidden");
+                                            }
+                                        }
+                    */
 
                 </script>
 
@@ -231,7 +273,7 @@ include("includes/navigation.php"); ?>
                     <div class="col-md-5 col-sm-12"></div>
                     <div class="col-md-7 col-sm-12"><input type="submit" name="registrar" id="registrar"
                                                            class="btn btn-outline-primary my-2 my-sm-0 login"
-                                                           type="submit" value="Registrarse" disabled></button></div>
+                                                           type="submit" value="Registrarse"></button></div>
                 </div>
             </form>
             <hr>
