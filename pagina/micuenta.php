@@ -2,6 +2,11 @@
 session_start();
 include "funciones/Conexion.php";
 include "funciones/usuarios/funciones_usuario.php";
+
+if (!isset($_SESSION['usuario']) || $_SESSION['usuario'][0]->rol != 'administrador') {
+    header("Location:index.php");
+}
+
 ?>
 <!DOCTYPE html>
 <html>
@@ -15,7 +20,10 @@ include "funciones/usuarios/funciones_usuario.php";
     <?php
 
     if (isset($_SESSION['usuario']) && $_SESSION['usuario'][0]->rol == 'administrador') {
-        echo "<a href='administracion.php'>Ir a la zona de administración</a>";
+        echo "<a href='administracion.php'>Ir a la zona de administración</a><br>";
+        echo "<a href='n_comentarios.php'>Ir a la zona de mensajeria N</a><br>";
+        echo "<a href='t_comentarios.php'>Ir a la zona de mensajeria T</a><br>";
+        echo "<a href='contacta_mensajes.php'>Ir a la zona de mensajeria Contacta(No disponible)</a><br>";
     }
 
     if (isset($_POST['editarModal'])) {
