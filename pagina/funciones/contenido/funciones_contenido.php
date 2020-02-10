@@ -118,3 +118,6 @@ function getPublicacionesPorUsuario($id_usuario) {
         return null;
     }
 }
+function novedades(){
+
+}

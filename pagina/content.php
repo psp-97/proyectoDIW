@@ -1,5 +1,4 @@
 <?php
-session_start();
 include ("funciones/contenido/funciones_contenido.php");
 include ("funciones/usuarios/funciones_usuario.php");
 ?>
@@ -12,6 +11,22 @@ include ("funciones/usuarios/funciones_usuario.php");
                 </div>
             </div>
             <?php
+                if (!isset($_COOKIE['novedades'])){
+                    ?>
+                    <div class="alert alert-primary" role="alert">
+                        <form action="" method="post">
+                            <div class="row">
+                                <div class="col-11">
+                                Hay nuevas y frescas noticias en nuestra web :D
+                                </div>
+                                <div class="col-1">
+                                <input type="submit" class="btn btn-primary" name="novedades" value="X">
+                                </div>
+                            </div>
+                        </form>
+                    </div>
+             <?php
+                }
             $contenido = getContenidoLast();
             foreach ($contenido as $c) {
                 ?>
@@ -49,26 +64,26 @@ include ("funciones/usuarios/funciones_usuario.php");
                             por nuestros visitantes. ¡Enhorabuena al creador!</p>
                     </a>
                 </div>
-                <div class="col-12 aside">
-                    <h3 class="aside-title">Ranking de usuarios</h3>
-                    <ol class="text-center">
-                        <?php
-                            $publicaciones = [];
-                            $id_ordenados = [];
-                            $id_usuarios = getIdUsuarios();
-                            foreach($id_usuarios as $id) {
-                                $publicaciones[] = getPublicacionesPorUsuario($id)->contador;
-                            }
-                            rsort($publicaciones);
-                            foreach ($publicaciones as $p) {
-                                $id_ordenados[] = getIdPorPublicaciones($p);
-                            }
-                            foreach ($id_ordenados as $id) {
-                                echo "<li>".getUsuario($id)->username."</li>";
-                            }
-                        ?>
-                    </ol>
-                </div>
+<!--                <div class="col-12 aside">-->
+<!--                    <h3 class="aside-title">Ranking de usuarios</h3>-->
+<!--                    <ol class="text-center">-->
+<!--                        --><?php
+//                            $publicaciones = [];
+//                            $id_ordenados = [];
+//                            $id_usuarios = getIdUsuarios();
+//                            foreach($id_usuarios as $id) {
+//                                $publicaciones[] = getPublicacionesPorUsuario($id)->contador;
+//                            }
+//                            rsort($publicaciones);
+//                            foreach ($publicaciones as $p) {
+//                                $id_ordenados[] = getIdPorPublicaciones($p);
+//                            }
+//                            foreach ($id_ordenados as $id) {
+//                                echo "<li>".getUsuario($id)->username."</li>";
+//                            }
+//                        ?>
+<!--                    </ol>-->
+<!--                </div>-->
                 <div class="col-12 aside">
                     <p>&copy; <?php print date("Y"); ?> <a href="https://iesmarquesdecomares.org/"> IES Marqués de
                             Comares.</a></p>

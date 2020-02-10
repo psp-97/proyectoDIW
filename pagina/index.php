@@ -1,5 +1,8 @@
 <?php
 session_start();
+if( isset($_POST['novedades'])){
+    setcookie('novedades',"algo",time() + 2629800);
+    header('Location:index.php');}
 ?>
 <!DOCTYPE html>
 <html>
