@@ -28,7 +28,7 @@ if( isset($_POST['novedades'])){
         },
         "position": "bottom-right",
         "content": {
-            "message": "Esta web utiliza cookies para mejorar su experiencia de usuario, si sigues navegando sera como si las hubieras aceptado ;D",
+            "message": "Esta web utiliza cookies para mejorar su experiencia de usuario, si sigues navegando será como si las hubieras aceptado ;D",
             "dismiss": "Seguir navegando",
             "link": "Saber más"
         }
