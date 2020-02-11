@@ -14,4 +14,24 @@ if( isset($_POST['novedades'])){
 <?php include("includes/navigation.php"); ?>
 <?php include("content.php"); ?>
 </body>
+<script src="https://cdn.jsdelivr.net/npm/cookieconsent@3/build/cookieconsent.min.js" data-cfasync="false"></script>
+<script>
+    window.cookieconsent.initialise({
+        "palette": {
+            "popup": {
+                "background": "black"
+            },
+            "button": {
+                "background": "#2b33eb"
+
+            }
+        },
+        "position": "bottom-right",
+        "content": {
+            "message": "Esta web utiliza cookies para mejorar su experiencia de usuario, si sigues navegando sera como si las hubieras aceptado ;D",
+            "dismiss": "Seguir navegando",
+            "link": "Saber más"
+        }
+    });
+</script>
 </html>
