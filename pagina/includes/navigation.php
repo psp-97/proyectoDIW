@@ -68,11 +68,11 @@
                     <li class="nav-item dropdown">
                         <a id="logout" class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLinkUsuario" data-toggle="dropdown"
                            aria-haspopup="true" aria-expanded="false">
-                            <?php echo $_SESSION['usuario'][0]->username; ?>
+                            <?php echo $_SESSION['usuario'][0]->nombre; ?>
                         </a>
                         <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
                             <a class="dropdown-item" href="micuenta.php">Mi cuenta</a>
-                            <a class="dropdown-item" href="logout.php">Cerrar sesión</a>
+                            <a class="dropdown-item" onclick="signOut();" href="logout.php">Cerrar sesión</a>
                         </div>
                     </li>
                 </ul>
@@ -88,3 +88,4 @@
         ?>
     </div>
 </nav>
+<script>startApp();</script>

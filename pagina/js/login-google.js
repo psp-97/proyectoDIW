@@ -42,19 +42,22 @@ var signinChanged = function (val) {
     dato_str_usuario = JSON.stringify(datousuario);
     console.log("Antes del get");
     console.log(dato_str_usuario);
-/*
+
     $.get("funciones/usuarios/insertarUsuarioGoogle.php", JSON.parse(dato_str_usuario),
         function (respuestaJson) {
         }
     ).done(function (respuestaJson) {
-          alert("Datos insertados correctamente");
           console.log("Datos insertados correctamente");
+          location.reload();
         }
     ).fail(function () {
       alert("Falla");
       console.log("Falla");
     });
-*/
+
+
+
+
     /*$(".editar").click(function ($e) {
       $e.preventDefault();
       var datousuario = new Object();
@@ -78,14 +81,9 @@ var signinChanged = function (val) {
       )
 
     });*/
-    document.getElementById('usuario').innerHTML = auth2.currentUser.get().getBasicProfile().getName();
     document.getElementById('dropdownLoginLI').style.display = 'none';
-    document.getElementById('dropdownLogoutLI').style.display = 'block';
-
-
   } else {
     console.log('Not signed in.');
-    document.getElementById('dropdownLogoutLI').style.display = 'none';
     document.getElementById('dropdownLoginLI').style.display = 'block';
   }
 }

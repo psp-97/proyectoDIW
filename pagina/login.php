@@ -21,6 +21,21 @@ if (isset($_POST['login'])) {
     }
 
 }
+
+if(!isset($_SESSION['usuario'])) {
+    ?>
+    <script>signOut();</script>
+    <?php
+}
+
+
+
+/*if (isset($_POST['cerrar'])) {
+    ?>
+    <script>signOut();</script>
+    <?php
+    //header("location:logout.php");
+}*/
 ?>
 <!DOCTYPE html>
 <html>
@@ -74,15 +89,7 @@ include("includes/navigation.php"); ?>
                         IN WITH GOOGLE
                     </button>
                 </div>
-
-                <form method="POST">
-                    <div id="dropdownLogoutLI" class="col-md-7 col-sm-12" style="display:none;">
-                        <button id="googleSignOutBtn" onclick="signOut()"
-                                class="btn btn-outline-primary my-2 my-sm-0 login">SIGN OUT
-                        </button>
-                    </div>
             </div>
-            </form>
         </div>
 
 
@@ -288,6 +295,5 @@ include("includes/navigation.php"); ?>
 <div class="footer text-center">
     <p>&copy; <?php print date("Y"); ?> <a href="https://iesmarquesdecomares.org/"> IES Marqués de Comares.</a></p>
 </div>
-<script>startApp();</script>
 </body>
 </html>

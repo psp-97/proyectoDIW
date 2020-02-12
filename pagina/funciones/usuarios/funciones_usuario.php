@@ -46,7 +46,7 @@ function getUsernamePorId($id) {
     return $usuario;
 }
 
-function getIdUsuarios() {
+/*function getIdUsuarios() {
     $id = [];
     $c = new Conexion();
     $resultado = $c->query("SELECT id FROM usuario");
@@ -54,6 +54,17 @@ function getIdUsuarios() {
         $id[] = $objeto->id;
     }
     return $id;
+}
+*/
+
+function getUsuarioPorEmail($email) {
+    $usuario = [];
+    $c = new Conexion();
+    $resultado = $c->query("SELECT * FROM usuario WHERE correo='$email'");
+    while ($objeto = $resultado->fetch(PDO::FETCH_OBJ)) {
+        $usuario[] = $objeto;
+    }
+    return $usuario;
 }
 
 function updateUsuario($datos)
