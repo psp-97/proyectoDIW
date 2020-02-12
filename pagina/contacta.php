@@ -1,17 +1,76 @@
 <?php
+// Sesion
 session_start();
+
+// Funciones que usaremos
+//include "funciones/contenido/funciones_contenido.php";
+//include "funciones/valoraciones/funciones_valoraciones.php";
+include "funciones/contacta/funciones_contacta.php";
+//include "funciones/usuarios/funciones_usuario.php";
 ?>
 <!DOCTYPE html>
 <html>
 <head>
     <?php include("includes/head-tag-contents.php"); ?>
+
+    <!-- Quill -->
+
+    <meta name="twitter:description" content="Quill is a free, open source rich text editor built for the modern web.">
+<meta name="twitter:image" content="https://quilljs.com/assets/images/brand-asset.png">
+<meta property="og:type" content="website">
+<meta property="og:url" content="https://quilljs.com/standalone/full/">
+<meta property="og:image" content="https://quilljs.com/assets/images/brand-asset.png">
+<meta property="og:title" content="Full Editor - Quill">
+<meta property="og:site_name" content="Quill">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/KaTeX/0.7.1/katex.min.css" />
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/styles/monokai-sublime.min.css" />
+
+    <link rel="stylesheet" href="https://cdn.quilljs.com/1.3.6/quill.snow.css" />
+
+    <style>
+    body > #standalone-container {
+        margin: 50px auto;
+        max-width: 720px;
+    }
+    #editor-container {
+        height: 350px;
+    }
+    </style>
+
+
+
 </head>
 <body>
 <?php include("includes/navigation.php"); ?>
+
 <div class="container">
     <div class="row content ">
         <div class="col-12">
             <h2>Contacta con nosotros</h2>
+
+            <?php
+            // Si se ha pulsado el boton de Enviar de Contacta
+            if (isset($_POST['Enviar'])) {
+
+                $nombre = $_POST['nombre']; // Recogemos el nombre
+                $email = $_POST['email']; // Recogemos el email
+                $asunto = $_POST['asunto']; // Recogemos el asunto
+                $comentario = $_POST['editor-container']; // Recogemos el comentario
+
+                // Si algun campo esta vacio lanzamos un error
+                if ($nombre == null || $asunto == null || $comentario == null) {
+                    echo "<div class='alert alert-danger'>Debe rellenar los campos obligatorios</div>";
+                }
+                // En caso contrario llamamas a la funcion que lo guarde pasandole nombre, email, asunto y el comentario
+                else {
+                    addContacta($nombre, $email, $asunto, $comentario);
+                    echo "<div class='alert alert-success'>Tu propuesta ha sido recibida correctamente</div>";
+                }
+            }
+            ?>
+
             <div class="col-md-4 col-sm-12">
                 <hr>
             </div>
@@ -28,15 +87,18 @@ session_start();
                     </p>
                 </div>
             </div>
+
+            
+
             <form action="" method="POST">
                 <div class="row">
                     <div class="col-md-6 col-sm-12 text-md-right">Nombre</div>
-                    <div class="col-md-6 col-sm-12 text-md-left"><input class="formulario" type="text" id="nombre" placeholder="Nombre"></div>
+                    <div class="col-md-6 col-sm-12 text-md-left"><input class="formulario" type="text" id="nombre" name="nombre" placeholder="Nombre"></div>
                 </div>
                 <hr>
                 <div class="row">
                     <div class="formulario col-md-6 col-sm-12 text-md-right">Email</div>
-                    <div class="formulario col-md-6 col-sm-12 text-md-left"><input class="formulario" type="text" id="email" placeholder="email (opcional)"></div>
+                    <div class="formulario col-md-6 col-sm-12 text-md-left"><input class="formulario" type="text" id="email" name="email" placeholder="email (opcional)"></div>
                 </div>
                 <hr>
                 <div class="row">
@@ -57,19 +119,81 @@ session_start();
                     </div>
                 </div>
                 <hr>
+                <!--
                 <div class="row">
                     <div class="col-md-6 col-sm-12 text-md-right">Comentarios</div>
                     <div class="col-md-6 col-sm-12 text-md-left">
                         <textarea class="formulario" name="comentarios" placeholder="Comentarios" rows="10" cols="30"></textarea>
                     </div>
                 </div>
-                <hr>
+                -->
                 <div class="row">
-                    <div class="col-md-12 col-sm-12 text-md-center"><input type="submit" name="enviar" value="Enviar" class="btn btn-primary"/></div>
+                    <div class="col-md-12 col-sm-12 text-md-center">Comentarios</div>
+                    <div class="col-md-12 col-sm-12 text-md-center">
+                        <div id="standalone-container">
+                            <div id="toolbar-container">
+                                <span class="ql-formats">
+                                    <select class="ql-font"></select>
+                                    <select class="ql-size"></select>
+                                </span>
+                                <span class="ql-formats">
+                                    <button class="ql-bold"></button>
+                                    <button class="ql-italic"></button>
+                                    <button class="ql-underline"></button>
+                                    <button class="ql-strike"></button>
+                                </span>
+                                    <span class="ql-formats">
+                                    <select class="ql-color"></select>
+                                    <select class="ql-background"></select>
+                                </span>
+                                <span class="ql-formats">
+                                    <button class="ql-script" value="sub"></button>
+                                    <button class="ql-script" value="super"></button>
+                                </span>
+                                <span class="ql-formats">
+                                    <button class="ql-header" value="1"></button>
+                                    <button class="ql-header" value="2"></button>
+                                    <button class="ql-blockquote"></button>
+                                    <button class="ql-code-block"></button>
+                                </span>
+                                <span class="ql-formats">
+                                    <button class="ql-list" value="ordered"></button>
+                                    <button class="ql-list" value="bullet"></button>
+                                    <button class="ql-indent" value="-1"></button>
+                                    <button class="ql-indent" value="+1"></button>
+                                </span>
+                                <span class="ql-formats">
+                                    <button class="ql-direction" value="rtl"></button>
+                                    <select class="ql-align"></select>
+                                </span>
+                                <span class="ql-formats">
+                                    <button class="ql-link"></button>
+                                    <button class="ql-image"></button>
+                                    <button class="ql-video"></button>
+                                    <button class="ql-formula"></button>
+                                </span>
+                                <span class="ql-formats">
+                                    <button class="ql-clean"></button>
+                                </span>
+                            </div>
+                            <div id="editor-container"></div>
+                        </div>
+                    </div>
+                </div>
+
+                <hr>
+
+                <div class="row">
+                    <div class="col-md-12 col-sm-12 text-md-center"><input type="submit" name="Enviar" value="Enviar" class="btn btn-primary"/></div>
                 </div>
             </form>
             <hr class="col-4">
             <br>
+
+            
+
+
+
             <!-- Redes-->
             <div class="row text-center">
                 <div class="col-md col-sm-6">
@@ -100,6 +224,31 @@ session_start();
         </div>
     </div>
 </div>
+
+
+<!-- Quill -->
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/KaTeX/0.7.1/katex.min.js"></script>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/highlight.min.js"></script>
+
+<script src="https://cdn.quilljs.com/1.3.6/quill.js"></script>
+
+<script>
+  var quill = new Quill('#editor-container', {
+    modules: {
+      formula: true,
+      syntax: true,
+      toolbar: '#toolbar-container'
+    },
+    placeholder: 'Compose an epic...',
+    theme: 'snow'
+  });
+</script>
+
+
+<!-- Footer -->
+
 <div class="footer text-center">
     <p>&copy; <?php print date("Y"); ?> <a href="https://iesmarquesdecomares.org/"> IES Marqués de Comares.</a></p>
 </div>
