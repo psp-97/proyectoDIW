@@ -134,7 +134,7 @@ $meme = getContenidoId($_GET['id']); // Obtenemos los datos del meme (imagen, de
                             if ($valoracionMeGusta->megusta == 0) {
                                 ?>
                                 
-                                <button type="submit" name="me_gusta1" >
+                                <button type="submit" class="btn btn-primary-outline" name="me_gusta1" >
                                     <img class="logito" src="images/iconos/like.png" alt="coment">
                                 </button>
                                 
@@ -149,7 +149,7 @@ $meme = getContenidoId($_GET['id']); // Obtenemos los datos del meme (imagen, de
                             else {
                                 ?>
                                 
-                                <button type="submit" name="nome_gusta1" >
+                                <button type="submit" class="btn btn-primary-outline" name="nome_gusta1" >
                                     <img class="logito" src="images/iconos/likeok.png" alt="coment">
                                 </button>
                                 
