@@ -50,6 +50,20 @@ include "funciones/contacta/funciones_contacta.php";
         <div class="col-12">
             <h2>Contacta con nosotros</h2>
 
+            <script type="text/javascript">
+            /*
+            $('#Enviar').click(function() { 
+                $.ajax({
+                    url: "contacta.php", //Archivo PHP al que le enviarás el texto en <p>
+                    type: "GET",
+                    data: {save: "1", content: [COLOR="#008000"]$('#editor-container').text()[/COLOR]}
+                });
+            });*/
+
+            $comentario = document.getElementById("editor-container");
+
+            </script>
+
             <?php
             // Si se ha pulsado el boton de Enviar de Contacta
             if (isset($_POST['Enviar'])) {
@@ -57,6 +71,11 @@ include "funciones/contacta/funciones_contacta.php";
                 $nombre = $_POST['nombre']; // Recogemos el nombre
                 $email = $_POST['email']; // Recogemos el email
                 $asunto = $_POST['asunto']; // Recogemos el asunto
+                //$comentario = advancedEditor.getText();
+                //$comentario = $_GET['content']; //Variable que almacena el contenido escrito en <p>
+
+                $comentario = "Mi comentario pero no lo puedo recoger";
+
                 //$comentario = "JavaScript: quill.root.innerHTML"; // Recogemos el comentario
                 //$comentario = JavaScript: quill; // Recogemos el comentario
                 
@@ -186,7 +205,7 @@ include "funciones/contacta/funciones_contacta.php";
                 <hr>
 
                 <div class="row">
-                    <div class="col-md-12 col-sm-12 text-md-center"><input type="submit" name="Enviar" value="Enviar" class="btn btn-primary"/></div>
+                    <div class="col-md-12 col-sm-12 text-md-center"><input type="submit" id="Enviar" name="Enviar" value="Enviar" class="btn btn-primary"/></div>
                 </div>
             </form>
             <hr class="col-4">
@@ -246,6 +265,9 @@ include "funciones/contacta/funciones_contacta.php";
     placeholder: 'Comentarios...',
     theme: 'snow'
   });
+  
+
+  //$(document).on("click", "#SubmitButton", function(e) { e.preventDefault(); var $comentario = advancedEditor.getText(); var title = $("#title").val(); console.log(title, question); });
 </script>
 
 

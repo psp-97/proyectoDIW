@@ -1,4 +1,3 @@
-
 (function(){
 	
 	var Memory = {
@@ -112,7 +111,7 @@
 				<div class="front"><img src="'+ v.img +'"\
 				alt="'+ v.name +'" /></div>\
 				<div class="back"><img src="./images/juegoAlberto_descent/Reverso.png"\
-				alt="Codepen" /></div></div>\
+				alt="Reverso" /></div></div>\
 				</div>';
 			});
 			return frag;
