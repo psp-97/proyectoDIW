@@ -2,7 +2,7 @@
 session_start();
 include "funciones/Conexion.php";
 include "funciones/usuarios/funciones_usuario.php";
-include "funciones/valoraciones/funciones_valoraciones.php";
+include "funciones/contacta/funciones_contacta.php";
 
 if (!isset($_SESSION['usuario']) || $_SESSION['usuario'][0]->rol != 'administrador') {
     header("Location:index.php");
@@ -38,7 +38,7 @@ if (!isset($_SESSION['usuario']) || $_SESSION['usuario'][0]->rol != 'administrad
 <div class="container">
 
     <a href="micuenta.php">Volver a Mi Cuenta</a>
-    <h2>Listado de Mensajes Contacta (No disponible)</h2>
+    <h2>Listado de Mensajes Contacta</h2>
     <table class="table table-striped">
         <thead>
         <tr>
@@ -51,18 +51,18 @@ if (!isset($_SESSION['usuario']) || $_SESSION['usuario'][0]->rol != 'administrad
         </thead>
         <tbody>
         <?php
-        $n_comentarios = getN_Comentario();
-        if (empty($n_comentarios)) {
-            echo "<div class='alert alert-danger'>No hay T Mensajes en la base de datos</div>";
+        $contacta = getContacta();
+        if (empty($contacta)) {
+            echo "<div class='alert alert-danger'>No hay Mensajes de Contacta en la base de datos</div>";
         } else {
-            foreach ($n_comentarios as $n) {
+            foreach ($contacta as $c) {
                 ?>
                 <tr>
-                    <th scope="row"><?php echo $n->id; ?></th>
-                    <td><?php echo $n->id_usuario; ?></td>
-                    <td><?php echo $n->id_usuario; ?></td>
-                    <td><?php echo $n->id_usuario; ?></td>
-                    <td><?php echo $n->comentario; ?></td>
+                    <th scope="row"><?php echo $c->id; ?></th>
+                    <td><?php echo $c->nombre; ?></td>
+                    <td><?php echo $c->email; ?></td>
+                    <td><?php echo $c->asunto; ?></td>
+                    <td><?php echo $c->comentario; ?></td>
                 </tr>
                 <?php
             }

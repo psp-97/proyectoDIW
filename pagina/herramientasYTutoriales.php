@@ -102,7 +102,15 @@ if (isset($_POST['enviar']) && isset($_SESSION['usuario'])){
             <input type="submit" name="enviar" value="Comentar">
             </form>
             <hr class="linea">
-            <p id="pie"><a href="masComentarios.php">Más comentarios...</a></p>
+            <p id="pie">
+            <?php 
+            if (isset($_SESSION['usuario']) && $_SESSION['usuario'][0]->rol == 'administrador') {
+                ?>
+                <a href="t_comentarios.php">Más comentarios...</a>
+                <?php
+            }
+            ?>
+            </p>
         </div>
     </div>
 </div>

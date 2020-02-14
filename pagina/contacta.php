@@ -57,7 +57,9 @@ include "funciones/contacta/funciones_contacta.php";
                 $nombre = $_POST['nombre']; // Recogemos el nombre
                 $email = $_POST['email']; // Recogemos el email
                 $asunto = $_POST['asunto']; // Recogemos el asunto
-                $comentario = $_POST['editor-container']; // Recogemos el comentario
+                //$comentario = "JavaScript: quill.root.innerHTML"; // Recogemos el comentario
+                //$comentario = JavaScript: quill; // Recogemos el comentario
+                
 
                 // Si algun campo esta vacio lanzamos un error
                 if ($nombre == null || $asunto == null || $comentario == null) {
@@ -83,7 +85,7 @@ include "funciones/contacta/funciones_contacta.php";
                     </p>
                     <p>
                         Antes de enviar tu duda, asegúrate que no esté resuelta en nuestra sección de
-                        <a href="#" title="Preguntas frecuentes">preguntas frecuentes</a>.
+                        <a href="terminos.php" title="Preguntas frecuentes">preguntas frecuentes</a>.
                     </p>
                 </div>
             </div>
@@ -176,7 +178,7 @@ include "funciones/contacta/funciones_contacta.php";
                                     <button class="ql-clean"></button>
                                 </span>
                             </div>
-                            <div id="editor-container"></div>
+                            <div id="editor-container">Mi comentario pero no lo puedo recoger</div>
                         </div>
                     </div>
                 </div>
@@ -241,7 +243,7 @@ include "funciones/contacta/funciones_contacta.php";
       syntax: true,
       toolbar: '#toolbar-container'
     },
-    placeholder: 'Compose an epic...',
+    placeholder: 'Comentarios...',
     theme: 'snow'
   });
 </script>

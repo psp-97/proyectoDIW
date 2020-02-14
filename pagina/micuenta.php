@@ -23,7 +23,7 @@ if (!isset($_SESSION['usuario']) || $_SESSION['usuario'][0]->rol != 'administrad
         echo "<a href='administracion.php'>Ir a la zona de administración</a><br>";
         echo "<a href='n_comentarios.php'>Ir a la zona de mensajeria N</a><br>";
         echo "<a href='t_comentarios.php'>Ir a la zona de mensajeria T</a><br>";
-        echo "<a href='contacta_mensajes.php'>Ir a la zona de mensajeria Contacta(No disponible)</a><br>";
+        echo "<a href='contacta_mensajes.php'>Ir a la zona de mensajeria Contacta</a><br>";
     }
 
     if (isset($_POST['editarModal'])) {

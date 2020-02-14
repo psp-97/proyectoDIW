@@ -20,7 +20,7 @@ session_start();
                 Titular: Momazos S.L., en adelante LA EMPRESA<br/><br/>
                 CIF: B-25717273<br/><br/>
                 Domicilio: Vía Ardilla 76, 14900 Lucena (España)<br/><br/>
-                Correo electrónico: contacto (arroba) momazos (punto) combr/><br/>
+                Correo electrónico: contacto (arroba) momazos (punto) com<br/><br/>
                 Datos registrales: Registro Mercantil de Lleida, Tomo 1.252, Folio 151, Hoja L24.996, Inscripción 1.
             </p>
             <h3>2. Derechos de autor</h3>
