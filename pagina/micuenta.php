@@ -3,7 +3,7 @@ session_start();
 include "funciones/Conexion.php";
 include "funciones/usuarios/funciones_usuario.php";
 
-if (!isset($_SESSION['usuario']) || $_SESSION['usuario'][0]->rol != 'administrador') {
+if (!isset($_SESSION['usuario'])) {
     header("Location:index.php");
 }
 
