@@ -74,7 +74,8 @@ include "funciones/contacta/funciones_contacta.php";
                 //$comentario = advancedEditor.getText();
                 //$comentario = $_GET['content']; //Variable que almacena el contenido escrito en <p>
 
-                $comentario = "Mi comentario pero no lo puedo recoger";
+                $comentario = $_POST['description']; // Recogemos el comentario
+                
 
                 //$comentario = "JavaScript: quill.root.innerHTML"; // Recogemos el comentario
                 //$comentario = JavaScript: quill; // Recogemos el comentario
@@ -150,6 +151,7 @@ include "funciones/contacta/funciones_contacta.php";
                 -->
                 <div class="row">
                     <div class="col-md-12 col-sm-12 text-md-center">Comentarios</div>
+                    <input name='description' id="id_description" required="" type="hidden">
                     <div class="col-md-12 col-sm-12 text-md-center">
                         <div id="standalone-container">
                             <div id="toolbar-container">
@@ -197,7 +199,7 @@ include "funciones/contacta/funciones_contacta.php";
                                     <button class="ql-clean"></button>
                                 </span>
                             </div>
-                            <div id="editor-container">Mi comentario pero no lo puedo recoger</div>
+                            <div id="editor-container"></div>
                         </div>
                     </div>
                 </div>
@@ -264,7 +266,9 @@ include "funciones/contacta/funciones_contacta.php";
     },
     placeholder: 'Comentarios...',
     theme: 'snow'
-  });
+  }).on('text-change', function () {
+                $('#id_description').val($('#editor-container .ql-editor').html());
+            });
   
 
   //$(document).on("click", "#SubmitButton", function(e) { e.preventDefault(); var $comentario = advancedEditor.getText(); var title = $("#title").val(); console.log(title, question); });
