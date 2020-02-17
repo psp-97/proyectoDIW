@@ -15,18 +15,7 @@ session_start();
 </head>
 <body>
 <?php include("includes/navigation.php"); ?>
-<!--
-<div class="container">
-    <div class="row">
-        <div class="col text-center mt-2">
-            <h2>EMPAREJADOS (Alberto Zafra Montero)</h2>
-            <canvas id="canvas">
-                Your browser doesn't support Canvas, try another or update
-            </canvas>
-        </div>
-    </div>
-</div>
--->
+
 
 <!-- partial:index.partial.html -->
 <div class="wrap">

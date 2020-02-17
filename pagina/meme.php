@@ -38,6 +38,9 @@ if (isset($_POST['borrarMeme'])) {
 
 $memeSemana = getcontenidoSemana(); // Buscamos si es el meme de la semana
 $meme = getContenidoId($_GET['id']); // Obtenemos los datos del meme (imagen, descripcion)
+$numeroMegustas = getTotalMeGustas($_GET['id']); // Obtenemos los datos del meme (imagen, descripcion)
+
+//echo $numeroMegustas->sum; 
 
 //$valoracionMeme = getValoracionId($_GET['id']);
 
@@ -131,7 +134,16 @@ $meme = getContenidoId($_GET['id']); // Obtenemos los datos del meme (imagen, de
                         <form action="" method="POST">
                             <?php
                             // Si esta en estado no_megusta el boton lo cambiara a megusta
+                            /*
+                            if ($numeroMegustas > 0) {
+                                echo "Hay algunos megustas";
+                            }
+                            else {
+                                echo "Ningun megusta";
+                            }*/
                             if ($valoracionMeGusta->megusta == 0) {
+
+                                //echo $numeroMegustas; 
                                 ?>
                                 
                                 <button type="submit" class="btn btn-primary-outline" name="me_gusta1" >
@@ -147,6 +159,8 @@ $meme = getContenidoId($_GET['id']); // Obtenemos los datos del meme (imagen, de
                             }
                             // Si esta en estado megusta el boton lo cambiara a no_megusta
                             else {
+
+                                //echo $numeroMegustas; 
                                 ?>
                                 
                                 <button type="submit" class="btn btn-primary-outline" name="nome_gusta1" >
@@ -178,6 +192,8 @@ $meme = getContenidoId($_GET['id']); // Obtenemos los datos del meme (imagen, de
 
                     // Si no hay un megusta/no_megusta en la base estos botones crearan el registro megusta
                     } else {
+
+                        //echo $numeroMegustas; 
                         ?>
                         <!--
                         <form action="" method="POST">
@@ -187,7 +203,7 @@ $meme = getContenidoId($_GET['id']); // Obtenemos los datos del meme (imagen, de
 
                         
                         <form action="" method="POST">
-                        <button type="submit" name="me_gusta2" >
+                        <button type="submit" class="btn btn-primary-outline" name="me_gusta2" >
                             <img class="logito" src="images/iconos/like.png" alt="coment">
                         </button>
                         </form>
