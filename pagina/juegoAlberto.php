@@ -29,7 +29,7 @@ session_start();
 	</div>
 	
   </div>
-  <script src="js/JuegoAlberto.js"></script>
+  <script src="./js/JuegoAlberto.js"></script>
 
 
 <div class="footer text-center">
