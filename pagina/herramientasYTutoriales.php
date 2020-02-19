@@ -10,7 +10,7 @@ if (isset($_POST['enviar']) && isset($_SESSION['usuario'])){
 }
 ?>
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 <head>
     <?php include("includes/head-tag-contents.php"); ?>
     <script src="js/video.js"></script>

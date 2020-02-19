@@ -3,7 +3,7 @@ session_start();
 require_once("funciones/categorias/funciones_categorias.php");
 ?>
 <!DOCTYPE html>
-<html>
+<html lang="es">
 <head>
     <?php include("includes/head-tag-contents.php"); ?>
 </head>
