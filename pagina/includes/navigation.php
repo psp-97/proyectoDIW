@@ -40,8 +40,8 @@
                         Juegos
                     </a>
                     <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink2">
-                        <a class="dropdown-item" href="juegoPedro.php">"Nombre del juego"</a>
-                        <a class="dropdown-item" href="juegoAlberto.php">"Emparejados"</a>
+                        <a class="dropdown-item" href="juegoPedro.php">Digimon</a>
+                        <a class="dropdown-item" href="juegoAlberto.php">Emparejados</a>
                         <a class="dropdown-item" href="juegoJavi.php">3 en raya</a>
                         <a class="dropdown-item" href="juegoAntonio.php">Pong</a>
                     </div>
