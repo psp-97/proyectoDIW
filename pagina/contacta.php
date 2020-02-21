@@ -9,7 +9,7 @@ include "funciones/contacta/funciones_contacta.php";
 //include "funciones/usuarios/funciones_usuario.php";
 ?>
 <!DOCTYPE html>
-<html>
+<html lang="es">
 <head>
     <?php include("includes/head-tag-contents.php"); ?>
 
@@ -114,17 +114,17 @@ include "funciones/contacta/funciones_contacta.php";
 
             <form action="" method="POST">
                 <div class="row">
-                    <div class="col-md-6 col-sm-12 text-md-right">Nombre</div>
+                    <div class="col-md-6 col-sm-12 text-md-right"><label name="nombre" id="nombre">Nombre</lavel></div>
                     <div class="col-md-6 col-sm-12 text-md-left"><input class="formulario" type="text" id="nombre" name="nombre" placeholder="Nombre"></div>
                 </div>
                 <hr>
                 <div class="row">
-                    <div class="formulario col-md-6 col-sm-12 text-md-right">Email</div>
+                    <div class="formulario col-md-6 col-sm-12 text-md-right"><label name="email" id="email">Email</lavel></div>
                     <div class="formulario col-md-6 col-sm-12 text-md-left"><input class="formulario" type="text" id="email" name="email" placeholder="email (opcional)"></div>
                 </div>
                 <hr>
                 <div class="row">
-                    <div class="col-md-6 col-sm-12 text-md-right">Asunto</div>
+                    <div class="col-md-6 col-sm-12 text-md-right"><label name="asunto" id="asunto">Asunto</lavel></div>
                     <div class="col-md-6 col-sm-12 text-md-left">
                         <select id="asunto" name="asunto">
                             <option value="">Escoge</option>
@@ -150,7 +150,7 @@ include "funciones/contacta/funciones_contacta.php";
                 </div>
                 -->
                 <div class="row">
-                    <div class="col-md-12 col-sm-12 text-md-center">Comentarios</div>
+                    <div class="col-md-12 col-sm-12 text-md-center"><label name="comentarios" id="comentarios">Comentarios</lavel></div>
                     <input name='description' id="id_description" required="" type="hidden">
                     <div class="col-md-12 col-sm-12 text-md-center">
                         <div id="standalone-container">
