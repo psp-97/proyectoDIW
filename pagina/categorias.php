@@ -3,7 +3,7 @@ session_start();
 require_once("funciones/categorias/funciones_categorias.php");
 ?>
 <!DOCTYPE html>
-<html>
+<html lang="es">
 <head>
     <?php include("includes/head-tag-contents.php"); ?>
 </head>
@@ -21,7 +21,7 @@ require_once("funciones/categorias/funciones_categorias.php");
                     ?>
                     <a href="aleatorio.php?id_cat=<?php echo $c->id; ?>">
                         <div class=row id="linea">
-                            <div class="col-2"><img src="images/iconos/categorias/<?php echo $c->logo; ?>" width="50"></i></button>
+                            <div class="col-2"><img src="images/iconos/categorias/<?php echo $c->logo; ?>" width="50" alt="icono"></i></button>
                             </div>
                             <div class="col-10 my-auto"><?php echo $c->nombre ?></div>
                         </div>
