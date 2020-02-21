@@ -17,7 +17,7 @@ session_start();
             </div>
             <div class="row">
 
-            <div class="col text-center"><img src="./images/grupo.jpg" class="imagen-grupal" alt="orgia"></div>
+            <div class="col text-center"><img src="./images/grupo.jpg" class="imagen-grupal" alt="foto grupo"></div>
 
             </div>
             <div class="col-md-4 col-sm-12">
@@ -36,21 +36,21 @@ session_start();
             <div class="row text-center">
                 <div class="col-md">
 
-                    <img src="images/iconos/quienesSomos/quienes-somos-01.png" class="img-fluid imagen-meme" alt="imagen"/>
+                    <img src="images/iconos/quienesSomos/quienes-somos-01.png" class="img-fluid imagen-meme" alt="imagen consulta"/>
 
                     <p class="col">No te guardas ninguna duda o pregunta sobre ese artículo que tanto te gusta. En
                         nuestro Centro de Soporte estamos deseando poder ayudarte. ¡Pero qué majos somos!</p>
                 </div>
                 <div class="col-md">
 
-                    <img src="images/iconos/quienesSomos/quienes-somos-02.png" class="img-fluid imagen-meme" alt="imagen""/>
+                    <img src="images/iconos/quienesSomos/quienes-somos-02.png" class="img-fluid imagen-meme" alt="imagen web atractiva y rapida""/>
 
                     <p class="col-md-12">Nuestra web ha sido diseñada atendiendo a las opiniones y sugerencias de
                         personas como tú, que queréis una web sencilla, rápida y atractiva.</p>
                 </div>
                 <div class="col-md">
 
-                    <img src="images/iconos/quienesSomos/quienes-somos-03.png" class="img-fluid imagen-meme" alt="imagen"/>
+                    <img src="images/iconos/quienesSomos/quienes-somos-03.png" class="img-fluid imagen-meme" alt="imagen de pagina segura"/>
 
 
                     <p class="col-md-12">Paga de forma cómoda, rápida y segura en nuestra tienda. Utiliza el método de
@@ -61,7 +61,7 @@ session_start();
             <div class="row text-center">
                 <div class="col-md">
 
-                    <img src="images/iconos/quienesSomos/quienes-somos-04.png" class="img-fluid imagen-meme" alt="imagen"/>
+                    <img src="images/iconos/quienesSomos/quienes-somos-04.png" class="img-fluid imagen-meme" alt="imagen de compromiso de gestion eficaz"/>
 
 
                     <p class="col-md-12">Nada más realizar tu pedido nos ponemos en marcha para que llegue lo antes
@@ -69,7 +69,7 @@ session_start();
                 </div>
                 <div class="col-md">
 
-                    <img src="images/iconos/quienesSomos/quienes-somos-05.png" class="img-fluid imagen-meme" alt="imagen"/>
+                    <img src="images/iconos/quienesSomos/quienes-somos-05.png" class="img-fluid imagen-meme" alt="imagen de personas expertas"/>
 
 
                     <p class="col-md-12">Nuestro equipo de manitas es experto en montaje y reparación de equipos
@@ -77,7 +77,7 @@ session_start();
                 </div>
                 <div class="col-md">
 
-                    <img src="images/iconos/quienesSomos/quienes-somos-06.png" class="img-fluid imagen-meme" alt="imagen"/>
+                    <img src="images/iconos/quienesSomos/quienes-somos-06.png" class="img-fluid imagen-meme" alt="imagen de sitio fisico"/>
                     
                     <p class="col-md-12">Además de ser la tienda online de referencia, también puedes visitarnos en
                         nuestra tienda física. Aquí te asesoraremos en persona y recoger tus pedidos realizados mediante
