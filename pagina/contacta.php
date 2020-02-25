@@ -9,7 +9,7 @@ include "funciones/contacta/funciones_contacta.php";
 //include "funciones/usuarios/funciones_usuario.php";
 ?>
 <!DOCTYPE html>
-<html>
+<html lang="es">
 <head>
     <?php include("includes/head-tag-contents.php"); ?>
 
@@ -50,6 +50,20 @@ include "funciones/contacta/funciones_contacta.php";
         <div class="col-12">
             <h2>Contacta con nosotros</h2>
 
+            <script type="text/javascript">
+            /*
+            $('#Enviar').click(function() { 
+                $.ajax({
+                    url: "contacta.php", //Archivo PHP al que le enviarás el texto en <p>
+                    type: "GET",
+                    data: {save: "1", content: [COLOR="#008000"]$('#editor-container').text()[/COLOR]}
+                });
+            });*/
+
+            $comentario = document.getElementById("editor-container");
+
+            </script>
+
             <?php
             // Si se ha pulsado el boton de Enviar de Contacta
             if (isset($_POST['Enviar'])) {
@@ -57,6 +71,12 @@ include "funciones/contacta/funciones_contacta.php";
                 $nombre = $_POST['nombre']; // Recogemos el nombre
                 $email = $_POST['email']; // Recogemos el email
                 $asunto = $_POST['asunto']; // Recogemos el asunto
+                //$comentario = advancedEditor.getText();
+                //$comentario = $_GET['content']; //Variable que almacena el contenido escrito en <p>
+
+                $comentario = $_POST['description']; // Recogemos el comentario
+                
+
                 //$comentario = "JavaScript: quill.root.innerHTML"; // Recogemos el comentario
                 //$comentario = JavaScript: quill; // Recogemos el comentario
                 
@@ -94,17 +114,17 @@ include "funciones/contacta/funciones_contacta.php";
 
             <form action="" method="POST">
                 <div class="row">
-                    <div class="col-md-6 col-sm-12 text-md-right">Nombre</div>
+                    <div class="col-md-6 col-sm-12 text-md-right"><label for="nombre">Nombre</lavel></div>
                     <div class="col-md-6 col-sm-12 text-md-left"><input class="formulario" type="text" id="nombre" name="nombre" placeholder="Nombre"></div>
                 </div>
                 <hr>
                 <div class="row">
-                    <div class="formulario col-md-6 col-sm-12 text-md-right">Email</div>
+                    <div class="formulario col-md-6 col-sm-12 text-md-right"><label for="email">Email</lavel></div>
                     <div class="formulario col-md-6 col-sm-12 text-md-left"><input class="formulario" type="text" id="email" name="email" placeholder="email (opcional)"></div>
                 </div>
                 <hr>
                 <div class="row">
-                    <div class="col-md-6 col-sm-12 text-md-right">Asunto</div>
+                    <div class="col-md-6 col-sm-12 text-md-right"><label for="asunto">Asunto</lavel></div>
                     <div class="col-md-6 col-sm-12 text-md-left">
                         <select id="asunto" name="asunto">
                             <option value="">Escoge</option>
@@ -130,7 +150,8 @@ include "funciones/contacta/funciones_contacta.php";
                 </div>
                 -->
                 <div class="row">
-                    <div class="col-md-12 col-sm-12 text-md-center">Comentarios</div>
+                    <div class="col-md-12 col-sm-12 text-md-center"><label for="id_description">Comentarios</lavel></div>
+                    <input name='description' id="id_description" required="" type="hidden">
                     <div class="col-md-12 col-sm-12 text-md-center">
                         <div id="standalone-container">
                             <div id="toolbar-container">
@@ -178,7 +199,7 @@ include "funciones/contacta/funciones_contacta.php";
                                     <button class="ql-clean"></button>
                                 </span>
                             </div>
-                            <div id="editor-container">Mi comentario pero no lo puedo recoger</div>
+                            <div id="editor-container"></div>
                         </div>
                     </div>
                 </div>
@@ -186,7 +207,7 @@ include "funciones/contacta/funciones_contacta.php";
                 <hr>
 
                 <div class="row">
-                    <div class="col-md-12 col-sm-12 text-md-center"><input type="submit" name="Enviar" value="Enviar" class="btn btn-primary"/></div>
+                    <div class="col-md-12 col-sm-12 text-md-center"><input type="submit" id="Enviar" name="Enviar" value="Enviar" class="btn btn-primary"/></div>
                 </div>
             </form>
             <hr class="col-4">
@@ -199,28 +220,22 @@ include "funciones/contacta/funciones_contacta.php";
             <!-- Redes-->
             <div class="row text-center">
                 <div class="col-md col-sm-6">
-                    <a href="https://www.twitch.tv/linustech"><i class="fa fa-twitch redes" style="color:purple"></i></a>
-                    <p class="col-md-12">Twitch</p>
+                    <a href="https://www.twitch.tv/linustech"><i class="fa fa-twitch redes" style="color:purple"></i><p class="col-md-12">Twitch</p></a>
                 </div>
                 <div class="col-md col-sm-6">
-                    <a href="https://www.facebook.com/LinusTech"><i class="fa fa-facebook-square redes" style="color:blue"></i></a>
-                    <p class="col-md-12">Facebook</p>
+                    <a href="https://www.facebook.com/LinusTech"><i class="fa fa-facebook-square redes" style="color:blue"></i><p class="col-md-12">Facebook</p></a>
                 </div>
                 <div class="col-md col-sm-6">
-                    <a href="https://github.com/psp-97/proyectoDIW.git"><i class="fa fa-git-square redes" style="color:burlywood"></i></a>
-                    <p class="col-md-12">GitHub</p>
+                    <a href="https://github.com/psp-97/proyectoDIW.git"><i class="fa fa-git-square redes" style="color:burlywood"></i><p class="col-md-12">GitHub</p></a>
                 </div>
                 <div class="col-md col-sm-6">
-                    <a href="https://www.instagram.com/linustech/"><i class="fa fa-instagram redes" style="color:purple"></i></a>
-                    <p class="col-md-12">Instagram</p>
+                    <a href="https://www.instagram.com/linustech/"><i class="fa fa-instagram redes" style="color:purple"></i><p class="col-md-12">Instagram</p></a>
                 </div>
                 <div class="col-md col-sm-6">
-                    <a href="https://twitter.com/LinusTech"><i class="fa fa-twitter-square redes" style="color:cyan"></i></a>
-                    <p class="col-md-12">Twiter</p>
+                    <a href="https://twitter.com/LinusTech"><i class="fa fa-twitter-square redes" style="color:cyan"></i><p class="col-md-12">Twiter</p></a>
                 </div>
                 <div class="col-md col-sm-6">
-                    <a href="https://www.youtube.com/user/LinusTechTips/videos"><i class="fa fa-youtube-play redes" style="color:red"></i></a>
-                    <p class="col-md-12">Youtube</p>
+                    <a href="https://www.youtube.com/user/LinusTechTips/videos"><i class="fa fa-youtube-play redes" style="color:red"></i><p class="col-md-12">Youtube</p></a>
                 </div>
             </div>
         </div>
@@ -245,7 +260,12 @@ include "funciones/contacta/funciones_contacta.php";
     },
     placeholder: 'Comentarios...',
     theme: 'snow'
-  });
+  }).on('text-change', function () {
+                $('#id_description').val($('#editor-container .ql-editor').html());
+            });
+  
+
+  //$(document).on("click", "#SubmitButton", function(e) { e.preventDefault(); var $comentario = advancedEditor.getText(); var title = $("#title").val(); console.log(title, question); });
 </script>
 
 

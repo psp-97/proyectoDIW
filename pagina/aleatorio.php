@@ -3,7 +3,7 @@ session_start();
 include("funciones/contenido/funciones_contenido.php");
 ?>
 <!DOCTYPE html>
-<html>
+<html lang="es">
 <head>
     <?php include("includes/head-tag-contents.php"); ?>
 </head>
@@ -27,7 +27,7 @@ include("funciones/contenido/funciones_contenido.php");
                                 <img src="images/memes/<?php echo $c->imagen;?>" alt="Sample Image" class="card-image m-20"/>
                                 <div class="row">
                                     <div class="col text-left">
-                                        <a class="fuente" href="<?php echo $c->fuente; ?>">Fuente: <?php echo $c->fuente; ?></a>
+                                        class="fuente" href="<?php echo $c->fuente; ?>">Fuente: <?php echo $c->fuente; ?>
                                     </div>
                                 </div>
                                 <p class="card-content"><?php echo $c->descripcion; ?></p>

@@ -38,7 +38,7 @@ if(!isset($_SESSION['usuario'])) {
 }*/
 ?>
 <!DOCTYPE html>
-<html>
+<html lang="es">
 <head>
     <?php include("includes/head-tag-contents.php");
     ?>
@@ -59,7 +59,7 @@ include("includes/navigation.php"); ?>
             <form action="" method="POST">
                 <div class=row>
                     <div class="col-md-3 col-sm-12"></div>
-                    <div id="email" class="col-md-3 col-sm-12">EMAIL:</div>
+                    <div id="email" class="col-md-3 col-sm-12"><label for="correo">EMAIL:</label></div>
                     <div class="col-md-6 col-sm-12"><input class="formulario" type="text" id="correo" name="email">
                     </div>
                 </div>
@@ -67,7 +67,7 @@ include("includes/navigation.php"); ?>
 
                 <div class=row>
                     <div class="col-md-3 col-sm-12"></div>
-                    <div class="col-md-3 col-sm-12">CONTRASEÑA:</div>
+                    <div class="col-md-3 col-sm-12"><label for="contra">CONTRASEÑA:</label></div>
                     <div class="col-md-6 col-sm-12"><input class="formulario" type="password" id="contra" name="pass">
                     </div>
                 </div>
@@ -141,35 +141,35 @@ include("includes/navigation.php"); ?>
                 </div>
                 <div class=row>
                     <div class="col-md-1 col-sm-12"></div>
-                    <div class="col-md-5 col-sm-12">EMAIL:</div>
-                    <div class="col-md-6 col-sm-12"><input class="formulario" name="correo" type="text" id="correo">
+                    <div class="col-md-5 col-sm-12"><label for="correeo">EMAIL:</label></div>
+                    <div class="col-md-6 col-sm-12"><input class="formulario" name="correo" type="text" id="correeo">
                     </div>
                 </div>
                 <hr>
                 <div class=row>
                     <div class="col-md-1 col-sm-12"></div>
-                    <div class="col-md-5 col-sm-12">USUARIO:</div>
+                    <div class="col-md-5 col-sm-12"><label for="usuario">USUARIO:</label></div>
                     <div class="col-md-6 col-sm-12"><input class="formulario" name="username" type="text" id="usuario">
                     </div>
                 </div>
                 <hr>
                 <div class=row>
                     <div class="col-md-1 col-sm-12"></div>
-                    <div class="col-md-5 col-sm-12">CONTRASEÑA:</div>
+                    <div class="col-md-5 col-sm-12"><label for="contraa">CONTRASEÑA:</label></div>
                     <div class="col-md-6 col-sm-12"><input class="formulario" name="password" type="password"
-                                                           id="contra"></div>
+                                                           id="contraa"></div>
                 </div>
                 <hr>
                 <div class=row>
                     <div class="col-md-1 col-sm-12"></div>
-                    <div class="col-md-5 col-sm-12">OTRA VEZ:</div>
+                    <div class="col-md-5 col-sm-12"><label for="repe">OTRA VEZ:</label></div>
                     <div class="col-md-6 col-sm-12"><input class="formulario" name="otraVez" type="password" id="repe">
                     </div>
                 </div>
                 <hr>
                 <div class=row>
                     <div class="col">
-                        Resuelve la operación
+                       <label for="resultado"> Resuelve la operación</label>
                     </div>
                 </div>
                 <div class="row">

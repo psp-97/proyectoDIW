@@ -11,7 +11,8 @@ session_start();
 <div class="container">
     <div class="row">
         <div class="col text-center mt-2">
-            <h2>PONG (Antonio Miguel Cobos Fernández)</h2>
+            <h2>Digimon (Pedro Serrano Pacheco)</h2>
+            <h3>Se habra acabado el curso y todavia no lo habra subido xDDD</h3>
             <canvas id="canvas">
                 Your browser doesn't support Canvas, try another or update
             </canvas>

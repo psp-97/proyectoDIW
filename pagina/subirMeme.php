@@ -3,7 +3,7 @@ require_once("funciones/categorias/funciones_categorias.php");
 session_start();
 ?>
 <!DOCTYPE html>
-<html>
+<html lang="es">
 <head>
     <?php include("includes/head-tag-contents.php"); ?>
 </head>
@@ -40,8 +40,7 @@ session_start();
                     <div class="col-md-3 col-sm-12">
                         <div class="input-group">
                             <div class="custom-file">
-                                <input type="file" name="imagen" class="custom-file-input" id="inputGroupFile01"
-                                       aria-describedby="inputGroupFileAddon01">
+                                <input type="file" name="imagen" class="custom-file-input" id="inputGroupFile01">
                                 <label class="custom-file-label" for="inputGroupFile01">Elegir archivo</label>
                             </div>
                         </div>
@@ -50,15 +49,15 @@ session_start();
                 <hr>
                 <div class=row>
                     <div class="col-md-4 col-sm-12"></div>
-                    <div class="col-md-2 col-sm-12">Fuente:</div>
-                    <div class="col-md-6 col-sm-12"><input class="formulario" type="text" name="fuente"></div>
+                    <div class="col-md-2 col-sm-12"><label for="fuente">Fuente:</label></div>
+                    <div class="col-md-6 col-sm-12"><input class="formulario" type="text" id="fuente" name="fuente"></div>
                 </div>
                 <hr>
                 <div class=row>
                     <div class="col-md-4 col-sm-12"></div>
-                    <div class="col-md-2 col-sm-12">Categoria:</div>
+                    <div class="col-md-2 col-sm-12"><label for="categoria">Categoria:</label></div>
                     <div class="col-md-6 col-sm-12">
-                        <select class="formulario" name="categoria">
+                        <select class="formulario" name="categoria" id="categoria">
                             <?php
                             $categorias = getCategorias();
                             foreach ($categorias as $categoria) {
@@ -70,8 +69,10 @@ session_start();
                 </div>
                 <hr>
                 <div class=row>
-                    <div class="col-md-5 col-sm-12"></div>
-                    <div class="col-md-7 col-sm-12"><textarea class="formulario" name="descripcion" rows="10" cols="30"
+                    <div class="col-md-3 col-sm-12"></div>
+
+                    <div class="col-md-2 col-sm-12"><label for="descripcion" hidden>descripcion</label></div>
+                    <div class="col-md-7 col-sm-12"><textarea class="formulario" id="descripcion" name="descripcion" rows="10" cols="30"
                                                               placeholder="Introduce aquí la descripción..."></textarea>
                     </div>
                 </div>
@@ -79,7 +80,7 @@ session_start();
                 <div class=row>
                     <div class="col-md-6 col-sm-12"></div>
                     <div class="col-md-6 col-sm-12"><input type="submit" name="submit" value="Subir"
-                                                           class="btn btn-primary"/></div>
+                                                           class="btn btn-dark"/></div>
                 </div>
                 <hr>
             </form>

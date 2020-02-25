@@ -2,13 +2,13 @@
 session_start();
 ?>
 <!DOCTYPE html>
-<html>
+<html lang="es">
 <head>
     <?php include("includes/head-tag-contents.php"); ?>
 </head>
 <body>
 <?php include("includes/navigation.php"); ?>
-<div class="container text-justify">
+<div class="container text-left">
     <div class="row content">
         <div class="col">
             <h2>Terminos de Uso</h2>

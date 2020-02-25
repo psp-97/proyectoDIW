@@ -1,6 +1,6 @@
 <nav class="navbar navbar-expand-md navbar-light bg-light">
     <div class="navbar-toggler logoPequeño">
-        <a class="navbar-brand" href="index.php"><img class="logo" src="images/iconos/Momazos_Logo_Completo.png"></a>
+        <a class="navbar-brand" href="index.php"><img class="logo" src="images/iconos/Momazos_Logo_Completo.png" alt="Logo de MOMAZOS y ya"></a>
     </div>
     <button class="navbar-toggler btn btn-primary" type="button" data-toggle="collapse"
             data-target="#navbarTogglerDemo01"
@@ -9,7 +9,7 @@
     </button>
     <div class="collapse navbar-collapse" id="navbarTogglerDemo01">
         <a class="navbar-brand d-none d-md-block" href="index.php"><img class="logo"
-        src="images/iconos/Momazos_Logo_Completo.png"></a>
+        src="images/iconos/Momazos_Logo_Completo.png" alt="Ir a pagina principal de MOMAZOS tu web de memes"></a>
         <ul class="navbar-nav mr-auto mt-2 mt-lg-0">
             <?php
             if (isset($_SESSION['usuario']) &&
@@ -40,8 +40,8 @@
                         Juegos
                     </a>
                     <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink2">
-                        <a class="dropdown-item" href="juegoPedro.php">"Nombre del juego"</a>
-                        <a class="dropdown-item" href="juegoAlberto.php">"Emparejados"</a>
+                        <a class="dropdown-item" href="juegoPedro.php">Digimon</a>
+                        <a class="dropdown-item" href="juegoAlberto.php">Emparejados</a>
                         <a class="dropdown-item" href="juegoJavi.php">3 en raya</a>
                         <a class="dropdown-item" href="juegoAntonio.php">Pong</a>
                     </div>

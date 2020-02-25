@@ -5,7 +5,7 @@ if( isset($_POST['novedades'])){
     header('Location:index.php');}
 ?>
 <!DOCTYPE html>
-<html>
+<html lang="es">
 <head>
     <?php include("includes/head-tag-contents.php"); ?>
 </head>

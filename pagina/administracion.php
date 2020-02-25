@@ -10,7 +10,7 @@ if (!isset($_SESSION['usuario']) || $_SESSION['usuario'][0]->rol != 'administrad
 
 ?>
 <!DOCTYPE html>
-<html>
+<html lang="es">
 <head>
     <?php include("includes/head-tag-contents.php"); ?>
 </head>

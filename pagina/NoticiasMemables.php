@@ -10,7 +10,7 @@ if (isset($_POST['enviar']) && isset($_SESSION['usuario'])){
 }
 ?>
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 <head>
     <?php include("includes/head-tag-contents.php");?>
     <style>
@@ -107,7 +107,15 @@ if (isset($_POST['enviar']) && isset($_SESSION['usuario'])){
                 <input type="submit" name="enviar" value="Comentar">
                 </form>
                 <hr class="linea">
-                <p id="pie"><a href="masComentarios.php">Más comentarios...</a></p>
+                <p id="pie">
+                <?php 
+                if (isset($_SESSION['usuario']) && $_SESSION['usuario'][0]->rol == 'administrador') {
+                    ?>
+                    <a href="n_comentarios.php">Más comentarios...</a>
+                    <?php
+                }
+                ?>
+                </p>
             </div>
         </div>
     </div>

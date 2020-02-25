@@ -32,11 +32,11 @@ include ("funciones/usuarios/funciones_usuario.php");
                 ?>
                 <a class="enlaceAMeme" href="meme.php?id=<?php echo $c->id; ?>">
                     <div class="card">
-                        <img src="images/memes/<?php echo $c->imagen; ?>" alt="Sample Image" class="card-image"/>
+                        <img src="images/memes/<?php echo $c->imagen; ?>" alt="Momazo" class="card-image"/>
                         <div class="row">
                             <div class="col text-left">
-                                <a class="fuente" href="<?php echo $c->fuente; ?>">Fuente:
-                                    <?php echo $c->fuente; ?></a>
+                                <div class="fuente">Fuente:
+                                    <?php echo $c->fuente; ?></div>
                             </div>
                         </div>
                         <p class="card-content"><?php echo $c->descripcion; ?></p>
@@ -54,10 +54,10 @@ include ("funciones/usuarios/funciones_usuario.php");
                     ?>
                     <a class="enlaceAMeme" href="meme.php?id=<?php echo $memeSemana->id; ?>">
                         <h3 class="aside-title">Meme de la semana</h3>
-                        <img src="images/memes/<?php echo $memeSemana->imagen; ?>" alt="Sample Image" class="item-image"/>
+                        <img src="images/memes/<?php echo $memeSemana->imagen; ?>" alt="Meme" class="item-image"/>
                         <div class="row">
                             <div class="col text-right">
-                                <a class="fuente" href="<?php echo $memeSemana->fuente; ?>">Fuente: <?php echo $memeSemana->fuente; ?></a>
+                                <div class="fuente" >Fuente: <?php echo $memeSemana->fuente; ?></div>
                             </div>
                         </div>
                         <p>Este meme se ha merecido el galardón a meme de la semana tras ser el más votado

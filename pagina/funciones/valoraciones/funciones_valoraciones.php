@@ -40,6 +40,20 @@ function getValoracionId($id) {
     return $valoraciones;
 }
 
+// Obtiene todos los megustas que tiene este meme en total
+function getTotalMeGustas($id) {
+    $c = new Conexion();
+    $resultado = $c->query("SELECT SUM(megusta) FROM valoracion_mg where id_contenido=$id && megusta=1");
+
+    if ($objeto = $resultado->fetch(PDO::FETCH_OBJ)) {
+       return $objeto;
+    }
+    else{
+        return 0;
+    }   
+}
+
+
 // Obtiene si este usuario ha dado megusta o no_megusta al meme
 function getMeGustaId($id, $id_usuario) {
     $c = new Conexion();
