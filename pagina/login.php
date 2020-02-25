@@ -60,7 +60,7 @@ include("includes/navigation.php"); ?>
                 <div class=row>
                     <div class="col-md-3 col-sm-12"></div>
                     <div id="email" class="col-md-3 col-sm-12"><label for="correo">EMAIL:</label></div>
-                    <div class="col-md-6 col-sm-12"><input class="formulario" type="text" id="correo" name="email">
+                    <div class="col-md-6 col-sm-12"><input class="formulario form-control" type="text" id="correo" name="email">
                     </div>
                 </div>
                 <hr>
@@ -68,7 +68,7 @@ include("includes/navigation.php"); ?>
                 <div class=row>
                     <div class="col-md-3 col-sm-12"></div>
                     <div class="col-md-3 col-sm-12"><label for="contra">CONTRASEÑA:</label></div>
-                    <div class="col-md-6 col-sm-12"><input class="formulario" type="password" id="contra" name="pass">
+                    <div class="col-md-6 col-sm-12"><input class="formulario form-control" type="password" id="contra" name="pass">
                     </div>
                 </div>
                 <hr>
@@ -142,28 +142,28 @@ include("includes/navigation.php"); ?>
                 <div class=row>
                     <div class="col-md-1 col-sm-12"></div>
                     <div class="col-md-5 col-sm-12"><label for="correeo">EMAIL:</label></div>
-                    <div class="col-md-6 col-sm-12"><input class="formulario" name="correo" type="text" id="correeo">
+                    <div class="col-md-6 col-sm-12"><input class="formulario form-control" name="correo" type="text" id="correeo">
                     </div>
                 </div>
                 <hr>
                 <div class=row>
                     <div class="col-md-1 col-sm-12"></div>
                     <div class="col-md-5 col-sm-12"><label for="usuario">USUARIO:</label></div>
-                    <div class="col-md-6 col-sm-12"><input class="formulario" name="username" type="text" id="usuario">
+                    <div class="col-md-6 col-sm-12"><input class="formulario form-control" name="username" type="text" id="usuario">
                     </div>
                 </div>
                 <hr>
                 <div class=row>
                     <div class="col-md-1 col-sm-12"></div>
                     <div class="col-md-5 col-sm-12"><label for="contraa">CONTRASEÑA:</label></div>
-                    <div class="col-md-6 col-sm-12"><input class="formulario" name="password" type="password"
+                    <div class="col-md-6 col-sm-12"><input class="formulario form-control" name="password" type="password"
                                                            id="contraa"></div>
                 </div>
                 <hr>
                 <div class=row>
                     <div class="col-md-1 col-sm-12"></div>
                     <div class="col-md-5 col-sm-12"><label for="repe">OTRA VEZ:</label></div>
-                    <div class="col-md-6 col-sm-12"><input class="formulario" name="otraVez" type="password" id="repe">
+                    <div class="col-md-6 col-sm-12"><input class="formulario form-control" name="otraVez" type="password" id="repe">
                     </div>
                 </div>
                 <hr>
@@ -209,7 +209,7 @@ include("includes/navigation.php"); ?>
                         <?php echo $numero2 . " = "; ?>
                     </div>
                     <div class="col-2">
-                        <input type="text" name="resultado" id="resultado">
+                        <input class="form-control" type="text" name="resultado" id="resultado">
                     </div>
                     <?php
                     if (isset($errorCaptcha) && $errorCaptcha) {
