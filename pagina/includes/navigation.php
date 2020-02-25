@@ -81,7 +81,7 @@
         } else {
             ?>
             <form action="login.php" class="form-inline my-2 my-lg-0">
-                <button class="btn btn-outline-primary my-2 my-sm-0 login" id="usuario" type="submit">Log in</button>
+                <button class="btn btn-outline-primary  my-2 my-sm-0 login" id="usuario" type="submit">Log in</button>
             </form>
             <?php
         }

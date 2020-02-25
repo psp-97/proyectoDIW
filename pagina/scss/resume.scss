@@ -140,6 +140,12 @@ span.textoMenu{
   font-family: "Gochi Hand";
 }
 
+.btn-outline-primary:hover, .btn-outline-primary:focus, .btn-outline-primary:active, .btn-outline-primary.active, .open>.dropdown-toggle.btn-outline-primary {
+  color: black !important;
+  background-color: white !important;
+  border-color: #285e8e !important; /*set the color you want here*/
+}
+
 .miCuenta{
   background-color: $primary;
   color: white;
