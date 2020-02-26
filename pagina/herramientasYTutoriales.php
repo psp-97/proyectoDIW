@@ -101,7 +101,7 @@ if (isset($_POST['enviar']) && isset($_SESSION['usuario'])){
             <h3>Coméntanos cómo haces tú los memes</h3>
             <form action="" method="post">
             <label for="comentario" style="display:none">Comentario</label>
-            <textarea placeholder="Deja tu comentario aquí..." name="comentario" id="comentario"></textarea>
+            <textarea placeholder="Deja tu comentario aquí..." name="comentario" id="comentario" required></textarea>
             <input type="submit" name="enviar" value="Comentar">
             </form>
             <hr class="linea">
