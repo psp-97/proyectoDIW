@@ -274,7 +274,7 @@ $numeroMegustas = getTotalMeGustas($_GET['id']); // Obtenemos los datos del meme
                         <div class=row>
                             <div class="col-md-12 col-sm-12">COMENTARIO:</div>
                             <div class="col-md-12 col-sm-12"><input class="formulario form-control" type="text" style="width:100%"
-                                id="comentario" name="comentario" placeholder="Escriba aqui su comentario">
+                                id="comentario" name="comentario" placeholder="Escriba aqui su comentario" required="">
                             </div>
                         </div>
                         <br>

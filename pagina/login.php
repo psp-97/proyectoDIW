@@ -58,25 +58,20 @@ include("includes/navigation.php"); ?>
             <h2 class="aside-title">Iniciar Sesion</h2>
             <form action="" method="POST">
                 <div class=row>
-                    <div class="col-md-3 col-sm-12"></div>
-                    <div id="email" class="col-md-3 col-sm-12"><label for="correo">EMAIL:</label></div>
-                    <div class="col-md-6 col-sm-12"><input class="formulario form-control" type="text" id="correo" name="email">
-                    </div>
+                    <div id="email" class="col-md-6 col-sm-12 text-md-right"><label for="correo">EMAIL</label></div>
+                    <div class="col-md-6 col-sm-12 text-md-left"><input class="formulario form-control" type="text" id="correo" name="email" required=""></div>
                 </div>
                 <hr>
-
                 <div class=row>
-                    <div class="col-md-3 col-sm-12"></div>
-                    <div class="col-md-3 col-sm-12"><label for="contra">CONTRASEÑA:</label></div>
-                    <div class="col-md-6 col-sm-12"><input class="formulario form-control" type="password" id="contra" name="pass">
-                    </div>
+                    <div class="col-md-6 col-sm-12 text-md-right"><label for="contra">CONTRASEÑA</label></div>
+                    <div class="col-md-6 col-sm-12 text-md-left"><input class="formulario form-control" type="password" id="contra" name="pass" required=""></div>
                 </div>
                 <hr>
                 <div class="row">
                     <div class="col-md-5 col-sm-12"></div>
                     <div class="col-md-7 col-sm-12"><input type="submit"
-                                                           class="btn btn-outline-primary my-2 my-sm-0 login"
-                                                           type="submit" value="Iniciar Sesión" name="login"></button>
+                        class="btn btn-outline-primary my-2 my-sm-0 login"
+                        type="submit" value="Iniciar Sesión" name="login"></button>
                     </div>
                 </div>
                 <hr>
@@ -140,31 +135,23 @@ include("includes/navigation.php"); ?>
                     </div>
                 </div>
                 <div class=row>
-                    <div class="col-md-1 col-sm-12"></div>
-                    <div class="col-md-5 col-sm-12"><label for="correeo">EMAIL:</label></div>
-                    <div class="col-md-6 col-sm-12"><input class="formulario form-control" name="correo" type="text" id="correeo">
-                    </div>
+                    <div class="col-md-6 col-sm-12 text-md-right"><label for="correeo">EMAIL</label></div>
+                    <div class="col-md-6 col-sm-12 text-md-left"><input class="formulario form-control" name="correo" type="text" id="correeo" required=""></div>
                 </div>
                 <hr>
                 <div class=row>
-                    <div class="col-md-1 col-sm-12"></div>
-                    <div class="col-md-5 col-sm-12"><label for="usuario">USUARIO:</label></div>
-                    <div class="col-md-6 col-sm-12"><input class="formulario form-control" name="username" type="text" id="usuario">
-                    </div>
+                    <div class="col-md-6 col-sm-12 text-md-right"><label for="usuario">USUARIO</label></div>
+                    <div class="col-md-6 col-sm-12 text-md-left"><input class="formulario form-control" name="username" type="text" id="usuario" required=""></div>
                 </div>
                 <hr>
                 <div class=row>
-                    <div class="col-md-1 col-sm-12"></div>
-                    <div class="col-md-5 col-sm-12"><label for="contraa">CONTRASEÑA:</label></div>
-                    <div class="col-md-6 col-sm-12"><input class="formulario form-control" name="password" type="password"
-                                                           id="contraa"></div>
+                    <div class="col-md-6 col-sm-12 text-md-right"><label for="contraa">CONTRASEÑA</label></div>
+                    <div class="col-md-6 col-sm-12 text-md-left"><input class="formulario form-control" name="password" type="password" id="contraa" required=""></div>
                 </div>
                 <hr>
                 <div class=row>
-                    <div class="col-md-1 col-sm-12"></div>
-                    <div class="col-md-5 col-sm-12"><label for="repe">OTRA VEZ:</label></div>
-                    <div class="col-md-6 col-sm-12"><input class="formulario form-control" name="otraVez" type="password" id="repe">
-                    </div>
+                    <div class="col-md-6 col-sm-12 text-md-right"><label for="repe">OTRA VEZ</label></div>
+                    <div class="col-md-6 col-sm-12 text-md-left"><input class="formulario form-control" name="otraVez" type="password" id="repe" required=""></div>
                 </div>
                 <hr>
                 <div class=row>
@@ -198,19 +185,20 @@ include("includes/navigation.php"); ?>
                     $_SESSION['captcha'] = $resultado;
 
                     ?>
-
-                    <div class="col-2">
+                    
+                    <div class="col-6 text-md-right">
                         <?php echo $numero1; ?>
-                    </div>
-                    <div class="col-2">
+
                         <?php echo $operacion; ?>
-                    </div>
-                    <div class="col-2">
+
                         <?php echo $numero2 . " = "; ?>
                     </div>
-                    <div class="col-2">
-                        <input class="form-control" type="text" name="resultado" id="resultado">
+
+                    <div class="col-6 text-md-left">
+                        <input class="form-control" type="text" name="resultado" id="resultado" required="">
                     </div>
+                    
+                    
                     <?php
                     if (isset($errorCaptcha) && $errorCaptcha) {
                         ?>
@@ -279,8 +267,8 @@ include("includes/navigation.php"); ?>
                 <div class=row>
                     <div class="col-md-5 col-sm-12"></div>
                     <div class="col-md-7 col-sm-12"><input type="submit" name="registrar" id="registrar"
-                                                           class="btn btn-outline-primary my-2 my-sm-0 login"
-                                                           type="submit" value="Registrarse"></button></div>
+                        class="btn btn-outline-primary my-2 my-sm-0 login"
+                        type="submit" value="Registrarse"></button></div>
                 </div>
             </form>
             <hr>
