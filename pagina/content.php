@@ -42,7 +42,7 @@ include("funciones/usuarios/funciones_usuario.php");
                 ?>
                 <a class="enlaceAMeme" href="meme.php?id=<?php echo $c->id; ?>">
                     <div class="card">
-                        <img src="images/memes/<?php echo $c->imagen; ?>" alt="Momazo" class="card-image"/>
+                        <img src="images/memes/<?php echo $c->imagen; ?>" alt="<?php echo $c->descripcion; ?>" class="card-image"/>
                         <div class="row">
                             <div class="col text-left">
                                 <div class="fuente">Fuente:
