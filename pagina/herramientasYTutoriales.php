@@ -31,7 +31,7 @@ if (isset($_POST['enviar']) && isset($_SESSION['usuario'])){
         <div class="col-sm-8">
             <div class="row" id="columna">
                 <h4>¿Cómo hacer memes?</h4>
-                <img src="images/herramientasYTutoriales/Captura.PNG" width="500" alt="Sample Image" class="item-image"/>
+                <img src="images/herramientasYTutoriales/Captura.PNG" width="500" alt="Como hacer memes" class="item-image"/>
                 <p>Existen páginas como por ejemplo <a href="https://imgur.com/memegen/create/nTxcG3I">Imgur</a> en
                     las
                     que se puede hacer
@@ -60,12 +60,14 @@ if (isset($_POST['enviar']) && isset($_SESSION['usuario'])){
                             <button type="button" id="play-pause" class="play">Play</button>
                         </div>
                         <div class="col-l-7">
+                            <label for="seek-bar" style="display:none">Barra de video</label>
                             <input type="range" id="seek-bar" value="0">
                         </div>
                         <div class="col-l-1">
                             <button type="button" id="mute">Mute</button>
                         </div>
                         <div class="col-l-2">
+                            <label for="volume-bar" style="display:none">Barra de volumen</label>
                             <input type="range" id="volume-bar" min="0" max="1" step="0.1" value="1">
                         </div>
                         <div class="col-l-1">
@@ -76,13 +78,13 @@ if (isset($_POST['enviar']) && isset($_SESSION['usuario'])){
             </div>
             <div class="row" id="columna">
                 <h4>Facebook saca su propia herramienta para crear memes</h4>
-                <img id="imagen2" src="images/herramientasYTutoriales/face.png">
+                <img id="imagen2" src="images/herramientasYTutoriales/face.png" alt="Imagen facebook">
                    <p>Facebook ha sacado su propio editor de memes. <a href="https://www.20minutos.es/noticia/4102092/0/facebook-se-fija-en-los-memes-y-prueba-una-app-propia-para-disenarlos/">Link de la noticia...</a></p>
             </div>
            
             <div class="row" id="columna">
                 <h4>Memes con Photoshop</h4>
-                    <img id="imagen2" src="images/herramientasYTutoriales/photo.jpg">
+                    <img id="imagen2" src="images/herramientasYTutoriales/photo.jpg" alt="Memes con PhotoShop">
                 <p>Siempre está la opción de crear los memes desde 0 sin ningún tipo de aplicación asistente para hacer memes.
                 </p>
             </div>
@@ -98,7 +100,8 @@ if (isset($_POST['enviar']) && isset($_SESSION['usuario'])){
         <div class="col-sm-4" id="derecha">
             <h3>Coméntanos cómo haces tú los memes</h3>
             <form action="" method="post">
-            <textarea placeholder="Deja tu comentario aquí..." name="comentario"></textarea>
+            <label for="comentario" style="display:none">Comentario</label>
+            <textarea placeholder="Deja tu comentario aquí..." name="comentario" id="comentario"></textarea>
             <input type="submit" name="enviar" value="Comentar">
             </form>
             <hr class="linea">
