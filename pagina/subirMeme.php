@@ -50,14 +50,14 @@ session_start();
                 <div class=row>
                     <div class="col-md-4 col-sm-12"></div>
                     <div class="col-md-2 col-sm-12"><label for="fuente">Fuente:</label></div>
-                    <div class="col-md-6 col-sm-12"><input class="formulario" type="text" id="fuente" name="fuente"></div>
+                    <div class="col-md-6 col-sm-12"><input class="formulario form-control" type="text" id="fuente" name="fuente"></div>
                 </div>
                 <hr>
                 <div class=row>
                     <div class="col-md-4 col-sm-12"></div>
                     <div class="col-md-2 col-sm-12"><label for="categoria">Categoria:</label></div>
                     <div class="col-md-6 col-sm-12">
-                        <select class="formulario" name="categoria" id="categoria">
+                        <select class="formulario form-control" name="categoria" id="categoria">
                             <?php
                             $categorias = getCategorias();
                             foreach ($categorias as $categoria) {
@@ -72,7 +72,7 @@ session_start();
                     <div class="col-md-3 col-sm-12"></div>
 
                     <div class="col-md-2 col-sm-12"><label for="descripcion" hidden>descripcion</label></div>
-                    <div class="col-md-7 col-sm-12"><textarea class="formulario" id="descripcion" name="descripcion" rows="10" cols="30"
+                    <div class="col-md-7 col-sm-12"><textarea class="formulario form-control"" id="descripcion" name="descripcion" rows="10" cols="30"
                                                               placeholder="Introduce aquí la descripción..."></textarea>
                     </div>
                 </div>

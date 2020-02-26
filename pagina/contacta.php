@@ -115,12 +115,12 @@ include "funciones/contacta/funciones_contacta.php";
             <form action="" method="POST">
                 <div class="row">
                     <div class="col-md-6 col-sm-12 text-md-right"><label for="nombre">Nombre</lavel></div>
-                    <div class="col-md-6 col-sm-12 text-md-left"><input class="formulario" type="text" id="nombre" name="nombre" placeholder="Nombre"></div>
+                    <div class="col-md-6 col-sm-12 text-md-left"><input class="formulario form-control"" type="text" id="nombre" name="nombre" placeholder="Nombre"></div>
                 </div>
                 <hr>
                 <div class="row">
                     <div class="formulario col-md-6 col-sm-12 text-md-right"><label for="email">Email</lavel></div>
-                    <div class="formulario col-md-6 col-sm-12 text-md-left"><input class="formulario" type="text" id="email" name="email" placeholder="email (opcional)"></div>
+                    <div class="formulario col-md-6 col-sm-12 text-md-left"><input class="formulario form-control"" type="text" id="email" name="email" placeholder="email (opcional)"></div>
                 </div>
                 <hr>
                 <div class="row">
